@@ -1,0 +1,71 @@
+{
+    "title": "SafeWeb - Protect your kids",
+    "meta":{
+        "description": "Effective remote work collaboration",
+        "image": "/static/img/safeweb-app-tracking.jpg",
+        "url": "https://safeweb.app"
+    },
+    "header": {
+        "part1": "A New Way",
+        "part2": "To Work Remotely",
+        "part3": "Working in a virtual office environment, each person sitting in a remote place.",
+        "part4": "Not wasting time, everyone was highly focused."
+    },
+    "topic": {
+        "head": "Highly focused on your project",
+        "part1":"High efficiency work",
+        "message1":"When you lose focus, the app will remind you.",
+        "part2":"Avoid wasting time",
+        "message2":"App assists you in getting rid of useless things.",
+        "part3":"Real-time reporting",
+        "message3":"The App actively sends warnings to the leader."
+    },
+    "feature":{
+        "part1": {
+            "head": "Take a look inside",
+            "message": "Team transparency in the project,",
+            "detail": "details of the work that members are trying to develop."
+        },
+        "part2": {
+            "head": "Safe and reliable",
+            "message": "App runs smoothly, does not affect your work.",
+            "detail": "You can control multiple apps remotely at the same time.."
+        }
+    },
+    "payment":{
+        "free":{
+            "type": "FREE",
+            "price": "0",
+            "service1": "Up to 30 Reports",
+            "service2": "Up to 30 Real-time",
+            "service3": "4 Members",
+            "service4": "Limited Support",
+            "button": "Get Free"
+        },
+        "standard": {
+            "type": "STANDARD",
+            "price": "7",
+            "service1": "Up to 100 Reports",
+            "service2": "Up to 100 Real-time",
+            "service3": "30 Members",
+            "service4": "Limited Support",
+            "button": "Buy Now"
+        },
+        "premium":{
+            "type": "PREMIUM",
+            "price": "14",
+            "service1": "1000 Reports",
+            "service2": "1000 Real-time",
+            "service3": "100 Members",
+            "service4": "Unlimited Support",
+            "button": "Buy Now"
+        }
+    },
+    "footer": {
+        "part1": "If you want to add features or buy an on-premise version,",
+        "part2": "please contact the address below.",
+        "email":"qa@safeweb.app",
+        "phone":"+84-989-550-390",
+        "address":"Hanoi, Vietnam"
+    }
+}
