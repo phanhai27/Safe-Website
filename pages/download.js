@@ -50,14 +50,14 @@ function DownloadPage() {
             <script type="text/javascript" async src="https://www.googletagmanager.com/gtag/js?id=G-9F4WMSXE2C"></script>
             <script type="text/javascript" src="/static/js/ga.js"></script>
           </Head>
-          <div class="padding">
-            <div class="col-md-12">
-                <div class="wow fadeInUp animated" data-wow-duration="2s" data-wow-delay="0.2s" style={stylingUp}>
+          <div className="padding">
+            <div className="col-md-12">
+                <div className="wow fadeInUp animated" data-wow-duration="2s" data-wow-delay="0.2s" style={stylingUp}>
                     <h2>{downloadData.title}</h2>
                     <p> {downloadData.message} </p>
                 </div>
-                <div class="buttons"> 
-                    <a href={downloadData.windows.filename} class="btn btn-info btn-lg" data-wow-duration="2s" data-wow-delay="0.2s" style={stylingLeft}><i class="fa fa-windows fa-2x"></i> Download<br/> <small>{downloadData.windows.version}</small></a> 
+                <div className="buttons"> 
+                    <a href={downloadData.windows.filename} className="btn btn-info btn-lg" data-wow-duration="2s" data-wow-delay="0.2s" style={stylingLeft}><i className="fa fa-windows fa-2x"></i> Download<br/> <small>{downloadData.windows.version}</small></a> 
                 </div>
             </div>
           </div>
