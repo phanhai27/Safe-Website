@@ -1,0 +1,8 @@
+{
+    "title": "Download SafeWeb app",
+    "message": "Download our Windows application to have awesome experience.",
+    "windows": {
+        "version": "Windows version 0.1",
+        "filename": "SafeApp_v0.1.25.msi"
+    }
+}

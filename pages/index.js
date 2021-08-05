@@ -3,9 +3,6 @@ import Head from 'next/head'
 import homeData from '../homepage.json'
 
 function IndexPage() {
-    const styling = {
-        backgroundImage: "url('/static/img/banner-bk.jpg')",
-      }
     return (
       <div>
         <Head>
@@ -40,8 +37,9 @@ function IndexPage() {
             <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
             <script type="text/javascript" async src="https://www.googletagmanager.com/gtag/js?id=G-9F4WMSXE2C"></script>
             <script type="text/javascript" src="https://www.google.com/recaptcha/api.js?render=6LcUv5MaAAAAAFdSHhVVXoQTYoHRr2SKSSMqHU0F"></script>
-            <script type="text/javascript" src="/static/js/myscript.js"></script>
             <script type="text/javascript" src="/static/js/aos.js"></script>
+            <script type="text/javascript" src="/static/js/ga.js"></script>
+            <script type="text/javascript" src="/static/js/myscript.js"></script>
         </Head>
         
     <div class="jumbotron jumbotron-fluid" id="banner">
