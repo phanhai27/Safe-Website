@@ -6,15 +6,15 @@ function IndexPage() {
     return (
       <div>
         <Head>
-            <meta charset="UTF-8" />
+            <meta charSet="UTF-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
             <title>{homeData.title}</title>
 
             <meta name="description" content={homeData.meta.description} />
     
-            <meta itemprop="name" content={homeData.title}/>
-            <meta itemprop="description" content={homeData.meta.description}/>
-            <meta itemprop="image" content={homeData.meta.image}/>
+            <meta itemProp="name" content={homeData.title}/>
+            <meta itemProp="description" content={homeData.meta.description}/>
+            <meta itemProp="image" content={homeData.meta.image}/>
 
             <meta property="og:type" content="website"/>
             <meta property="og:url" content={homeData.meta.url}/>
@@ -64,7 +64,7 @@ function IndexPage() {
             <a href="https://safeweb.app/download" target="_blank" data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" className="btn my-4 font-weight-bold atlas-cta cta-green">Get Started</a>
         </div>
     </div>
-    <style JSX>{`
+    <style jsx>{`
     #banner {        
         background: url('/static/img/banner-bk.jpg');
     }
@@ -203,16 +203,16 @@ function IndexPage() {
                     <form>
                     	<div className="row">
 	                        <div className="form-group col-md-6">
-	                            <label for="name">Your Name</label>
+	                            <label htmlFor="name">Your Name</label>
 	                            <input type="name" className="form-control" id="name" />
 	                        </div>
 	                        <div className="form-group col-md-6">
-	                            <label for="Email">Your Email</label>
+	                            <label htmlFor="Email">Your Email</label>
 	                            <input type="email" className="form-control" id="email" />
 	                        </div>
 	                    </div>
 	                    <div className="form-group">
-	                        <label for="message">Message</label>
+	                        <label htmlFor="message">Message</label>
 	                        <textarea className="form-control" id="message" rows="3"></textarea>
 	                    </div>
                         <button type="submit" className="btn font-weight-bold atlas-cta atlas-cta-wide cta-green my-3" id="gocontact">Submit</button>
@@ -221,7 +221,7 @@ function IndexPage() {
             </div>
         </div>
     </div>
-    <style JSX>{`
+    <style jsx>{`
     #contact {        
         background: url('/static/img/contact-bk.jpg');
     }
