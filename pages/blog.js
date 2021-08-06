@@ -1,8 +1,12 @@
 import Head from 'next/head'
 import blogData from '../blogpage.json'
-import React, { Fragment } from 'react';
+import React from 'react';
 
 function Blog() {
+  React.useEffect( () => {
+    document.querySelector("body").classList.add("is-preload")
+  });
+
     return (
         <div>
           <Head>
@@ -52,7 +56,7 @@ function Blog() {
                     <article className="post">
                         {
                             blogData.posts.map((v, i) => (
-                              <React.Fragment>
+                              <React.Fragment key={Math.random()}>
                                 <header key={i}>
                                 <div className="title">
                                     <h2><a href={"/blog/"+v.url}>{v.title}</a></h2>
