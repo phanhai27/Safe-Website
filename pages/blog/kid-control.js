@@ -1,4 +1,4 @@
-import postData from './kid-control.json'
+import postData from '../../kid-control.json'
 
 import React from 'react'
 import BlogHeadMeta from '../../components/blog-head'

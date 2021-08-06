@@ -1,6 +1,7 @@
-import { getFontDefinitionFromNetwork } from 'next/dist/next-server/server/font-utils'
 import Head from 'next/head'
 import homeData from '../homepage.json'
+import React from 'react'
+import pageUrl from '../lib/page-url'
 
 function IndexPage() {
     return (
@@ -61,7 +62,7 @@ function IndexPage() {
             <p data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" className="lead text-white my-4">
                 {homeData.header.part3}<br/> {homeData.header.part4}
             </p>
-            <a href="https://safeweb.app/download" target="_blank" data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" className="btn my-4 font-weight-bold atlas-cta cta-green">Get Started</a>
+            <a href={pageUrl("/download")} target="_blank" data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" className="btn my-4 font-weight-bold atlas-cta cta-green">Get Started</a>
         </div>
     </div>
     <style jsx>{`
@@ -97,7 +98,7 @@ function IndexPage() {
                 <div data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" className="col-md-6">
                     <h2 className="font-weight-bold">{homeData.feature.part1.head}</h2>
                     <p className="my-4">{homeData.feature.part1.message}<br/>{homeData.feature.part1.detail}</p>
-                    <a href="./blog/kid-control" className="btn my-4 font-weight-bold atlas-cta cta-blue">Learn More</a>
+                    <a href={pageUrl("/blog/kid-control")} className="btn my-4 font-weight-bold atlas-cta cta-blue">Learn More</a>
                 </div>
                 <div data-aos="fade-left" data-aos-duration="1000" data-aos-once="true" className="col-md-6 align-self-center">
                     <img src="/static/img/feature-1.png" alt="Take a look inside" className="mx-auto d-block" />
@@ -112,7 +113,7 @@ function IndexPage() {
                 <div data-aos="fade-left" data-aos-duration="1000" data-aos-once="true" className="col-md-6 flex-md-last">
                     <h2 className="font-weight-bold">{homeData.feature.part2.head}</h2>
                     <p className="my-4">{homeData.feature.part2.message}<br/>{homeData.feature.part2.detail}</p>
-                    <a href="./blog/safeweb-remote-tagui-rpa" className="btn my-4 font-weight-bold atlas-cta cta-blue">Learn More</a>
+                    <a href={pageUrl("/blog/safeweb-remote-tagui-rpa")} className="btn my-4 font-weight-bold atlas-cta cta-blue">Learn More</a>
                 </div>
                 <div data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" className="col-md-6 align-self-center flex-md-first">
                     <img src="/static/img/feature-2.png" alt="Safe and reliable" className="mx-auto d-block" />

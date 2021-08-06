@@ -1,4 +1,4 @@
-import postData from './safeweb-remote-tagui-rpa.json'
+import postData from '../../safeweb-remote-tagui-rpa.json'
 
 import React from 'react'
 import BlogHeadMeta from '../../components/blog-head'

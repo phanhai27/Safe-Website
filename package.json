@@ -4,9 +4,10 @@
   "description": "Website giới thiệu về SafeWeb. Viết bằng Next.js",
   "main": "index.js",
   "scripts": {
-    "dev": "next -p 3001",
-    "build": "next build && next export",    
-    "start": "next start"
+    "dev": "node removeEnvFile.js && next -p 3001",
+    "build": "node removeEnvFile.js && next build",
+    "start": "next start",
+    "export": "node copyEnvFile.js && next build && next export"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
   },
   "homepage": "https://github.com/phanhai27/Safe-Website#readme",
   "dependencies": {
+    "fs": "0.0.1-security",
     "next": "^11.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
