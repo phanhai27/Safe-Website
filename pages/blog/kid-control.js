@@ -1,12 +1,12 @@
+import postData from './kid-control.json'
+
 import React from 'react'
 import BlogHeadMeta from '../../components/blog-head'
 import BlogHeader from '../../components/blog-header'
 import BlogFooter from '../../components/blog-footer'
 import BlogMain from '../../components/blog-main'
 
-import postData from './kid-control.json'
-
-export default function KidControlBlog() {
+export default function() {
     React.useEffect( () => {
       document.querySelector("body").classList.add("single")
       document.querySelector("body").classList.add("is-preload")
