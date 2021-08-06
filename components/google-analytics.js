@@ -1,0 +1,8 @@
+export default function GoogleAnalytics () {
+    return (
+    <>
+        <script type="text/javascript" async src="https://www.googletagmanager.com/gtag/js?id=G-9F4WMSXE2C"></script>
+        <script type="text/javascript" src="/static/js/ga.js"></script>
+    </>
+    )
+}
