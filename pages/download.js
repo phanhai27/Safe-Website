@@ -46,9 +46,11 @@ function DownloadPage() {
             <link rel="stylesheet" href="/static/css/download.css"/>
             
             <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-            <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+            
             <script type="text/javascript" async src="https://www.googletagmanager.com/gtag/js?id=G-9F4WMSXE2C"></script>
             <script type="text/javascript" src="/static/js/ga.js"></script>
+
+            <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
           </Head>
           <div className="padding">
             <div className="col-md-12">
