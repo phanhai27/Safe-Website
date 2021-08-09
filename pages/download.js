@@ -49,6 +49,7 @@ function DownloadPage() {
             
             <script type="text/javascript" async src="https://www.googletagmanager.com/gtag/js?id=G-9F4WMSXE2C"></script>
             <script type="text/javascript" src="/static/js/ga.js"></script>
+            <script type="text/javascript" src="/static/js/checkversion.js"></script>
 
             <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
           </Head>
@@ -59,7 +60,7 @@ function DownloadPage() {
                     <p> {downloadData.message} </p>
                 </div>
                 <div className="buttons"> 
-                    <a href={downloadData.windows.filename} className="btn btn-info btn-lg" data-wow-duration="2s" data-wow-delay="0.2s" style={stylingLeft}><i className="fa fa-windows fa-2x"></i> Download<br/> <small>{downloadData.windows.version}</small></a> 
+                    <a id="dlink" href={downloadData.windows.filename} className="btn btn-info btn-lg" data-wow-duration="2s" data-wow-delay="0.2s" style={stylingLeft}><i className="fa fa-windows fa-2x"></i> Download<br/> <small>{downloadData.windows.version}</small></a> 
                 </div>
             </div>
           </div>
