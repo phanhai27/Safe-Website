@@ -1,8 +1,8 @@
 import Head from 'next/head'
-import homeData from '../homepage.json'
-import downloadData from '../downloadpage.json'
+import homeData from '../locales/en/homepage.json'
+import downloadData from '../locales/en/downloadpage.json'
 
-function DownloadPage() {
+export default function DownloadPage() {
     const stylingUp = {        
         visibility: "visible",
         animationDuration: "2s",
@@ -67,4 +67,3 @@ function DownloadPage() {
         </div>
     )
 }
-export default DownloadPage

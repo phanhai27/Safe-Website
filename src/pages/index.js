@@ -1,8 +1,8 @@
 import Head from 'next/head'
-import homeData from '../homepage.json'
+import homeData from '../locales/en/homepage.json'
 import React from 'react'
 
-function IndexPage() {
+export default function IndexPage() {
     return (
       <div>
         <Head>
@@ -253,4 +253,3 @@ function IndexPage() {
     </div>
     )
 }
-export default IndexPage
