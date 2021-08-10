@@ -22,7 +22,7 @@ function Blog({ language }) {
         <div>
           <BlogHeadMeta postData={blogData}/>
             <div id="wrapper">
-              <BlogHeader/>
+              <BlogHeader lang={language}/>
                 <div id="main">
                     <article className="post">
                         {
@@ -30,7 +30,7 @@ function Blog({ language }) {
                               <React.Fragment key={Math.random()}>
                                 <header key={i}>
                                 <div className="title">
-                                    <h2><a href={"/blog/"+v.url}>{v.title}</a></h2>
+                                    <h2><a href={"/" + language + "/blog/" + v.url}>{v.title}</a></h2>
                                     <p>{v.description}</p>
                                 </div>
                                 <div className="meta">
@@ -41,7 +41,7 @@ function Blog({ language }) {
                                 <p key={i+1}>{v.summary}</p>
                                 <footer key={i+2}>
                                     <ul className="actions">
-                                        <li><a href={"/blog/"+v.url} className="button large">Continue Reading</a></li>
+                                        <li><a href={"/" + language + "/blog/" + v.url} className="button large">Continue Reading</a></li>
                                     </ul>
                                 </footer>
                               </React.Fragment>

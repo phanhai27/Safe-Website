@@ -23,7 +23,7 @@ export default function ({ language }) {
         <div>
           <BlogHeadMeta postData={postData}/>
           <div id="wrapper">
-            <BlogHeader/>
+            <BlogHeader lang={language}/>
             <BlogMain postData={postData}/>
             <BlogFooter/>
           </div>
