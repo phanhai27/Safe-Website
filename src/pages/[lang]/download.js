@@ -67,7 +67,7 @@ function DownloadPage({ language }) {
                     <p> {downloadData.message} </p>
                 </div>
                 <div className="buttons"> 
-                    <a id="dlink" href={downloadData.windows.filename} className="btn btn-info btn-lg" data-wow-duration="2s" data-wow-delay="0.2s" style={stylingLeft}><i className="fa fa-windows fa-2x"></i> Download<br/> <small>{downloadData.windows.version}</small></a> 
+                    <a id="dlink" href={"/download/"+downloadData.windows.filename} className="btn btn-info btn-lg" data-wow-duration="2s" data-wow-delay="0.2s" style={stylingLeft}><i className="fa fa-windows fa-2x"></i> Download<br/> <small>{downloadData.windows.version}</small></a> 
                 </div>
             </div>
           </div>
