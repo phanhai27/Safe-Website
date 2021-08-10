@@ -3,7 +3,6 @@ import BlogHeadMeta from '../components/blog-head'
 import BlogHeader from '../components/blog-header'
 import BlogFooter from '../components/blog-footer'
 import BlogIntro from '../components/blog-intro'
-import pageUrl from '../lib/page-url'
 
 import blogData from '../blog.json'
 
@@ -24,7 +23,7 @@ function Blog() {
                               <React.Fragment key={Math.random()}>
                                 <header key={i}>
                                 <div className="title">
-                                    <h2><a href={pageUrl("/blog/"+v.url)}>{v.title}</a></h2>
+                                    <h2><a href={"/blog/"+v.url}>{v.title}</a></h2>
                                     <p>{v.description}</p>
                                 </div>
                                 <div className="meta">
@@ -35,7 +34,7 @@ function Blog() {
                                 <p key={i}>{v.summary}</p>
                                 <footer key={i}>
                                     <ul className="actions">
-                                        <li><a href={pageUrl("/blog/"+v.url)} className="button large">Continue Reading</a></li>
+                                        <li><a href={"/blog/"+v.url} className="button large">Continue Reading</a></li>
                                     </ul>
                                 </footer>
                               </React.Fragment>

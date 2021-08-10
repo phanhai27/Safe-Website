@@ -4,10 +4,10 @@
   "description": "Website giới thiệu về SafeWeb. Viết bằng Next.js",
   "main": "index.js",
   "scripts": {
-    "dev": "node removeEnvFile.js && next -p 3001",
-    "build": "node removeEnvFile.js && next build",
+    "dev": "next -p 3001",
+    "build": "next build",
     "start": "next start",
-    "export": "node copyEnvFile.js && next build && next export"
+    "export": "next build && next export"
   },
   "repository": {
     "type": "git",
