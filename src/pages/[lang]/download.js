@@ -1,8 +1,15 @@
 import Head from 'next/head'
+import { getAllLanguageSlugs, getLanguage } from '../../lib/lang';
 import homeData from '../../locales/en/homepage.json'
-import downloadData from '../../locales/en/downloadpage.json'
+import downloadDataEn from '../../locales/en/downloadpage.json'
+import downloadDataVi from '../../locales/vi/downloadpage.json'
 
-function DownloadPage() {
+function DownloadPage({ language }) {
+    let downloadData = downloadDataEn;
+    if (language == 'vi') {
+        downloadData = downloadDataVi;
+    }
+
     const stylingUp = {        
         visibility: "visible",
         animationDuration: "2s",
@@ -24,9 +31,9 @@ function DownloadPage() {
 
             <meta name="description" content={homeData.meta.description} />
     
-            <meta itemprop="name" content={downloadData.title}/>
-            <meta itemprop="description" content={homeData.meta.description}/>
-            <meta itemprop="image" content={homeData.meta.image}/>
+            <meta itemProp="name" content={downloadData.title}/>
+            <meta itemProp="description" content={homeData.meta.description}/>
+            <meta itemProp="image" content={homeData.meta.image}/>
 
             <meta property="og:type" content="website"/>
             <meta property="og:url" content={homeData.meta.url}/>
@@ -66,6 +73,23 @@ function DownloadPage() {
           </div>
         </div>
     )
+}
+
+export async function getStaticPaths() {
+	const paths = getAllLanguageSlugs();
+	return {
+		paths,
+		fallback: false,
+	};
+}
+
+export async function getStaticProps({ params }) {
+	const language = getLanguage(params.lang);
+	return {
+		props: {
+			language,
+		},
+	};
 }
 
 export default DownloadPage

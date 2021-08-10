@@ -1,12 +1,19 @@
-import postData from '../../safeweb-remote-tagui-rpa.json'
+import postDataEn from '../../../locales/en/safeweb-remote-tagui-rpa.json'
+import postDataVi from '../../../locales/vi/safeweb-remote-tagui-rpa.json'
 
 import React from 'react'
+import { getAllLanguageSlugs, getLanguage } from '../../../lib/lang';
 import BlogHeadMeta from '../../../components/blog-head'
 import BlogHeader from '../../../components/blog-header'
 import BlogFooter from '../../../components/blog-footer'
 import BlogMain from '../../../components/blog-main'
 
-export default function () {
+export default function ({ language }) {
+    let postData = postDataEn;
+    if (language == 'vi') {
+      postData = postDataVi;
+    }
+
     React.useEffect( () => {
       document.querySelector("body").classList.add("single")
       document.querySelector("body").classList.add("is-preload")
@@ -22,4 +29,21 @@ export default function () {
           </div>
         </div>
     )
+}
+
+export async function getStaticPaths() {
+	const paths = getAllLanguageSlugs();
+	return {
+		paths,
+		fallback: false,
+	};
+}
+
+export async function getStaticProps({ params }) {
+	const language = getLanguage(params.lang);
+	return {
+		props: {
+			language,
+		},
+	};
 }
