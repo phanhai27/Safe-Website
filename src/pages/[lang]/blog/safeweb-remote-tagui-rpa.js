@@ -1,10 +1,10 @@
 import postData from '../../safeweb-remote-tagui-rpa.json'
 
 import React from 'react'
-import BlogHeadMeta from '../../components/blog-head'
-import BlogHeader from '../../components/blog-header'
-import BlogFooter from '../../components/blog-footer'
-import BlogMain from '../../components/blog-main'
+import BlogHeadMeta from '../../../components/blog-head'
+import BlogHeader from '../../../components/blog-header'
+import BlogFooter from '../../../components/blog-footer'
+import BlogMain from '../../../components/blog-main'
 
 export default function () {
     React.useEffect( () => {
