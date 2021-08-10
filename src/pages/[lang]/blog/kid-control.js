@@ -1,6 +1,3 @@
-import postDataEn from '../../../locales/en/kid-control.json'
-import postDataVi from '../../../locales/vi/kid-control.json'
-
 import React from 'react'
 import { getAllLanguageSlugs, getLanguage } from '../../../lib/lang';
 import BlogHeadMeta from '../../../components/blog-head'
@@ -8,15 +5,10 @@ import BlogHeader from '../../../components/blog-header'
 import BlogFooter from '../../../components/blog-footer'
 import BlogMain from '../../../components/blog-main'
 
-export default function({ language }) {
-    let postData = postDataEn;
-    if (language == 'vi') {
-      postData = postDataVi;
-    }
-
+export default function ({ language, postData }) {
     React.useEffect( () => {
       document.querySelector("body").classList.add("single")
-      document.querySelector("body").classList.add("is-preload")
+      document.querySelector("body").classList.add("is-preload")      
     });
 
     return (
@@ -40,10 +32,13 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-	const language = getLanguage(params.lang);
-	return {
+  const lang = getLanguage(params.lang);
+  const data = require('../../../locales/' + lang + '/kid-control.json');
+
+  return {
 		props: {
-			language,
+      language: lang,
+      postData: data,
 		},
 	};
 }

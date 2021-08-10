@@ -5,14 +5,7 @@ import BlogHeader from '../../components/blog-header'
 import BlogFooter from '../../components/blog-footer'
 import BlogIntro from '../../components/blog-intro'
 
-import blogDataEn from '../../locales/en/blog.json'
-import blogDataVi from '../../locales/vi/blog.json'
-
-function Blog({ language }) {
-  let blogData = blogDataEn;
-  if (language == 'vi') {
-    blogData = blogDataVi;
-  }
+function Blog({ language, blogData }) {
 
   React.useEffect( () => {
     document.querySelector("body").classList.add("is-preload")
@@ -68,10 +61,13 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-	const language = getLanguage(params.lang);
-	return {
+	const lang = getLanguage(params.lang);
+  const data = require('../../locales/' + lang + '/blog.json');
+
+  return {
 		props: {
-			language,
+      language: lang,
+      blogData: data,
 		},
 	};
 }

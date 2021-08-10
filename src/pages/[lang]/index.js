@@ -1,15 +1,9 @@
 import Head from 'next/head'
-import homeData1 from '../../locales/en/homepage.json'
-import homeData2 from '../../locales/vi/homepage.json'
 import React from 'react'
 import { getAllLanguageSlugs, getLanguage } from '../../lib/lang';
 import LanguageMenu from '../../components/LanguageMenu';
 
-function IndexPage({ language }) {
-    let homeData = homeData1;
-    if (language == 'vi') {
-        homeData = homeData2;
-    }
+function IndexPage({ language, homeData }) {
 
     return (
       <div>
@@ -271,10 +265,13 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-	const language = getLanguage(params.lang);
-	return {
+	const lang = getLanguage(params.lang);
+    const data = require('../../locales/' + lang + '/index.json');
+
+    return {
 		props: {
-			language,
+            language: lang,
+            homeData: data,
 		},
 	};
 }

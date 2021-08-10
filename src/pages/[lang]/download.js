@@ -1,14 +1,7 @@
 import Head from 'next/head'
 import { getAllLanguageSlugs, getLanguage } from '../../lib/lang';
-import homeData from '../../locales/en/homepage.json'
-import downloadDataEn from '../../locales/en/downloadpage.json'
-import downloadDataVi from '../../locales/vi/downloadpage.json'
 
-function DownloadPage({ language }) {
-    let downloadData = downloadDataEn;
-    if (language == 'vi') {
-        downloadData = downloadDataVi;
-    }
+function DownloadPage({ downloadData, htmlMeta }) {
 
     const stylingUp = {        
         visibility: "visible",
@@ -29,23 +22,23 @@ function DownloadPage({ language }) {
             <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
             <title>{downloadData.title}</title>
 
-            <meta name="description" content={homeData.meta.description} />
+            <meta name="description" content={htmlMeta.meta.description} />
     
             <meta itemProp="name" content={downloadData.title}/>
-            <meta itemProp="description" content={homeData.meta.description}/>
-            <meta itemProp="image" content={homeData.meta.image}/>
+            <meta itemProp="description" content={htmlMeta.meta.description}/>
+            <meta itemProp="image" content={htmlMeta.meta.image}/>
 
             <meta property="og:type" content="website"/>
-            <meta property="og:url" content={homeData.meta.url}/>
+            <meta property="og:url" content={htmlMeta.meta.url}/>
             <meta property="og:title" content={downloadData.title}/>
-            <meta property="og:description" content={homeData.meta.description}/>
-            <meta property="og:image" content={homeData.meta.image}/>
+            <meta property="og:description" content={htmlMeta.meta.description}/>
+            <meta property="og:image" content={htmlMeta.meta.image}/>
 
             <meta property="twitter:card" content="summary_large_image"/>
-            <meta property="twitter:url" content={homeData.meta.url}/>
+            <meta property="twitter:url" content={htmlMeta.meta.url}/>
             <meta property="twitter:title" content={downloadData.title}/>
-            <meta property="twitter:description" content={homeData.meta.description}/>
-            <meta property="twitter:image" content={homeData.meta.image}/>
+            <meta property="twitter:description" content={htmlMeta.meta.description}/>
+            <meta property="twitter:image" content={htmlMeta.meta.image}/>
             
             <link rel="icon" href="/static/img/favicon.png" sizes="32x32" type="image/png"/>
             <link rel="stylesheet" href="/static/css/bootstrap.min.css"/>
@@ -84,10 +77,14 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-	const language = getLanguage(params.lang);
-	return {
+    const lang = getLanguage(params.lang);
+    const data = require('../../locales/' + lang + '/download.json');
+    const metadata = require('../../locales/' + lang + '/index.json');
+
+    return {
 		props: {
-			language,
+            downloadData: data,
+            htmlMeta: metadata,
 		},
 	};
 }
