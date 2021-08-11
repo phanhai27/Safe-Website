@@ -5,7 +5,7 @@ import BlogHeader from '../../components/blog-header'
 import BlogFooter from '../../components/blog-footer'
 import BlogIntro from '../../components/blog-intro'
 
-function Blog({ language, blogData }) {
+function Blog({ language, blogHead, blogBody }) {
 
   React.useEffect( () => {
     document.querySelector("body").classList.add("is-preload")
@@ -13,13 +13,13 @@ function Blog({ language, blogData }) {
 
     return (
         <div>
-          <BlogHeadMeta postData={blogData}/>
+          <BlogHeadMeta postData={blogHead}/>
             <div id="wrapper">
               <BlogHeader lang={language}/>
                 <div id="main">
                     <article className="post">
                         {
-                            blogData.posts.map((v, i) => (
+                            blogBody.posts.map((v, i) => (
                               <React.Fragment key={Math.random()}>
                                 <header key={i}>
                                 <div className="title">
@@ -62,12 +62,14 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
 	const lang = getLanguage(params.lang);
-  const data = require('../../locales/' + lang + '/blog.json');
+  const head = require('../../locales/' + lang + '/blog-head.json');
+  const body = require('../../locales/' + lang + '/blog-body.json');
 
   return {
 		props: {
       language: lang,
-      blogData: data,
+      blogHead: head,
+      blogBody: body
 		},
 	};
 }

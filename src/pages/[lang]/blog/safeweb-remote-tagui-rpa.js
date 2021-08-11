@@ -32,9 +32,12 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-	const lang = getLanguage(params.lang);
-  const data = require('../../../locales/' + lang + '/safeweb-remote-tagui-rpa.json');
-
+  var path = require("path")
+  var filename = path.basename(__filename).replace('.js', '.json')
+  
+  const lang = getLanguage(params.lang);
+  const data = require('../../../locales/' + lang + '/posts/' + filename);
+  
   return {
 		props: {
       language: lang,
