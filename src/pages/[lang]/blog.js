@@ -5,7 +5,7 @@ import BlogHeader from '../../components/blog-header'
 import BlogFooter from '../../components/blog-footer'
 import BlogIntro from '../../components/blog-intro'
 
-function Blog({ language, blogHead, blogBody }) {
+function Blog({ language, blogHead, blogBody}) {
 
   React.useEffect( () => {
     document.querySelector("body").classList.add("is-preload")
@@ -61,9 +61,28 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
+  const fsp = require('fs/promises');
+  const fs = require('fs');
+  const path = require('path');
+
 	const lang = getLanguage(params.lang);
   const head = require('../../locales/' + lang + '/blog-head.json');
-  const body = require('../../locales/' + lang + '/blog-body.json');
+
+  const postDir = path.join(process.cwd(),"src", "locales", lang, "posts")
+  const filenames = await fsp.readdir(postDir)
+
+  const body = {
+    posts: []
+  }
+  
+  filenames.forEach(file => {
+    const filepath = path.join(postDir, file);
+    const headline = fs.readFileSync(filepath);
+    const jsonData = JSON.parse(headline);
+    body.posts.push(jsonData.article);
+  });
+
+  // const body = require('../../locales/' + lang + '/blog-body.json');
 
   return {
 		props: {
