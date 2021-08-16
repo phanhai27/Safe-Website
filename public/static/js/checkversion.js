@@ -4,7 +4,7 @@ $(document).ready(function(){
     $.getJSON(urlAPI, function(data) {
 		$.each(data.list, function(key,value) {
 			if (value.platform == `windows`) {
-				$('#dlink').attr("href", `${root}/download/SafeApp_v${value.version}.msi`);
+				$('#dlink').attr("href", `${root}/download/SafeAppSetup_v${value.version}.exe`);
 				$("#dlink small").text(`Windows version ${value.version}`);
 			}
 		  });
