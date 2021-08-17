@@ -1,5 +1,5 @@
 on: push
-name: Safe Website - Github Notification
+name: Safe Website
 jobs:
   slackNotification:
     name: Slack Notification

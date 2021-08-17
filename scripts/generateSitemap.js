@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const languages = ['en', 'vi'];
+const languages = require('../languages.json');
 
 const baseUrl = "https://safeweb.app";
 
@@ -76,27 +76,16 @@ function generateSitemap () {
         .join("")}
       ${langPages
         .map((url) => {
-          if (url == "download"){
-            return `
-        <url>
-            <loc>${baseUrl}/${url}</loc>
-            <lastmod>${new Date().toISOString()}</lastmod>
-            <changefreq>monthly</changefreq>
-            <priority>1.0</priority>
-        </url>`;
-          } else {
-              var list = "";
-  
-              languages.forEach(lang => {
-                list += `
+          var list = "";
+          languages.forEach(lang => {
+          list += `
         <url>
             <loc>${baseUrl}/${lang}/${url}</loc>
             <lastmod>${new Date().toISOString()}</lastmod>
             <changefreq>monthly</changefreq>
             <priority>1.0</priority>
         </url>`})
-              return list
-            }
+          return list
           })
         .join("")}
       ${blogPages
