@@ -7,8 +7,7 @@
     "dev": "next -p 3001",
     "build": "next build",
     "start": "next start",
-    "gen:sitemap": "node generateSitemap.js",
-    "export": "next build && next export"
+    "export": "node scripts/generateSitemap.js && next build && next export"
   },
   "repository": {
     "type": "git",
