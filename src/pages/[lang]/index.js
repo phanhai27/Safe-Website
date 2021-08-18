@@ -4,7 +4,26 @@ import { getAllLanguageSlugs, getLanguage } from '../../lib/lang';
 import LanguageMenu from '../../components/LanguageMenu';
 
 function IndexPage({ language, homeData }) {
+    React.useEffect(() => {
+        if (process.browser) {
+            var gaScript = document.createElement('script');
+            gaScript.type = 'text/javascript';
+            gaScript.src = "/static/js/ga.js";
+    
+            document.head.appendChild(gaScript);
+            gaScript.onload = () => {
+            };
 
+            var myScript = document.createElement('script');
+            myScript.type = 'text/javascript';
+            myScript.src = "/static/js/myscript.js";
+    
+            document.head.appendChild(myScript);
+            myScript.onload = () => {
+            };
+        }
+    }, [])
+    
     return (
       <div>
         <Head>
@@ -40,8 +59,6 @@ function IndexPage({ language, homeData }) {
             <script type="text/javascript" async src="https://www.googletagmanager.com/gtag/js?id=G-9F4WMSXE2C"></script>
             <script type="text/javascript" src="https://www.google.com/recaptcha/api.js?render=6LcUv5MaAAAAAFdSHhVVXoQTYoHRr2SKSSMqHU0F"></script>
             <script type="text/javascript" src="/static/js/aos.js"></script>
-            <script type="text/javascript" src="/static/js/ga.js"></script>
-            <script type="text/javascript" src="/static/js/myscript.js"></script>
         </Head>
         <LanguageMenu/>
     <div className="jumbotron jumbotron-fluid" id="banner">

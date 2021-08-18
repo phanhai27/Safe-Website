@@ -23,7 +23,7 @@ export default function BlogMeta ({postData}) {
             <meta property="twitter:description" content={postData.meta.description}/>
             <meta property="twitter:image" content={postData.meta.image}/>
 
-		    <link rel="icon" href="/static/img/favicon.ico" sizes="48x48" type="image/png"/>
+		    <link rel="icon" href="/favicon.ico" sizes="48x48" type="image/png"/>
     </>
     )
 }

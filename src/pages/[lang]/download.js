@@ -1,7 +1,27 @@
 import Head from 'next/head'
+import React from 'react'
 import { getAllLanguageSlugs, getLanguage } from '../../lib/lang';
 
 function DownloadPage({ downloadData, htmlMeta }) {
+    React.useEffect(() => {
+        if (process.browser) {
+            var gaScript = document.createElement('script');
+            gaScript.type = 'text/javascript';
+            gaScript.src = "/static/js/ga.js";
+    
+            document.head.appendChild(gaScript);
+            gaScript.onload = () => {
+            };
+
+            var checkversion = document.createElement('script');
+            checkversion.type = 'text/javascript';
+            checkversion.src = "/static/js/checkversion.js";
+    
+            document.head.appendChild(checkversion);
+            checkversion.onload = () => {
+            };
+        }
+    }, [])
 
     const stylingUp = {        
         visibility: "visible",
@@ -48,8 +68,6 @@ function DownloadPage({ downloadData, htmlMeta }) {
             <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
             
             <script type="text/javascript" async src="https://www.googletagmanager.com/gtag/js?id=G-9F4WMSXE2C"></script>
-            <script type="text/javascript" src="/static/js/ga.js"></script>
-            <script type="text/javascript" src="/static/js/checkversion.js"></script>
 
             <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
           </Head>
