@@ -2,26 +2,62 @@ import Head from 'next/head'
 import React from 'react'
 import { getAllLanguageSlugs, getLanguage } from '../../lib/lang';
 import LanguageMenu from '../../components/LanguageMenu';
+import $ from 'jquery';
 
 function IndexPage({ language, homeData }) {
     React.useEffect(() => {
-        if (process.browser) {
-            var gaScript = document.createElement('script');
-            gaScript.type = 'text/javascript';
-            gaScript.src = "/static/js/ga.js";
+        var aoScript = document.createElement('script');
+        aoScript.type = 'text/javascript';
+        aoScript.src = "/static/js/aos.js";
     
-            document.head.appendChild(gaScript);
-            gaScript.onload = () => {
-            };
+        document.head.appendChild(aoScript);
+        aoScript.onload = () => {
+            AOS.init({});
+        };
 
-            var myScript = document.createElement('script');
-            myScript.type = 'text/javascript';
-            myScript.src = "/static/js/myscript.js";
-    
-            document.head.appendChild(myScript);
-            myScript.onload = () => {
-            };
-        }
+        var gaScript = document.createElement('script');
+        gaScript.type = 'text/javascript';
+        document.head.appendChild(gaScript);
+        gaScript.onload = () => {
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-9F4WMSXE2C');
+        };
+
+        $(document).ready(function(){
+            $("#gocontact").click(function(e){
+                e.preventDefault();
+                
+                grecaptcha.ready(function() {
+                    grecaptcha.execute('6LcUv5MaAAAAAFdSHhVVXoQTYoHRr2SKSSMqHU0F', {action: 'contact'}).then(function(token) {
+                        var formData = {
+                            "fullname": $("#name").val(),
+                            "email": $("#email").val(),
+                            "message": $("#message").val(),
+                            "token": token,
+                        };
+                        $.ajax({
+                            type: "POST",
+                            url: "/api/v1/website/contact/submit",
+                            data: JSON.stringify(formData),
+                            contentType: "application/json; charset=utf-8",
+                            dataType: "json",
+                        })
+                        .done(function (data) {
+                            if (data.error == 0) {
+                                $("form").html('<div class="alert alert-success">' + data.message + "</div>");
+                            } else {
+                                $("form").html('<div class="alert alert-danger">' + data.message + "</div>");
+                            }
+                        })
+                        .fail(function (data) {
+                            $("form").html('<div class="alert alert-danger">Could not reach server, please try again later.</div>');
+                        });
+                    });
+                });
+            });
+        });
     }, [])
     
     return (
@@ -55,10 +91,8 @@ function IndexPage({ language, homeData }) {
             <link rel="stylesheet" href="/static/font-awesome-4.7.0/css/font-awesome.min.css"/>
             <link rel="stylesheet" href="/static/css/aos.css"></link>
             
-            <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
             <script type="text/javascript" async src="https://www.googletagmanager.com/gtag/js?id=G-9F4WMSXE2C"></script>
             <script type="text/javascript" src="https://www.google.com/recaptcha/api.js?render=6LcUv5MaAAAAAFdSHhVVXoQTYoHRr2SKSSMqHU0F"></script>
-            <script type="text/javascript" src="/static/js/aos.js"></script>
         </Head>
         <LanguageMenu/>
     <div className="jumbotron jumbotron-fluid" id="banner">

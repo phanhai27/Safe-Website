@@ -1,7 +1,4 @@
 $(document).ready(function(){
-    AOS.init({
-    });
-
     $("#gocontact").click(function(e){
         e.preventDefault();
         
