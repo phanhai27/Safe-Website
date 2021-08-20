@@ -59,8 +59,6 @@ function IndexPage({ language, homeData }) {
             <link rel="stylesheet" href="/static/css/bootstrap.min.css"/>
             <link rel="stylesheet" href="/static/font-awesome-4.7.0/css/font-awesome.min.css"/>
             <link rel="stylesheet" href="/static/css/aos.css"></link>
-            
-            {/* <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> */}
         </Head>
         <LanguageMenu/>
     <div className="jumbotron jumbotron-fluid" id="banner">

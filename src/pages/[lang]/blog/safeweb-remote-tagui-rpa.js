@@ -4,9 +4,11 @@ import BlogHeadMeta from '../../../components/blog-head'
 import BlogHeader from '../../../components/blog-header'
 import BlogFooter from '../../../components/blog-footer'
 import BlogMain from '../../../components/blog-main'
+import { gaRunScript } from '../../../lib/googleAnalytics';
 
 export default function ({ language, postData }) {
     React.useEffect( () => {
+      gaRunScript();
       document.querySelector("body").classList.add("single")
       document.querySelector("body").classList.add("is-preload")
     });

@@ -4,10 +4,12 @@ import BlogHeadMeta from '../../components/blog-head'
 import BlogHeader from '../../components/blog-header'
 import BlogFooter from '../../components/blog-footer'
 import BlogIntro from '../../components/blog-intro'
+import { gaRunScript } from '../../lib/googleAnalytics'
 
 function Blog({ language, blogHead, blogBody}) {
 
   React.useEffect( () => {
+    gaRunScript();
     document.querySelector("body").classList.add("is-preload")
   });
 
