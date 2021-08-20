@@ -3,9 +3,12 @@ import React from 'react'
 import { getAllLanguageSlugs, getLanguage } from '../../lib/lang';
 import LanguageMenu from '../../components/LanguageMenu';
 import $ from 'jquery';
+import { googleAnalyticsId, gaRunScript } from '../../lib/googleAnalytics'
 
 function IndexPage({ language, homeData }) {
     React.useEffect(() => {
+        gaRunScript();
+
         var aoScript = document.createElement('script');
         aoScript.type = 'text/javascript';
         aoScript.src = "/static/js/aos.js";
@@ -13,16 +16,6 @@ function IndexPage({ language, homeData }) {
         document.head.appendChild(aoScript);
         aoScript.onload = () => {
             AOS.init({});
-        };
-
-        var gaScript = document.createElement('script');
-        gaScript.type = 'text/javascript';
-        document.head.appendChild(gaScript);
-        gaScript.onload = () => {
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-9F4WMSXE2C');
         };
 
         $(document).ready(function(){
@@ -91,7 +84,7 @@ function IndexPage({ language, homeData }) {
             <link rel="stylesheet" href="/static/font-awesome-4.7.0/css/font-awesome.min.css"/>
             <link rel="stylesheet" href="/static/css/aos.css"></link>
             
-            <script type="text/javascript" async src="https://www.googletagmanager.com/gtag/js?id=G-9F4WMSXE2C"></script>
+            <script type="text/javascript" async src={"https://www.googletagmanager.com/gtag/js?id=" + googleAnalyticsId}></script>
             <script type="text/javascript" src="https://www.google.com/recaptcha/api.js?render=6LcUv5MaAAAAAFdSHhVVXoQTYoHRr2SKSSMqHU0F"></script>
         </Head>
         <LanguageMenu/>

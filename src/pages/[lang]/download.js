@@ -1,22 +1,18 @@
 import Head from 'next/head'
 import React from 'react'
 import { getAllLanguageSlugs, getLanguage } from '../../lib/lang';
+import { googleAnalyticsId, gaRunScript } from '../../lib/googleAnalytics'
+import ENV from '../../../env.json'
+import $ from 'jquery';
 
 function DownloadPage({ downloadData, htmlMeta }) {
     React.useEffect(() => {
         if (process.browser) {
-            var gaScript = document.createElement('script');
-            gaScript.type = 'text/javascript';
-            gaScript.src = "/static/js/ga.js";
-    
-            document.head.appendChild(gaScript);
-            gaScript.onload = () => {
-            };
+            gaRunScript();
 
             var checkversion = document.createElement('script');
             checkversion.type = 'text/javascript';
-            checkversion.src = "/static/js/checkversion.js";
-    
+            checkversion.src = '/static/js/checkversion.js'
             document.head.appendChild(checkversion);
             checkversion.onload = () => {
             };
@@ -64,11 +60,9 @@ function DownloadPage({ downloadData, htmlMeta }) {
             <link rel="stylesheet" href="/static/css/bootstrap.min.css"/>
             <link rel="stylesheet" href="/static/font-awesome-4.7.0/css/font-awesome.min.css"/>
             <link rel="stylesheet" href="/static/css/download.css"/>
-            
-            <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-            
-            <script type="text/javascript" async src="https://www.googletagmanager.com/gtag/js?id=G-9F4WMSXE2C"></script>
 
+            <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+            <script type="text/javascript" async src={"https://www.googletagmanager.com/gtag/js?id=" + googleAnalyticsId}></script>
             <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
           </Head>
           <div className="padding">
