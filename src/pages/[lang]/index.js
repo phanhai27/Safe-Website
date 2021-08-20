@@ -2,13 +2,14 @@ import Head from 'next/head'
 import React from 'react'
 import { getAllLanguageSlugs, getLanguage } from '../../lib/lang';
 import LanguageMenu from '../../components/LanguageMenu';
-import $ from 'jquery';
-import { googleAnalyticsId, gaRunScript } from '../../lib/googleAnalytics'
-import ENV from '../../../env.json'
+import { gaRunScript } from '../../lib/googleAnalytics'
+import { reCaptchaScript } from '../../lib/googleRecaptcha'
 
 function IndexPage({ language, homeData }) {
+
     React.useEffect(() => {
         gaRunScript();
+        reCaptchaScript();
 
         var aoScript = document.createElement('script');
         aoScript.type = 'text/javascript';
@@ -19,39 +20,13 @@ function IndexPage({ language, homeData }) {
             AOS.init({});
         };
 
-        $(document).ready(function(){
-            $("#gocontact").click(function(e){
-                e.preventDefault();
-                
-                grecaptcha.ready(function() {
-                    grecaptcha.execute(ENV.RECAPTCHA_KEY, {action: 'contact'}).then(function(token) {
-                        var formData = {
-                            "fullname": $("#name").val(),
-                            "email": $("#email").val(),
-                            "message": $("#message").val(),
-                            "token": token,
-                        };
-                        $.ajax({
-                            type: "POST",
-                            url: "/api/v1/website/contact/submit",
-                            data: JSON.stringify(formData),
-                            contentType: "application/json; charset=utf-8",
-                            dataType: "json",
-                        })
-                        .done(function (data) {
-                            if (data.error == 0) {
-                                $("form").html('<div class="alert alert-success">' + data.message + "</div>");
-                            } else {
-                                $("form").html('<div class="alert alert-danger">' + data.message + "</div>");
-                            }
-                        })
-                        .fail(function (data) {
-                            $("form").html('<div class="alert alert-danger">Could not reach server, please try again later.</div>');
-                        });
-                    });
-                });
-            });
-        });
+        var contactScript = document.createElement('script');
+        contactScript.type = 'text/javascript';
+        contactScript.src = "/static/js/contact.js";
+    
+        document.head.appendChild(aoScript);
+        contactScript.onload = () => {
+        };
     }, [])
     
     return (
@@ -85,8 +60,7 @@ function IndexPage({ language, homeData }) {
             <link rel="stylesheet" href="/static/font-awesome-4.7.0/css/font-awesome.min.css"/>
             <link rel="stylesheet" href="/static/css/aos.css"></link>
             
-            <script type="text/javascript" async src={"https://www.googletagmanager.com/gtag/js?id=" + googleAnalyticsId}></script>
-            <script type="text/javascript" src={"https://www.google.com/recaptcha/api.js?render=" + ENV.RECAPTCHA_KEY}></script>
+            {/* <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> */}
         </Head>
         <LanguageMenu/>
     <div className="jumbotron jumbotron-fluid" id="banner">
