@@ -1,22 +1,17 @@
 import Head from 'next/head'
 import React from 'react'
 import { getAllLanguageSlugs, getLanguage } from '../../lib/lang';
-import { googleAnalyticsId, gaRunScript } from '../../lib/googleAnalytics'
-import ENV from '../../../env.json'
-import $ from 'jquery';
+import { gaRunScript } from '../../lib/googleAnalytics'
 
 function DownloadPage({ downloadData, htmlMeta }) {
     React.useEffect(() => {
-        if (process.browser) {
-            gaRunScript();
+        gaRunScript();
 
-            var checkversion = document.createElement('script');
-            checkversion.type = 'text/javascript';
-            checkversion.src = '/static/js/checkversion.js'
-            document.head.appendChild(checkversion);
-            checkversion.onload = () => {
-            };
-        }
+        var checkversion = document.createElement('script');
+        checkversion.type = 'text/javascript';
+        checkversion.src = '/static/js/checkversion.js'
+        document.head.appendChild(checkversion);
+        checkversion.onload = () => {};
     }, [])
 
     const stylingUp = {        
@@ -62,7 +57,6 @@ function DownloadPage({ downloadData, htmlMeta }) {
             <link rel="stylesheet" href="/static/css/download.css"/>
 
             <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-            <script type="text/javascript" async src={"https://www.googletagmanager.com/gtag/js?id=" + googleAnalyticsId}></script>
             <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
           </Head>
           <div className="padding">
