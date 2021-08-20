@@ -3,7 +3,7 @@ const path = require('path');
 
 const languages = require('../languages.json');
 
-const baseUrl = "https://safeweb.app";
+const baseUrl = require('../env.json').BASE_URL;
 
 const externalUrls = [
   "https://admin.safeweb.app/signin",

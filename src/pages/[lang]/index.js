@@ -4,6 +4,7 @@ import { getAllLanguageSlugs, getLanguage } from '../../lib/lang';
 import LanguageMenu from '../../components/LanguageMenu';
 import $ from 'jquery';
 import { googleAnalyticsId, gaRunScript } from '../../lib/googleAnalytics'
+import ENV from '../../../env.json'
 
 function IndexPage({ language, homeData }) {
     React.useEffect(() => {
@@ -23,7 +24,7 @@ function IndexPage({ language, homeData }) {
                 e.preventDefault();
                 
                 grecaptcha.ready(function() {
-                    grecaptcha.execute('6LcUv5MaAAAAAFdSHhVVXoQTYoHRr2SKSSMqHU0F', {action: 'contact'}).then(function(token) {
+                    grecaptcha.execute(ENV.RECAPTCHA_KEY, {action: 'contact'}).then(function(token) {
                         var formData = {
                             "fullname": $("#name").val(),
                             "email": $("#email").val(),
@@ -85,7 +86,7 @@ function IndexPage({ language, homeData }) {
             <link rel="stylesheet" href="/static/css/aos.css"></link>
             
             <script type="text/javascript" async src={"https://www.googletagmanager.com/gtag/js?id=" + googleAnalyticsId}></script>
-            <script type="text/javascript" src="https://www.google.com/recaptcha/api.js?render=6LcUv5MaAAAAAFdSHhVVXoQTYoHRr2SKSSMqHU0F"></script>
+            <script type="text/javascript" src={"https://www.google.com/recaptcha/api.js?render=" + ENV.RECAPTCHA_KEY}></script>
         </Head>
         <LanguageMenu/>
     <div className="jumbotron jumbotron-fluid" id="banner">
