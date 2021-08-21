@@ -3,6 +3,7 @@ import React from 'react'
 import { getAllLanguageSlugs, getLanguage } from '../../lib/lang';
 import { gaRunScript } from '../../lib/googleAnalytics'
 import JQueryLib from '../../components/jquery-lib';
+import BootstrapLib from '../../components/bootstrap-lib';
 
 function DownloadPage({ downloadData, htmlMeta }) {
     React.useEffect(() => {
@@ -56,9 +57,8 @@ function DownloadPage({ downloadData, htmlMeta }) {
             <link rel="stylesheet" href="/static/css/bootstrap.min.css"/>
             <link rel="stylesheet" href="/static/font-awesome-4.7.0/css/font-awesome.min.css"/>
             <link rel="stylesheet" href="/static/css/download.css"/>
-
             <JQueryLib/>
-            <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+            <BootstrapLib/>
           </Head>
           <div className="padding">
             <div className="col-md-12">

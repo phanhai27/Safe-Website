@@ -10,7 +10,6 @@ export default function BlogHead ({postData}) {
         <Head>
             <Meta postData={postData}/>
             <JQueryLib/>
-            {/* <BlogCSS/> */}
             <link rel="stylesheet" href="/static/css/main.css" />
             <BlogJs/>            
         </Head>
