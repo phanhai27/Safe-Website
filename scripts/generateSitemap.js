@@ -3,11 +3,13 @@ const path = require('path');
 
 const languages = require('../languages.json');
 
-const baseUrl = require('../env.json').BASE_URL;
+const ENV = require('../env.json');
+
+const baseUrl = ENV.BASE_URL;
 
 const externalUrls = [
-  "https://admin.safeweb.app/signin",
-  "https://admin.safeweb.app/signup"
+  ENV.SIGN_IN_URL,
+  ENV.SIGN_UP_URL
 ];
 
 function generateSitemap () {

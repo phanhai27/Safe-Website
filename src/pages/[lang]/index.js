@@ -5,7 +5,7 @@ import LanguageMenu from '../../components/LanguageMenu';
 import { gaRunScript } from '../../lib/googleAnalytics'
 import { reCaptchaScript } from '../../lib/googleRecaptcha'
 
-function IndexPage({ language, homeData }) {
+function IndexPage({ language, homeData, externalUrls }) {
 
     React.useEffect(() => {
         gaRunScript();
@@ -69,8 +69,8 @@ function IndexPage({ language, homeData }) {
                         <img src="/static/img/logo.png" alt="logo"/>
                     </div>
                     <div className="col-6 align-self-center text-right">
-                        <a href="https://admin.safeweb.app/login" className="btn my-4 font-weight-bold atlas-cta cta-white">Sign in</a>
-						<a href="https://admin.safeweb.app/register" className="btn my-4 font-weight-bold atlas-cta cta-blue">Try it FREE</a>
+                        <a href={externalUrls.SignIn} className="btn my-4 font-weight-bold atlas-cta cta-white">Sign in</a>
+						<a href={externalUrls.SignUp} className="btn my-4 font-weight-bold atlas-cta cta-blue">Try it FREE</a>
                     </div>
                 </div>
             </header>
@@ -284,11 +284,18 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }) {
 	const lang = getLanguage(params.lang);
     const data = require('../../locales/' + lang + '/index.json');
+    
+    const ENV = require('../../../env.json');
+    const externalUrls = {
+        "SignIn": ENV.SIGN_IN_URL,
+        "SignUp": ENV.SIGN_UP_URL
+    };
 
     return {
 		props: {
             language: lang,
             homeData: data,
+            externalUrls: externalUrls,
 		},
 	};
 }
