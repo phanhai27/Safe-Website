@@ -5,7 +5,7 @@ import { gaRunScript } from '../../lib/googleAnalytics'
 import JQueryLib from '../../components/jquery-lib';
 import BootstrapLib from '../../components/bootstrap-lib';
 
-function DownloadPage({ downloadData, htmlMeta }) {
+function DownloadPage({ language, downloadData, htmlMeta }) {
     React.useEffect(() => {
         gaRunScript();
 
@@ -28,6 +28,14 @@ function DownloadPage({ downloadData, htmlMeta }) {
         animationDelay: "0.2s",
         animationName: "fadeInLeft"
     }
+    
+    const stylingLogo = {
+        width: "200px",
+        height: "200px",
+        float: "left",
+        padding: "50px 50px 50px 50px"
+    }
+
     return (
         <div>
           <Head>
@@ -60,6 +68,7 @@ function DownloadPage({ downloadData, htmlMeta }) {
             <JQueryLib/>
             <BootstrapLib/>
           </Head>
+          <div><a href={"/" + language}><img src="/static/img/logo.png" alt="logo" style={stylingLogo}/></a></div>
           <div className="padding">
             <div className="col-md-12">
                 <div className="wow fadeInUp animated" data-wow-duration="2s" data-wow-delay="0.2s" style={stylingUp}>
@@ -90,6 +99,7 @@ export async function getStaticProps({ params }) {
 
     return {
 		props: {
+            language: lang,
             downloadData: data,
             htmlMeta: metadata,
 		},

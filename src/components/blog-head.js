@@ -2,7 +2,6 @@ import Head from 'next/head'
 import JQueryLib from './jquery-lib';
 import Meta from './blog-meta'
 import BlogJs from './blog-js'
-import BlogCSS from './blog-css';
 
 export default function BlogHead ({postData}) {
     return (
