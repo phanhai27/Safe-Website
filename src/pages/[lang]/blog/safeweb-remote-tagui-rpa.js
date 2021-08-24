@@ -6,7 +6,7 @@ import BlogFooter from '../../../components/blog-footer'
 import BlogMain from '../../../components/blog-main'
 import { gaRunScript } from '../../../lib/googleAnalytics';
 
-export default function ({ language, postData }) {
+export default function ({ language, postData, menu }) {
     React.useEffect( () => {
       gaRunScript();
       document.querySelector("body").classList.add("single")
@@ -17,7 +17,7 @@ export default function ({ language, postData }) {
         <div>
           <BlogHeadMeta postData={postData}/>
           <div id="wrapper">
-            <BlogHeader lang={language}/>
+            <BlogHeader lang={language} menu={menu}/>
             <BlogMain postData={postData}/>
             <BlogFooter/>
           </div>
@@ -40,10 +40,13 @@ export async function getStaticProps({ params }) {
   const lang = getLanguage(params.lang);
   const data = require('../../../locales/' + lang + '/posts/' + filename);
   
+  const head = require('../../../locales/' + lang + '/blog-head.json');
+
   return {
 		props: {
       language: lang,
       postData: data,
+      menu: head.menu,
 		},
 	};
 }

@@ -4,5 +4,11 @@
         "description": "Stories about remote and automated work",
         "image": "https://safeweb.app/blog/images/remote-working-scaled.jpeg",
         "url": "https://safeweb.app/blog"
+    },
+    "menu": "Chuyện về SafeWeb",
+    "button": "Đọc Tiếp",
+    "intro": {
+        "title": "Tương lai của làm việc ở xa từ nhà",
+        "message": "One day, robots will work for us so that we have more time for life."
     }
 }

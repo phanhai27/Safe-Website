@@ -69,8 +69,8 @@ function IndexPage({ language, homeData, externalUrls }) {
                         <img src="/static/img/logo.png" alt="logo"/>
                     </div>
                     <div className="col-6 align-self-center text-right">
-                        <a href={externalUrls.SignIn} className="btn my-4 font-weight-bold atlas-cta cta-white">Sign in</a>
-						<a href={externalUrls.SignUp} className="btn my-4 font-weight-bold atlas-cta cta-blue">Try it FREE</a>
+                        <a href={externalUrls.SignIn} className="btn my-4 font-weight-bold atlas-cta cta-white">{homeData.header.button1}</a>
+						<a href={externalUrls.SignUp} className="btn my-4 font-weight-bold atlas-cta cta-blue">{homeData.header.button2}</a>
                     </div>
                 </div>
             </header>
@@ -80,7 +80,7 @@ function IndexPage({ language, homeData, externalUrls }) {
             <p data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" className="lead text-white my-4">
                 {homeData.header.part3}<br/> {homeData.header.part4}
             </p>
-            <a href={"/" + language + "/download"} target="_blank" data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" className="btn my-4 font-weight-bold atlas-cta cta-green">Get Started</a>
+            <a href={"/" + language + "/download"} target="_blank" data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" className="btn my-4 font-weight-bold atlas-cta cta-green">{homeData.header.button3}</a>
         </div>
     </div>
     <style jsx>{`
@@ -116,7 +116,7 @@ function IndexPage({ language, homeData, externalUrls }) {
                 <div data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" className="col-md-6">
                     <h2 className="font-weight-bold">{homeData.feature.part1.head}</h2>
                     <p className="my-4">{homeData.feature.part1.message}<br/>{homeData.feature.part1.detail}</p>
-                    <a href={"/" + language + "/blog/kid-control"} className="btn my-4 font-weight-bold atlas-cta cta-blue">Learn More</a>
+                    <a href={"/" + language + "/blog/kid-control"} className="btn my-4 font-weight-bold atlas-cta cta-blue">{homeData.feature.part1.button}</a>
                 </div>
                 <div data-aos="fade-left" data-aos-duration="1000" data-aos-once="true" className="col-md-6 align-self-center">
                     <img src="/static/img/feature-1.png" alt="Take a look inside" className="mx-auto d-block" />
@@ -131,7 +131,7 @@ function IndexPage({ language, homeData, externalUrls }) {
                 <div data-aos="fade-left" data-aos-duration="1000" data-aos-once="true" className="col-md-6 flex-md-last">
                     <h2 className="font-weight-bold">{homeData.feature.part2.head}</h2>
                     <p className="my-4">{homeData.feature.part2.message}<br/>{homeData.feature.part2.detail}</p>
-                    <a href={"/" + language + "/blog/safeweb-remote-tagui-rpa"} className="btn my-4 font-weight-bold atlas-cta cta-blue">Learn More</a>
+                    <a href={"/" + language + "/blog/safeweb-remote-tagui-rpa"} className="btn my-4 font-weight-bold atlas-cta cta-blue">{homeData.feature.part2.button}</a>
                 </div>
                 <div data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" className="col-md-6 align-self-center flex-md-first">
                     <img src="/static/img/feature-2.png" alt="Safe and reliable" className="mx-auto d-block" />
@@ -141,11 +141,11 @@ function IndexPage({ language, homeData, externalUrls }) {
     </div>
 
     <div className="container my-5 py-2" id="price-table">
-        <h2 className="text-center font-weight-bold d-block mb-3">Check our pricing</h2>
+        <h2 className="text-center font-weight-bold d-block mb-3">{homeData.payment.title}</h2>
         <div className="row">
             <div data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true" className="col-md-4 text-center py-4 mt-5">
                 <h4 className="my-4">{homeData.payment.free.type}</h4>
-                <p className="font-weight-bold">$ <span className="display-2 font-weight-bold">{homeData.payment.free.price}</span> / MO.</p>
+                <p className="font-weight-bold">$ <span className="display-2 font-weight-bold">{homeData.payment.free.price}</span> / {homeData.payment.unit}.</p>
                 <ul className="list-unstyled">
                     <li>{homeData.payment.free.service1}</li>
                     <li>{homeData.payment.free.service2}</li>
@@ -156,7 +156,7 @@ function IndexPage({ language, homeData, externalUrls }) {
             </div>
             <div data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" className="col-md-4 text-center py-4 mt-5 rounded" id="price-table__premium">
             <h4 className="my-4">{homeData.payment.standard.type}</h4>
-                <p className="font-weight-bold">$ <span className="display-2 font-weight-bold">{homeData.payment.standard.price}</span> / MO.</p>
+                <p className="font-weight-bold">$ <span className="display-2 font-weight-bold">{homeData.payment.standard.price}</span> / {homeData.payment.unit}.</p>
                 <ul className="list-unstyled">
                     <li>{homeData.payment.standard.service1}</li>
                     <li>{homeData.payment.standard.service2}</li>
@@ -167,7 +167,7 @@ function IndexPage({ language, homeData, externalUrls }) {
             </div>
             <div data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true" className="col-md-4 text-center py-4 mt-5">
             <h4 className="my-4">{homeData.payment.premium.type}</h4>
-                <p className="font-weight-bold">$ <span className="display-2 font-weight-bold">{homeData.payment.premium.price}</span> / MO.</p>
+                <p className="font-weight-bold">$ <span className="display-2 font-weight-bold">{homeData.payment.premium.price}</span> / {homeData.payment.unit}.</p>
                 <ul className="list-unstyled">
                     <li>{homeData.payment.premium.service1}</li>
                     <li>{homeData.payment.premium.service2}</li>
@@ -208,7 +208,7 @@ function IndexPage({ language, homeData, externalUrls }) {
         <div className="container my-5">
             <div className="row justify-content-between">
                 <div className="col-md-6 text-white">
-                    <h2 className="font-weight-bold">Contact Us</h2>
+                    <h2 className="font-weight-bold">{homeData.footer.title}</h2>
                     <p className="my-4">
                         {homeData.footer.part1}<br/>{homeData.footer.part2}
                     </p>
@@ -222,19 +222,19 @@ function IndexPage({ language, homeData, externalUrls }) {
                     <form>
                     	<div className="row">
 	                        <div className="form-group col-md-6">
-	                            <label htmlFor="name">Your Name</label>
+	                            <label htmlFor="name">{homeData.submit.name}</label>
 	                            <input type="name" className="form-control" id="name" />
 	                        </div>
 	                        <div className="form-group col-md-6">
-	                            <label htmlFor="Email">Your Email</label>
+	                            <label htmlFor="Email">{homeData.submit.email}</label>
 	                            <input type="email" className="form-control" id="email" />
 	                        </div>
 	                    </div>
 	                    <div className="form-group">
-	                        <label htmlFor="message">Message</label>
+	                        <label htmlFor="message">{homeData.submit.message}</label>
 	                        <textarea className="form-control" id="message" rows="3"></textarea>
 	                    </div>
-                        <button type="submit" className="btn font-weight-bold atlas-cta atlas-cta-wide cta-green my-3" id="gocontact">Submit</button>
+                        <button type="submit" className="btn font-weight-bold atlas-cta atlas-cta-wide cta-green my-3" id="gocontact">{homeData.submit.button}</button>
                     </form>
                 </div>
             </div>

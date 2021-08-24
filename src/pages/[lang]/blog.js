@@ -17,7 +17,7 @@ function Blog({ language, blogHead, blogBody}) {
         <div>
           <BlogHeadMeta postData={blogHead}/>
             <div id="wrapper">
-              <BlogHeader lang={language}/>
+              <BlogHeader lang={language} menu={blogHead.menu}/>
                 <div id="main">
                     <article className="post">
                         {
@@ -36,7 +36,7 @@ function Blog({ language, blogHead, blogBody}) {
                                 <p key={i+1}>{v.summary}</p>
                                 <footer key={i+2}>
                                     <ul className="actions">
-                                        <li><a href={"/" + language + "/blog/" + v.url} className="button large">Continue Reading</a></li>
+                                        <li><a href={"/" + language + "/blog/" + v.url} className="button large">{blogHead.button}</a></li>
                                     </ul>
                                 </footer>
                               </React.Fragment>
@@ -46,7 +46,7 @@ function Blog({ language, blogHead, blogBody}) {
 				</div>
 
         <section id="sidebar">
-					<BlogIntro/>
+					<BlogIntro postData={blogHead.intro}/>
           <BlogFooter/>
 				</section>
         </div>

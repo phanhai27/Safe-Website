@@ -9,63 +9,77 @@
         "part1": "Tôi yêu quê tôi",
         "part2": "Hello Việt Nam",
         "part3": "Working in a virtual office environment, each person sitting in a remote place.",
-        "part4": "Not wasting time, everyone was highly focused."
+        "part4": "Not wasting time, everyone was highly focused.",
+        "button1": "Đăng nhập",
+        "button2": "Đăng ký",
+        "button3": "Tải xuống SafeApp"
     },
     "topic": {
-        "head": "Highly focused on your project",
-        "part1":"High efficiency work",
+        "head": "Tập trung cao khi làm việc",
+        "part1":"Công việc hiệu quả cao",
         "message1":"When you lose focus, the app will remind you.",
-        "part2":"Avoid wasting time",
+        "part2":"Tránh lãng phí thời gian",
         "message2":"App assists you in getting rid of useless things.",
-        "part3":"Real-time reporting",
+        "part3":"Báo cáo tức thì",
         "message3":"The App actively sends warnings to the leader."
     },
     "feature":{
         "part1": {
-            "head": "Take a look inside",
+            "head": "Nhìn thấu bên trong",
             "message": "Team transparency in the project,",
-            "detail": "details of the work that members are trying to develop."
+            "detail": "details of the work that members are trying to develop.",
+            "button": "Đọc Thêm"
         },
         "part2": {
-            "head": "Safe and reliable",
+            "head": "An toàn và tin cậy",
             "message": "App runs smoothly, does not affect your work.",
-            "detail": "You can control multiple apps remotely at the same time.."
+            "detail": "You can control multiple apps remotely at the same time..",
+            "button": "Đọc Thêm"
         }
     },
     "payment":{
+        "title": "Bảng giá",
+        "unit": "NGƯỜI/TH",
         "free":{
-            "type": "FREE",
+            "type": "MIỄN PHÍ",
             "price": "0",
             "service1": "Up to 30 Reports",
             "service2": "Up to 30 Real-time",
             "service3": "4 Members",
             "service4": "Limited Support",
-            "button": "Get Free"
+            "button": "Dùng Luôn"
         },
         "standard": {
-            "type": "STANDARD",
-            "price": "7",
+            "type": "TIÊU CHUẨN",
+            "price": "3",
             "service1": "Up to 100 Reports",
             "service2": "Up to 100 Real-time",
             "service3": "30 Members",
             "service4": "Limited Support",
-            "button": "Buy Now"
+            "button": "Mua Ngay"
         },
         "premium":{
-            "type": "PREMIUM",
-            "price": "14",
+            "type": "CAO CẤP",
+            "price": "6",
             "service1": "1000 Reports",
             "service2": "1000 Real-time",
             "service3": "100 Members",
             "service4": "Unlimited Support",
-            "button": "Buy Now"
+            "button": "Mua Ngay"
         }
     },
     "footer": {
-        "part1": "If you want to add features or buy an on-premise version,",
-        "part2": "please contact the address below.",
+        "title": "Liên hệ",
+        "part1": "Bạn gặp sự cố hoặc muốn thêm tính năng,",
+        "part2": "hãy liên hệ với chúng tôi.",
         "email":"qa@safeweb.app",
         "phone":"+84-989-550-390",
         "address":"Hanoi, Vietnam"
+    },
+    "submit": {
+        "name": "Họ và tên",
+        "email": "Địa chỉ email",
+        "message": "Nội dung",
+        "button": "Gửi"
     }
 }
