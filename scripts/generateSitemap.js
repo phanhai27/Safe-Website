@@ -79,11 +79,29 @@ function generateSitemap () {
       ${langPages
         .map((url) => {
           var list = "";
+          var lastModified = new Date().toISOString();
+          const fs = require('fs');
           languages.forEach(lang => {
+            if (url == "") {
+              var jsonFile = path.join(process.cwd(), "src", "locales", lang, "index.json");
+              // fetch file details
+              const { mtime } = fs.statSync(jsonFile);
+              lastModified = mtime.toISOString();
+            } else if (url == "blog") {
+              var jsonFile = path.join(process.cwd(), "src", "locales", lang, url + "-body.json");
+              // fetch file details
+              const { mtime } = fs.statSync(jsonFile);
+              lastModified = mtime.toISOString();
+            } else {
+              var jsonFile = path.join(process.cwd(), "src", "locales", lang, url + ".json");
+              // fetch file details
+              const { mtime } = fs.statSync(jsonFile);
+              lastModified = mtime.toISOString();
+            }
           list += `
         <url>
             <loc>${baseUrl}/${lang}/${url}</loc>
-            <lastmod>${new Date().toISOString()}</lastmod>
+            <lastmod>${lastModified}</lastmod>
             <changefreq>monthly</changefreq>
             <priority>1.0</priority>
         </url>`})
@@ -93,11 +111,17 @@ function generateSitemap () {
       ${blogPages
         .map((url) => {
           var list = "";
+          var lastModified = new Date().toISOString();
+          const fs = require('fs');
           languages.forEach(lang => {
+            var jsonFile = path.join(process.cwd(), "src", "locales", lang, "posts", url + ".json");
+              // fetch file details
+              const { mtime } = fs.statSync(jsonFile);
+              lastModified = mtime.toISOString();
             list += `
         <url>
             <loc>${baseUrl}/${lang}/${url}</loc>
-            <lastmod>${new Date().toISOString()}</lastmod>
+            <lastmod>${lastModified}</lastmod>
             <changefreq>monthly</changefreq>
             <priority>1.0</priority>
         </url>`})
