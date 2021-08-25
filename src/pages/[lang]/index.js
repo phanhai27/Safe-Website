@@ -28,6 +28,16 @@ function IndexPage({ language, homeData, externalUrls }) {
         contactScript.onload = () => {
         };
     }, [])
+
+    const stylingImg1 = {
+        width: "250px",
+        height: "250px",
+    }
+
+    const stylingImg2 = {
+        width: "250px",
+        height: "350px",
+    }
     
     return (
       <div>
@@ -93,17 +103,17 @@ function IndexPage({ language, homeData, externalUrls }) {
         <h2 className="text-center font-weight-bold my-5">{homeData.topic.head}</h2>
         <div className="row">
             <div data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000" data-aos-once="true" className="col-md-4 text-center">
-                <img src="/static/img/smart-protect-1.jpg" alt="Anti-spam" className="mx-auto"/>
+                <img src="/static/img/smart-protect-1.png" alt="Anti-spam" className="mx-auto"/>
                 <h4>{homeData.topic.part1}</h4>
                 <p>{homeData.topic.message1}</p>
             </div>
             <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true" className="col-md-4 text-center">
-                <img src="/static/img/smart-protect-2.jpg" alt="Phishing Detect" className="mx-auto"/>
+                <img src="/static/img/smart-protect-2.png" alt="Phishing Detect" className="mx-auto"/>
                 <h4>{homeData.topic.part2}</h4>
                 <p>{homeData.topic.message2}</p>
             </div>
             <div data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000" data-aos-once="true" className="col-md-4 text-center">
-                <img src="/static/img/smart-protect-3.jpg" alt="Smart Scan" className="mx-auto"/>
+                <img src="/static/img/smart-protect-6.png" alt="Smart Scan" className="mx-auto"/>
                 <h4>{homeData.topic.part3}</h4>
                 <p>{homeData.topic.message3}</p>
             </div>
@@ -119,7 +129,7 @@ function IndexPage({ language, homeData, externalUrls }) {
                     <a href={"/" + language + "/blog/kid-control"} className="btn my-4 font-weight-bold atlas-cta cta-blue">{homeData.feature.part1.button}</a>
                 </div>
                 <div data-aos="fade-left" data-aos-duration="1000" data-aos-once="true" className="col-md-6 align-self-center">
-                    <img src="/static/img/feature-1.png" alt="Take a look inside" className="mx-auto d-block" />
+                    <img src="/static/img/feature-1a.png" alt="Take a look inside" className="mx-auto d-block" style={stylingImg1}/>
                 </div>
             </div>
         </div>
@@ -134,7 +144,7 @@ function IndexPage({ language, homeData, externalUrls }) {
                     <a href={"/" + language + "/blog/safeweb-remote-tagui-rpa"} className="btn my-4 font-weight-bold atlas-cta cta-blue">{homeData.feature.part2.button}</a>
                 </div>
                 <div data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" className="col-md-6 align-self-center flex-md-first">
-                    <img src="/static/img/feature-2.png" alt="Safe and reliable" className="mx-auto d-block" />
+                    <img src="/static/img/feature-2a.png" alt="Safe and reliable" className="mx-auto d-block" style={stylingImg2}/>
                 </div>
             </div>
         </div>
