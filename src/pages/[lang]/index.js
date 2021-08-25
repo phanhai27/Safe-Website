@@ -180,7 +180,7 @@ function IndexPage({ language, homeData, externalUrls }) {
     </div>
 
     <div className="jumbotron jumbotron-fluid">
-        <div className="container">
+        {/* <div className="container">
             <div className="row">
                 <div className="col-sm-4 col-md-2 py-2 align-self-center">
                     <img src="/static/img/client-1.png" className="mx-auto d-block"/>
@@ -201,7 +201,7 @@ function IndexPage({ language, homeData, externalUrls }) {
                     <img src="/static/img/client-6.png" className="mx-auto d-block" />
                 </div>
             </div>
-        </div>
+        </div> */}
     </div>
 
     <div className="jumbotron jumbotron-fluid" id="contact">
