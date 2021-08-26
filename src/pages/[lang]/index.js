@@ -70,7 +70,7 @@ function IndexPage({ language, homeData, externalUrls }) {
             <link rel="stylesheet" href="/static/font-awesome-4.7.0/css/font-awesome.min.css"/>
             <link rel="stylesheet" href="/static/css/aos.css"></link>
         </Head>
-        <LanguageMenu/>
+
     <div className="jumbotron jumbotron-fluid" id="banner">
         <div className="container text-center text-md-left">
             <header>
@@ -81,6 +81,7 @@ function IndexPage({ language, homeData, externalUrls }) {
                     <div className="col-6 align-self-center text-right">
                         <a href={externalUrls.SignIn} className="btn my-4 font-weight-bold atlas-cta cta-white">{homeData.header.button1}</a>
 						<a href={externalUrls.SignUp} className="btn my-4 font-weight-bold atlas-cta cta-blue">{homeData.header.button2}</a>
+						<a className="btn font-weight-bold "><LanguageMenu/></a>
                     </div>
                 </div>
             </header>
