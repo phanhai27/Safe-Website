@@ -142,7 +142,7 @@ function IndexPage({ language, homeData, externalUrls }) {
                 <div data-aos="fade-left" data-aos-duration="1000" data-aos-once="true" className="col-md-6 flex-md-last">
                     <h2 className="font-weight-bold">{homeData.feature.part2.head}</h2>
                     <p className="my-4">{homeData.feature.part2.message}<br/>{homeData.feature.part2.detail}</p>
-                    <a href={"/" + language + "/blog/safeweb-remote-tagui-rpa"} className="btn my-4 font-weight-bold atlas-cta cta-blue">{homeData.feature.part2.button}</a>
+                    <a href={"/" + language + "/blog/remote-tagui-rpa"} className="btn my-4 font-weight-bold atlas-cta cta-blue">{homeData.feature.part2.button}</a>
                 </div>
                 <div data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" className="col-md-6 align-self-center flex-md-first">
                     <img src="/static/img/feature-2a.png" alt="Safe and reliable" className="mx-auto d-block" style={stylingImg2}/>

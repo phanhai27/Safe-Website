@@ -44,27 +44,24 @@
             "type": "FREE",
             "price": "0",
             "service1": "Up to 30 Reports",
-            "service2": "Up to 30 Real-time",
-            "service3": "4 Members",
-            "service4": "Limited Support",
+            "service2": "4 Members",
+            "service3": "Limited Support",
             "button": "Get Free"
         },
         "standard": {
             "type": "STANDARD",
-            "price": "3",
+            "price": "2",
             "service1": "Up to 100 Reports",
-            "service2": "Up to 100 Real-time",
-            "service3": "30 Members",
-            "service4": "Limited Support",
+            "service2": "30 Members",
+            "service3": "Limited Support",
             "button": "Buy Now"
         },
         "premium":{
             "type": "PREMIUM",
             "price": "6",
             "service1": "1000 Reports",
-            "service2": "1000 Real-time",
-            "service3": "100 Members",
-            "service4": "Unlimited Support",
+            "service2": "100 Members",
+            "service3": "Unlimited Support",
             "button": "Buy Now"
         }
     },

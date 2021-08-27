@@ -3,11 +3,11 @@
     "meta":{
         "description": "Stories about Remote TagUI",
         "image": "https://safeweb.app/blog/images/remote_working.jpg",
-        "url": "https://safeweb.app/blog/safeweb-remote-tagui-rpa.html"
+        "url": "https://safeweb.app/blog/remote-tagui-rpa"
     },
     "article":{
-        "url": "safeweb-remote-tagui-rpa",
-        "title": "Truy cập vào PC từ web",
+        "url": "remote-tagui-rpa",
+        "title": "Remote TagUI from Web",
         "description": "The TagUI progress is displayed on the dashboard",
         "summary": "Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.",
         "date": "May 14, 2021",
