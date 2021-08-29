@@ -1,39 +1,39 @@
 {
-    "title": "SafeWeb - Protect your kids",
+    "title": "SafeWeb - Safe Internet - Focus on the computer",
     "meta":{
-        "description": "Effective remote work collaboration",
+        "description": "SafeWeb helps you create a safe environment on computers and the internet to focus on studying or working.",
         "image": "/static/img/safeweb-app-tracking.jpg",
         "url": "https://safeweb.app"
     },
     "header": {
-        "part1": "A New Way",
-        "part2": "To Work Remotely",
-        "part3": "Working in a virtual office environment, each person sitting in a remote place.",
-        "part4": "Not wasting time, everyone was highly focused.",
+        "part1": "Safe Internet",
+        "part2": "Focus on the computer",
+        "part3": "Very simple!",
+        "part4": "Just open the smart phone to access the cloud and turn on focus mode to block inappropriate websites and applications while at work or during school hours.",
         "button1": "Sign in",
         "button2": "Try it FREE",
-        "button3": "Download SafeApp"
+        "button3": "Free Download"
     },
     "topic": {
-        "head": "Highly focused on your project",
-        "part1":"High efficiency work",
-        "message1":"When you lose focus, the app will remind you.",
-        "part2":"Avoid wasting time",
-        "message2":"App assists you in getting rid of useless things.",
+        "head": "Main Features of SafeWeb",
+        "part1":"Focused working environment",
+        "message1":"Block social networking sites and game apps while learning or working.",
+        "part2":"Shows time-wasting behaviors",
+        "message2":"Usage time of applications and time spent on websites are listed on the dashboard.",
         "part3":"Real-time reporting",
-        "message3":"The App actively sends warnings to the leader."
+        "message3":"Report a graph on the admin's web or send a warning email about a policy violator."
     },
     "feature":{
         "part1": {
-            "head": "Take a look inside",
-            "message": "Team transparency in the project,",
-            "detail": "details of the work that members are trying to develop.",
+            "head": "Block dangerous and malicious websites",
+            "message": "Just turn on your smart phone and you will know what your child is doing on the computer, learning or playing a game or on social media.",
+            "detail": "From the data list, you can block or allow which websites can and cannot be accessed while your children are in online lessons.",
             "button": "Read More"
         },
         "part2": {
-            "head": "Safe and reliable",
-            "message": "App runs smoothly, does not affect your work.",
-            "detail": "You can control multiple apps remotely at the same time..",
+            "head": "Control the computer to run commands remotely",
+            "message": "SafeWeb uses cloud technology, so you can run commands on your computer like an IT administrator, but commands are sent from the web.",
+            "detail": "You can also use your smart phone to control multiple computers performing RPA tasks at the same time. The results of running RPA on computers will be continuously updated on the web dashboard.",
             "button": "Read More"
         }
     },
@@ -43,31 +43,31 @@
         "free":{
             "type": "FREE",
             "price": "0",
-            "service1": "Up to 30 Reports",
-            "service2": "4 Members",
+            "service1": "Up to 2 PCs",
+            "service2": "Up to 4 Users/PC",
             "service3": "Limited Support",
             "button": "Get Free"
         },
         "standard": {
             "type": "STANDARD",
             "price": "2",
-            "service1": "Up to 100 Reports",
-            "service2": "30 Members",
+            "service1": "Up to 20 PCs",
+            "service2": "Up to 40 Users/PC",
             "service3": "Limited Support",
             "button": "Buy Now"
         },
         "premium":{
             "type": "PREMIUM",
             "price": "6",
-            "service1": "1000 Reports",
-            "service2": "100 Members",
+            "service1": "Unlimited PCs",
+            "service2": "Unlimited Users/PC",
             "service3": "Unlimited Support",
             "button": "Buy Now"
         }
     },
     "footer": {
         "title": "Contact Us",
-        "part1": "If you want to add features or buy an on-premise version,",
+        "part1": "You have a problem or want to comment on a feature,",
         "part2": "please contact the address below.",
         "email":"qa@safeweb.app",
         "phone":"+84-989-550-390",

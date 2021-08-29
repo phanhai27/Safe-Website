@@ -1,18 +1,18 @@
 {
     "title": "SafeWeb - An toàn khi vào Internet - Tập trung khi trên máy vi tính",
     "meta":{
-        "description": "SafeWeb giúp bạn kiểm soát môi trường máy vi tính và Internet, tạo không gian an toàn để làm việc hoặc học tập",
+        "description": "SafeWeb giúp bạn kiểm soát môi trường máy vi tính và Internet, tạo không gian an toàn để làm việc hoặc học tập.",
         "image": "/static/img/safeweb-app-tracking.jpg",
         "url": "https://safeweb.app"
     },
     "header": {
         "part1": "An toàn khi vào Internet,",
         "part2": "Tập trung khi trên máy vi tính",
-        "part3": "Thật đơn giản. Chỉ cần mở điện thoại vào cloud và bật chế độ focus để chặn những website, những ứng dụng không phù hợp",
-        "part4": "khi đang trong giờ làm việc hoặc đang trong giờ học.",
+        "part3": "Thật đơn giản!",
+        "part4": "Chỉ cần mở điện thoại vào cloud và bật chế độ focus để chặn những website, những ứng dụng không phù hợp khi đang trong giờ làm việc hoặc đang trong giờ học.",
         "button1": "Đăng nhập",
         "button2": "Đăng ký",
-        "button3": "Tải xuống SafeApp"
+        "button3": "Tải app"
     },
     "topic": {
         "head": "Các tính năng chính",
@@ -67,7 +67,7 @@
     },
     "footer": {
         "title": "Liên hệ",
-        "part1": "Bạn gặp sự cố hoặc góp ý về tính năng,",
+        "part1": "Bạn gặp sự cố hoặc muốn góp ý về tính năng,",
         "part2": "hãy liên hệ với chúng tôi theo địa chỉ bên dưới.",
         "email":"qa@safeweb.app",
         "phone":"+84-989-550-390",
