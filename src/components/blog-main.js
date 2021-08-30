@@ -21,9 +21,9 @@ export default function BlogMain ({postData}) {
                       height={postData.iframe.height}
                       src={postData.iframe.src}
                       title={postData.article.title}
-                      frameborder='0' 
+                      frameBorder='0' 
                       allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' 
-                      allowfullscreen>
+                      allowFullScreen>
                     </iframe>
                     </p>:""
                   }
