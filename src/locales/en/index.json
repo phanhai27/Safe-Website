@@ -32,8 +32,8 @@
         },
         "part2": {
             "head": "Control the computer to run commands remotely",
-            "message": "SafeWeb uses cloud technology, so you can run commands on your computer like an IT administrator, but commands are sent from the web.",
-            "detail": "You can also use your smart phone to control multiple computers performing RPA tasks at the same time. The results of running RPA on computers will be continuously updated on the web dashboard.",
+            "message": "SafeWeb is a cloud platform that allows you to run PowerShell commands on your computer like an IT administrator, but the commands are sent from the web.",
+            "detail": "You can also use your smart phone to control multiple computers performing Robotic Process Automation (RPA) tasks at the same time. The results of running RPA on computers will be continuously updated on the web dashboard.",
             "button": "Read More"
         }
     },

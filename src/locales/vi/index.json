@@ -32,8 +32,8 @@
         },
         "part2": {
             "head": "Điều khiển máy vi tính chạy lệnh từ xa",
-            "message": "SafeWeb sử dụng công nghệ cloud nên bạn có thể chạy các lệnh trên máy vi tính giống như một quản trị viên IT nhưng lệnh được gửi đi từ web.",
-            "detail": "Bạn cũng có thể sử dụng điện thoại di động để điều khiển nhiều máy vi tính thực hiện các nhiệm vụ RPA cùng một lúc. Kết quả chạy RPA ở các máy vi tính sẽ được cập nhật liên tục trên dashboard của web.",
+            "message": "SafeWeb phát triển nền tảng cloud cho phép bạn chạy các lệnh PowerShell trên máy vi tính giống như một quản trị viên IT nhưng lệnh được gửi đi từ web.",
+            "detail": "Bạn cũng có thể sử dụng điện thoại di động để điều khiển các robot RPA trên nhiều máy vi tính khác nhau cùng một lúc. Kết quả chạy RPA ở các máy vi tính sẽ được cập nhật liên tục trên dashboard của web.",
             "button": "Đọc Thêm"
         }
     },
