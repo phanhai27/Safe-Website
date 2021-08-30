@@ -88,7 +88,7 @@ function generateSitemap () {
               const { mtime } = fs.statSync(jsonFile);
               lastModified = mtime.toISOString();
             } else if (url == "blog") {
-              var jsonFile = path.join(process.cwd(), "src", "locales", lang, url + "-body.json");
+              var jsonFile = path.join(process.cwd(), "src", "locales", lang, url + "-head.json");
               // fetch file details
               const { mtime } = fs.statSync(jsonFile);
               lastModified = mtime.toISOString();

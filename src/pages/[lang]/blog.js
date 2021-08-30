@@ -84,8 +84,6 @@ export async function getStaticProps({ params }) {
     body.posts.push(jsonData.article);
   });
 
-  // const body = require('../../locales/' + lang + '/blog-body.json');
-
   return {
 		props: {
       language: lang,
