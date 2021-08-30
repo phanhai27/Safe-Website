@@ -4,6 +4,7 @@ import { getAllLanguageSlugs, getLanguage } from '../../lib/lang';
 import LanguageMenu from '../../components/LanguageMenu';
 import { gaRunScript } from '../../lib/googleAnalytics'
 import { reCaptchaScript } from '../../lib/googleRecaptcha'
+import ENV from '../../../env.json'
 
 function IndexPage({ language, homeData, externalUrls }) {
 
@@ -53,13 +54,13 @@ function IndexPage({ language, homeData, externalUrls }) {
             <meta itemProp="image" content={homeData.meta.image}/>
 
             <meta property="og:type" content="website"/>
-            <meta property="og:url" content={homeData.meta.url}/>
+            <meta property="og:url" content={ENV.BASE_URL}/>
             <meta property="og:title" content={homeData.title}/>
             <meta property="og:description" content={homeData.meta.description}/>
             <meta property="og:image" content={homeData.meta.image}/>
 
             <meta property="twitter:card" content="summary_large_image"/>
-            <meta property="twitter:url" content={homeData.meta.url}/>
+            <meta property="twitter:url" content={ENV.BASE_URL}/>
             <meta property="twitter:title" content={homeData.title}/>
             <meta property="twitter:description" content={homeData.meta.description}/>
             <meta property="twitter:image" content={homeData.meta.image}/>
@@ -127,7 +128,7 @@ function IndexPage({ language, homeData, externalUrls }) {
                 <div data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" className="col-md-6">
                     <h2 className="font-weight-bold">{homeData.feature.part1.head}</h2>
                     <p className="my-4">{homeData.feature.part1.message}<br/>{homeData.feature.part1.detail}</p>
-                    <a href={"/" + language + "/blog/kid-control"} className="btn my-4 font-weight-bold atlas-cta cta-blue">{homeData.feature.part1.button}</a>
+                    <a href={"/" + language + "/" + homeData.feature.part1.url} className="btn my-4 font-weight-bold atlas-cta cta-blue">{homeData.feature.part1.button}</a>
                 </div>
                 <div data-aos="fade-left" data-aos-duration="1000" data-aos-once="true" className="col-md-6 align-self-center">
                     <img src="/static/img/feature-1a.png" alt="Take a look inside" className="mx-auto d-block" style={stylingImg1}/>
@@ -142,7 +143,7 @@ function IndexPage({ language, homeData, externalUrls }) {
                 <div data-aos="fade-left" data-aos-duration="1000" data-aos-once="true" className="col-md-6 flex-md-last">
                     <h2 className="font-weight-bold">{homeData.feature.part2.head}</h2>
                     <p className="my-4">{homeData.feature.part2.message}<br/>{homeData.feature.part2.detail}</p>
-                    <a href={"/" + language + "/blog/remote-tagui-rpa"} className="btn my-4 font-weight-bold atlas-cta cta-blue">{homeData.feature.part2.button}</a>
+                    <a href={"/" + language + "/" + homeData.feature.part2.url} className="btn my-4 font-weight-bold atlas-cta cta-blue">{homeData.feature.part2.button}</a>
                 </div>
                 <div data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" className="col-md-6 align-self-center flex-md-first">
                     <img src="/static/img/feature-2a.png" alt="Safe and reliable" className="mx-auto d-block" style={stylingImg2}/>

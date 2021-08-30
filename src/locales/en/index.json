@@ -2,8 +2,7 @@
     "title": "SafeWeb - Safe Internet - Focus on the computer",
     "meta":{
         "description": "SafeWeb helps you create a safe environment on computers and the internet to focus on studying or working.",
-        "image": "/static/img/safeweb-app-tracking.jpg",
-        "url": "https://safeweb.app"
+        "image": "/static/img/safeweb-app-tracking.jpg"        
     },
     "header": {
         "part1": "Safe Internet",
@@ -28,13 +27,15 @@
             "head": "Block dangerous and malicious websites",
             "message": "Just turn on your smart phone and you will know what your child is doing on the computer, learning or playing a game or on social media.",
             "detail": "From the data list, you can block or allow which websites can and cannot be accessed while your children are in online lessons.",
-            "button": "Read More"
+            "button": "Read More",
+            "url": "blog/protecting-your-child-online"
         },
         "part2": {
             "head": "Control the computer to run commands remotely",
             "message": "SafeWeb is a cloud platform that allows you to run PowerShell commands on your computer like an IT administrator, but the commands are sent from the web.",
             "detail": "You can also use your smart phone to control multiple computers performing Robotic Process Automation (RPA) tasks at the same time. The results of running RPA on computers will be continuously updated on the web dashboard.",
-            "button": "Read More"
+            "button": "Read More",
+            "url": "blog/remote-tagui-rpa"
         }
     },
     "payment":{

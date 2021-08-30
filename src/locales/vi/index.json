@@ -2,8 +2,7 @@
     "title": "SafeWeb - An toàn khi vào Internet - Tập trung khi trên máy vi tính",
     "meta":{
         "description": "SafeWeb giúp bạn kiểm soát môi trường máy vi tính và Internet, tạo không gian an toàn để làm việc hoặc học tập.",
-        "image": "/static/img/safeweb-app-tracking.jpg",
-        "url": "https://safeweb.app"
+        "image": "/static/img/safeweb-app-tracking.jpg"
     },
     "header": {
         "part1": "An toàn khi vào Internet,",
@@ -28,13 +27,15 @@
             "head": "Chặn các website nguy hiểm, độc hại",
             "message": "Chỉ cần mở điện thoại di động là bạn biết được con mình đang làm gì trên máy vi tính, đang học bài hay đang chơi game hoặc vào mạng xã hội.",
             "detail": "Từ bảng kê dữ liệu, bạn có thể chặn hoặc cho phép những website nào được vào và không được vào khi con cái đang trong giờ học online.",
-            "button": "Đọc Thêm"
+            "button": "Đọc Thêm",
+            "url": "blog/protecting-your-child-online"
         },
         "part2": {
             "head": "Điều khiển máy vi tính chạy lệnh từ xa",
             "message": "SafeWeb phát triển nền tảng cloud cho phép bạn chạy các lệnh PowerShell trên máy vi tính giống như một quản trị viên IT nhưng lệnh được gửi đi từ web.",
             "detail": "Bạn cũng có thể sử dụng điện thoại di động để điều khiển các robot RPA trên nhiều máy vi tính khác nhau cùng một lúc. Kết quả chạy RPA ở các máy vi tính sẽ được cập nhật liên tục trên dashboard của web.",
-            "button": "Đọc Thêm"
+            "button": "Đọc Thêm",
+            "url": "blog/remote-tagui-rpa"
         }
     },
     "payment":{
