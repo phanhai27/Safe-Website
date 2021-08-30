@@ -15,7 +15,7 @@ function Blog({ language, blogHead, blogBody}) {
 
     return (
         <div>
-          <BlogHeadMeta postData={blogHead}/>
+          <BlogHeadMeta postData={blogHead} lang={language}/>
             <div id="wrapper">
               <BlogHeader lang={language} menu={blogHead.menu}/>
                 <div id="main">
@@ -25,7 +25,7 @@ function Blog({ language, blogHead, blogBody}) {
                               <React.Fragment key={Math.random()}>
                                 <header key={i}>
                                 <div className="title">
-                                    <h2><a href={"/" + language + "/blog/" + v.url}>{v.title}</a></h2>
+                                    <h2><a href={"/" + language + "/" + v.url}>{v.title}</a></h2>
                                     <p>{v.description}</p>
                                 </div>
                                 <div className="meta">
@@ -36,7 +36,7 @@ function Blog({ language, blogHead, blogBody}) {
                                 <p key={i+1}>{v.summary}</p>
                                 <footer key={i+2}>
                                     <ul className="actions">
-                                        <li><a href={"/" + language + "/blog/" + v.url} className="button large">{blogHead.button}</a></li>
+                                        <li><a href={"/" + language + "/" + v.url} className="button large">{blogHead.button}</a></li>
                                     </ul>
                                 </footer>
                               </React.Fragment>

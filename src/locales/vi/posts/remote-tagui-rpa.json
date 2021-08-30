@@ -1,12 +1,6 @@
 {
-    "title": "Điều khiển thực thi RPA TagUI từ Web - SafeWeb",
-    "meta":{
-        "description": "Điều khiển thực thi RPA TagUI từ Web - SafeWeb",
-        "image": "https://safeweb.app/blog/images/remote_working.jpg",
-        "url": "https://safeweb.app/blog/remote-tagui-rpa"
-    },
     "article":{
-        "url": "remote-tagui-rpa",
+        "url": "blog/remote-tagui-rpa",
 
         "picture": "/static/img/remote_working.jpg",
 

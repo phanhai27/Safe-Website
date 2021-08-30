@@ -1,12 +1,6 @@
 {
-    "title": "Remote TagUI from Web - SafeWeb",
-    "meta":{
-        "description": "Stories about Remote TagUI",
-        "image": "https://safeweb.app/blog/images/remote_working.jpg",
-        "url": "https://safeweb.app/blog/remote-tagui-rpa"
-    },
     "article":{
-        "url": "remote-tagui-rpa",
+        "url": "blog/remote-tagui-rpa",
 
         "picture": "/static/img/remote_working.jpg",
 

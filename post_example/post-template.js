@@ -15,7 +15,7 @@ export default function ({ language, postData, menu }) {
 
     return (
         <div>
-          <BlogHeadMeta postData={postData}/>
+          <BlogHeadMeta postData={postData} lang={language}/>
           <div id="wrapper">
             <BlogHeader lang={language} menu={menu}/>
             <BlogMain postData={postData}/>

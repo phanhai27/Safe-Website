@@ -1,12 +1,6 @@
 {
-    "title": "Kid Control from Web - SafeWeb",
-    "meta":{
-        "description": "Stories about Kid Control",
-        "image": "https://safeweb.app/blog/images/remote_working.jpg",
-        "url": "https://safeweb.app/blog/safeweb-remote-tagui-rpa.html"
-    },
     "article":{
-        "url": "kid-control",
+        "url": "blog/kid-control",
 
         "picture": "/static/img/remote_working.jpg",
 

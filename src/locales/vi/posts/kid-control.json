@@ -1,17 +1,11 @@
 {
-    "title": "Kid Control from Web - SafeWeb",
-    "meta":{
-        "description": "Stories about Kid Control",
-        "image": "https://safeweb.app/blog/images/remote_working.jpg",
-        "url": "https://safeweb.app/blog/safeweb-remote-tagui-rpa.html"
-    },
     "article":{
-        "url": "kid-control",
+        "url": "blog/kid-control",
 
-        "picture": "/static/img/remote_working.jpg",
+        "picture": "/static/img/boy-on-laptop-with-shields.jpg",
 
-        "title": "Bọn trẻ con vớ vẩn",
-        "description": "Cấm chúng nó chơi",
+        "title": "Bảo vệ trẻ nhỏ khi lên mạng",
+        "description": "Hiện nay, trên internet có rất nhiều nguy hiểm luôn rình rập từ những thông tin sai lệch đến kích động bạo lực, tình dục, rủ nhau tự tử, hút thuốc phiện...",
         "summary": "Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.",
         "detail": "Nunc quis dui scelerisque, scelerisque urna ut, dapibus orci. Sed vitae condimentum lectus, ut imperdiet quam. Maecenas in justo ut nulla aliquam sodales vel at ligula. Sed blandit diam odio, sed fringilla lectus molestie sit amet. Praesent eu tortor viverra lorem mattis pulvinar feugiat in turpis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce ullamcorper tellus sit amet mattis dignissim. Phasellus ut metus ligula. Curabitur nec leo turpis. Ut gravida purus quis erat pretium, sed pellentesque massa elementum. Fusce vestibulum porta augue, at mattis justo. Integer sed sapien fringilla, dapibus risus id, faucibus ante. Pellentesque mattis nunc sit amet tortor pellentesque, non placerat neque viverra.",
         
@@ -22,6 +16,6 @@
     "iframe":{
         "width": "560",
         "height": "315",
-        "src": "https://www.youtube.com/embed/teOG8kETkkA"
+        "src": "https://www.youtube.com/embed/tHoSYm5hFmU"
     }
 }

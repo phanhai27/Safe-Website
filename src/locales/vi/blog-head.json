@@ -1,9 +1,9 @@
 {
-    "title": "SafeWeb - Kể chuyện",
-    "meta":{
-        "description": "Stories about remote and automated work",
-        "image": "https://safeweb.app/blog/images/remote-working-scaled.jpeg",
-        "url": "https://safeweb.app/blog"
+    "article":{
+        "url": "blog",
+        "picture": "/static/img/remote-working-scaled.jpeg",
+        "title": "SafeWeb - Kể chuyện",
+        "description": "Stories about remote and automated work"
     },
     "menu": "Chuyện về SafeWeb",
     "button": "Đọc Tiếp",
