@@ -14,6 +14,17 @@ export default function BlogMain ({postData}) {
                   </header>
                   <span className="image featured"><img src={postData.article.picture} alt="" /></span>
                   <p>{postData.article.summary}</p>
+                  <p align="center">
+                  <iframe 
+                    width={postData.iframe.width} 
+                    height={postData.iframe.height}
+                    src={postData.iframe.src}
+                    title={postData.article.title}
+                    frameborder='0' 
+                    allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' 
+                    allowfullscreen>
+                  </iframe>
+                  </p>
                   <p>{postData.article.detail}</p>
                 </article>
             </div>
