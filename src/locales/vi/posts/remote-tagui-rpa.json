@@ -6,10 +6,10 @@
 
         "title": "Điều khiển thực thi RPA TagUI từ Web",
         "description": "Tiến trình được cập nhật thời gian thực trên dashboard của web",
-        "summary": "Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.",
-        "detail": "Nunc quis dui scelerisque, scelerisque urna ut, dapibus orci. Sed vitae condimentum lectus, ut imperdiet quam. Maecenas in justo ut nulla aliquam sodales vel at ligula. Sed blandit diam odio, sed fringilla lectus molestie sit amet. Praesent eu tortor viverra lorem mattis pulvinar feugiat in turpis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce ullamcorper tellus sit amet mattis dignissim. Phasellus ut metus ligula. Curabitur nec leo turpis. Ut gravida purus quis erat pretium, sed pellentesque massa elementum. Fusce vestibulum porta augue, at mattis justo. Integer sed sapien fringilla, dapibus risus id, faucibus ante. Pellentesque mattis nunc sit amet tortor pellentesque, non placerat neque viverra.",
+        "summary": "Ngoài RPA TagUI, bạn cũng có thể thực hiện các lệnh từ xa với các ứng dụng chạy từ dòng lệnh như AutoIT hoặc với PowerShell. Sau đây là ví dụ về cách sử dụng web điều khiển TagUI thực việc các công việc thay cho con người.",
+        "detail": "Hãy nhớ những việc lặp đi lặp lại cứ để cho robot nó làm thay cho bạn. Còn bạn bây giờ nghỉ ngơi thư giãn thôi.",
         
-        "date": "May 14, 2021",
+        "date": "31 th8, 2021",
         "author": "Peter",
         "avatar": "/static/img/peter_avatar.png"
     },
