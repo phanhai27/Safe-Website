@@ -1,34 +1,20 @@
-export default function BlogMain ({postData}) {
+export default function BlogMain ({postMeta, postData}) {
     return (
       <div id="main">
                 <article className="post">
                   <header>
                     <div className="title">
-                      <h2><a href="#">{postData.article.title}</a></h2>
-                      <p>{postData.article.description}</p>
+                      <h2><a href="#">{postMeta.title}</a></h2>
+                      <p>{postMeta.description}</p>
                     </div>
                     <div className="meta">
-                      <time className="published" dateTime="2015-11-01">{postData.article.date}</time>
-                      <a href="#" className="author"><span className="name">{postData.article.author}</span><img src={postData.article.avatar} alt="" /></a>
+                      <time className="published" dateTime="2015-11-01">{postMeta.date}</time>
+                      <a href="#" className="author"><span className="name">{postMeta.author}</span><img src={postMeta.avatar} alt="" /></a>
                     </div>
                   </header>
-                  <span className="image featured"><img src={postData.article.picture} alt="" /></span>
-                  <p>{postData.article.summary}</p>
-                  { postData.iframe !== undefined ? 
-                    <p align="center">
-                    <iframe 
-                      width={postData.iframe.width} 
-                      height={postData.iframe.height}
-                      src={postData.iframe.src}
-                      title={postData.article.title}
-                      frameBorder='0' 
-                      allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' 
-                      allowFullScreen>
-                    </iframe>
-                    </p>:""
-                  }
-                  
-                  <p>{postData.article.detail}</p>
+                  <span className="image featured"><img src={postMeta.picture} alt="" /></span>
+                  <p>{postMeta.summary}</p>
+                  <p>{postData}</p>
                 </article>
             </div>
     )
