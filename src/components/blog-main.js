@@ -1,6 +1,15 @@
-import Markdown from 'react-markdown-it'
-
 export default function BlogMain ({postMeta, postData}) {
+  var md = require('markdown-it')({
+    html: true,
+    linkify: true,
+    typography: true
+  }).use(require('markdown-it-video'),
+  {
+    youtube: { width: 640, height: 390 }
+  });
+
+  var content = md.render(postData);
+
     return (
       <div id="main">
                 <article className="post">
@@ -16,7 +25,7 @@ export default function BlogMain ({postMeta, postData}) {
                   </header>
                   <span className="image featured"><img src={postMeta.picture} alt="" /></span>
                   <p>{postMeta.summary}</p>
-                  <Markdown source={postData} />
+                  <div dangerouslySetInnerHTML={{__html: content}}/>
                 </article>
             </div>
     )
