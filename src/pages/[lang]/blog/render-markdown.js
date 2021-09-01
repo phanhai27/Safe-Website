@@ -4,7 +4,7 @@ import BlogHeadMeta from '../../../components/blog-head'
 import BlogHeader from '../../../components/blog-header'
 import BlogFooter from '../../../components/blog-footer'
 import BlogMain from '../../../components/blog-main'
-import { gaRunScript } from '../../../lib/googleAnalytics';
+import { gaRunScript } from '../../../lib/googleAnalytics'
 
 export default function ({ language, postMeta, postData, menu }) {
     React.useEffect( () => {
@@ -37,6 +37,7 @@ export async function getStaticProps({ params }) {
   const fs = require("fs");
   var path = require("path")
   const matter = require("gray-matter");
+
 
   var filename = path.basename(__filename).replace('.js', '.md')
   

@@ -1,3 +1,5 @@
+import Markdown from 'react-markdown-it'
+
 export default function BlogMain ({postMeta, postData}) {
     return (
       <div id="main">
@@ -14,7 +16,7 @@ export default function BlogMain ({postMeta, postData}) {
                   </header>
                   <span className="image featured"><img src={postMeta.picture} alt="" /></span>
                   <p>{postMeta.summary}</p>
-                  <p>{postData}</p>
+                  <Markdown source={postData} />
                 </article>
             </div>
     )
