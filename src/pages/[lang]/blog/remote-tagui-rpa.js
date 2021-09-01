@@ -4,9 +4,9 @@ import BlogHeadMeta from '../../../components/blog-head'
 import BlogHeader from '../../../components/blog-header'
 import BlogFooter from '../../../components/blog-footer'
 import BlogMain from '../../../components/blog-main'
-import { gaRunScript } from '../../../lib/googleAnalytics';
+import { gaRunScript } from '../../../lib/googleAnalytics'
 
-export default function ({ language, postData, menu }) {
+export default function ({ language, postMeta, postData, menu }) {
     React.useEffect( () => {
       gaRunScript();
       document.querySelector("body").classList.add("single")
@@ -15,10 +15,10 @@ export default function ({ language, postData, menu }) {
 
     return (
         <div>
-          <BlogHeadMeta postData={postData}/>
+          <BlogHeadMeta postData={postMeta}/>
           <div id="wrapper">
             <BlogHeader lang={language} menu={menu}/>
-            <BlogMain postData={postData}/>
+            <BlogMain postMeta={postMeta} postData={postData}/>
             <BlogFooter/>
           </div>
         </div>
@@ -34,18 +34,26 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
+  const fs = require("fs");
   var path = require("path")
-  var filename = path.basename(__filename).replace('.js', '.json')
+  const matter = require("gray-matter");
+
+
+  var filename = path.basename(__filename).replace('.js', '.md')
   
   const lang = getLanguage(params.lang);
-  const data = require('../../../locales/' + lang + '/posts/' + filename);
+
+  const fullPath = path.join(process.cwd(), "src", "locales", lang, "posts", filename);
+  const fileContents = fs.readFileSync(fullPath, "utf8");
+  const data = matter(fileContents);
   
   const head = require('../../../locales/' + lang + '/blog-head.json');
 
   return {
 		props: {
       language: lang,
-      postData: data,
+      postMeta: data.data,
+      postData: data.content,
       menu: head.menu,
 		},
 	};

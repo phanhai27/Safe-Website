@@ -66,6 +66,7 @@ export async function getStaticProps({ params }) {
   const fsp = require('fs/promises');
   const fs = require('fs');
   const path = require('path');
+  const matter = require("gray-matter");
 
 	const lang = getLanguage(params.lang);
   const head = require('../../locales/' + lang + '/blog-head.json');
@@ -79,9 +80,9 @@ export async function getStaticProps({ params }) {
   
   filenames.forEach(file => {
     const filepath = path.join(postDir, file);
-    const headline = fs.readFileSync(filepath);
-    const jsonData = JSON.parse(headline);
-    body.posts.push(jsonData.article);
+    const fileContents = fs.readFileSync(filepath, "utf8");
+    const data = matter(fileContents);
+    body.posts.push(data.data);
   });
 
   return {
