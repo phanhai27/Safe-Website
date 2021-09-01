@@ -25,5 +25,5 @@ See the section on [`code`](#code).
 
 ![The San Juan Mountains are beautiful!](https://mdg.imgix.net/assets/images/san-juan-mountains.jpg?auto=format&fit=clip&q=40&w=1080 "San Juan Mountains")
 
-@[youtube](dQw4w9WgXcQ)
+@[youtube](https://www.youtube.com/watch?v=moZU_FzQtKI)
 Remember the repetitive things let the robot do it for you. And now you just rest and relax.
