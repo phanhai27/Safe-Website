@@ -130,7 +130,7 @@ function IndexPage({ language, homeData, externalUrls }) {
                     <a href={"/" + language + "/blog/kid-control"} className="btn my-4 font-weight-bold atlas-cta cta-blue">{homeData.feature.part1.button}</a>
                 </div>
                 <div data-aos="fade-left" data-aos-duration="1000" data-aos-once="true" className="col-md-6 align-self-center">
-                    <img src="/static/img/feature-1a.png" alt="Take a look inside" className="mx-auto d-block" style={stylingImg1}/>
+                    <img src="/static/img/feature-1.png" alt="Take a look inside" className="mx-auto d-block" />
                 </div>
             </div>
         </div>
