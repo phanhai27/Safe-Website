@@ -82,7 +82,7 @@ function IndexPage({ language, homeData, externalUrls }) {
                     <div className="col-6 align-self-center text-right">
                         <a href={externalUrls.SignIn} className="btn my-4 font-weight-bold atlas-cta cta-white">{homeData.header.button1}</a>
 						<a href={externalUrls.SignUp} className="btn my-4 font-weight-bold atlas-cta cta-blue">{homeData.header.button2}</a>
-						<a className="btn font-weight-bold "><LanguageMenu/></a>
+						<LanguageMenu/>
                     </div>
                 </div>
             </header>
