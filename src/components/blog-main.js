@@ -5,10 +5,13 @@ export default function BlogMain ({postMeta, postData}) {
     typography: true
   }).use(require('markdown-it-video'),
   {
-    youtube: { width: 640, height: 390 }
+    youtube: { width: 640, height: 390 },
+    vimeo: { width: 500, height: 281 }
   });
 
   var content = md.render(postData);
+  var temp = content.replace(/<iframe/g, '<p align="center"><iframe');
+  content = temp.replace(/<\/iframe>/g,'</iframe></p>');
 
     return (
       <div id="main">
