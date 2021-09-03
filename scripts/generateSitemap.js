@@ -45,13 +45,9 @@ function generateSitemap () {
     });
 
   // get pages in blog directory
-  const blogDir = path.join(process.cwd(),"src", "pages", `[lang]`, "blog")
-  const blogPages = fs
-    .readdirSync(blogDir)
-    .map((staticPagePath) => {
-      staticPagePath = staticPagePath.replace(".js", "");
-      return `${staticPagePath}`;
-    });
+  const glob = require('glob')
+	//get all .md files in the posts dir
+	const blogPages = glob.sync('posts/**/*.md')
 
   // xml content
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
@@ -88,23 +84,20 @@ function generateSitemap () {
           })
         .join("")}
       ${blogPages
-        .map((url) => {
-          var list = "";
+        .map((filepath) => {
           var lastModified = new Date().toISOString();
           const fs = require('fs');
-          languages.forEach(lang => {
-            var jsonFile = path.join(process.cwd(), "src", "locales", lang, "posts", url + ".md");
-              // fetch file details
-              const { mtime } = fs.statSync(jsonFile);
-              lastModified = mtime.toISOString();
-            list += `
+          // fetch file details
+          const { mtime } = fs.statSync(filepath);
+          lastModified = mtime.toISOString();
+          const subPaths = filepath.split('/');
+          return `
         <url>
-            <loc>${baseUrl}/${lang}/${url}</loc>
+            <loc>${baseUrl}/${subPaths[1]}/${subPaths[2]}</loc>
             <lastmod>${lastModified}</lastmod>
             <changefreq>monthly</changefreq>
             <priority>1.0</priority>
-        </url>`})
-          return list
+        </url>`
         })
         .join("")}
       ${externalUrls
