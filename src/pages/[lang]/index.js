@@ -294,8 +294,14 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
+    const fs = require('fs');
+    const path = require('path');
+    const matter = require("gray-matter");
 	const lang = getLanguage(params.lang);
-    const data = require('../../locales/' + lang + '/index.json');
+
+    const filepath = path.join(process.cwd(),"src", "locales", lang, "index.md");
+    const text = fs.readFileSync(filepath, "utf8");
+    const homepageData = matter(text);
     
     const ENV = require('../../../env.json');
     const externalUrls = {
@@ -306,7 +312,7 @@ export async function getStaticProps({ params }) {
     return {
 		props: {
             language: lang,
-            homeData: data,
+            homeData: homepageData.data,
             externalUrls: externalUrls,
 		},
 	};

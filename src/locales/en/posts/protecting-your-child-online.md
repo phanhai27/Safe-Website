@@ -8,4 +8,5 @@ date: Aug 30, 2021
 author: Peter
 avatar: /static/img/peter_avatar.png
 ---
+@[youtube](https://www.youtube.com/watch?v=tHoSYm5hFmU)
 In addition, children also face other dangers such as: Cyber violence, game addiction, human trafficking, online fraud, viewing prohibited and illegal content... Risks from playing games , watching YouTube, or accessing inappropriate websites, malicious content can be completely prevented. To manage thoroughly and not affect other family members, parents can set up a separate user profile for their children, with regulations on Internet usage time, websites accessed. access, all types of content will be blocked.

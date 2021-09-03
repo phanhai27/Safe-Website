@@ -47,14 +47,16 @@ export async function getStaticProps({ params }) {
   const fileContents = fs.readFileSync(fullPath, "utf8");
   const data = matter(fileContents);
   
-  const head = require('../../../locales/' + lang + '/blog-head.json');
+  const blogFilePath = path.join(process.cwd(),"src", "locales", lang, "blog.md");
+  const blogContents = fs.readFileSync(blogFilePath, "utf8");
+  const blogHead = matter(blogContents);
 
   return {
 		props: {
       language: lang,
       postMeta: data.data,
       postData: data.content,
-      menu: head.menu,
+      menu: blogHead.data.menu,
 		},
 	};
 }

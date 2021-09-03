@@ -69,7 +69,9 @@ export async function getStaticProps({ params }) {
   const matter = require("gray-matter");
 
 	const lang = getLanguage(params.lang);
-  const head = require('../../locales/' + lang + '/blog-head.json');
+  const blogFilePath = path.join(process.cwd(),"src", "locales", lang, "blog.md");
+  const blogContents = fs.readFileSync(blogFilePath, "utf8");
+  const blogHead = matter(blogContents);
 
   const postDir = path.join(process.cwd(),"src", "locales", lang, "posts")
   const filenames = await fsp.readdir(postDir)
@@ -88,7 +90,7 @@ export async function getStaticProps({ params }) {
   return {
 		props: {
       language: lang,
-      blogHead: head,
+      blogHead: blogHead.data,
       blogBody: body
 		},
 	};

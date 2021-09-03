@@ -93,15 +93,26 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
+    const fs = require('fs');
+    const path = require('path');
+    const matter = require("gray-matter");
+
     const lang = getLanguage(params.lang);
-    const data = require('../../locales/' + lang + '/download.json');
-    const metadata = require('../../locales/' + lang + '/index.json');
+
+    const filepath = path.join(process.cwd(),"src", "locales", lang, "download.md");
+    const text = fs.readFileSync(filepath, "utf8");
+    const downloadData = matter(text);
+
+    const indexFilePath = path.join(process.cwd(),"src", "locales", lang, "index.md");
+    const indexText = fs.readFileSync(indexFilePath, "utf8");
+    const metadata = matter(indexText);
+
 
     return {
 		props: {
             language: lang,
-            downloadData: data,
-            htmlMeta: metadata,
+            downloadData: downloadData.data,
+            htmlMeta: metadata.data,
 		},
 	};
 }

@@ -8,4 +8,5 @@ date: 30 th8, 202
 author: Peter
 avatar: /static/img/peter_avatar.png
 ---
+@[youtube](https://www.youtube.com/watch?v=tHoSYm5hFmU)
 Ngoài ra, trẻ em còn phải đối mặt với những mối nguy hại khác như: Bạo lực mạng, nghiện game, buôn bán người, lừa đảo qua mạng, xem phải các nội dung cấm và trái pháp luật… Các nguy cơ từ chơi game, xem YouTube, hoặc truy cập các website không đúng lứa tuổi, nội dung độc hại hoàn toàn có thể được ngăn chặn. Để quản lý triệt để và không ảnh hưởng đến các thành viên khác trong gia đình, phụ huynh có thể thiết lập riêng một hồ sơ người dùng cho con cái, với những quy định về thời gian sử dụng Internet, các trang web được truy cập, các dạng nội dung sẽ bị chặn lại.

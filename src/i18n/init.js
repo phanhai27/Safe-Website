@@ -8,7 +8,7 @@ const locales = Object.assign(
 	...Object.keys(languages).map((index) => {
 		return {
 			[languages[index]]: {
-				translations: require('../locales/' + languages[index] + '/index.json'),
+				translations: require('../locales/' + languages[index] + '/dictionary.json'),
 			},
 		};
 	}),

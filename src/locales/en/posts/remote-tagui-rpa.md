@@ -8,4 +8,5 @@ date: Aug 31, 2021
 author: Peter
 avatar: /static/img/peter_avatar.png
 ---
+@[youtube](https://www.youtube.com/watch?v=winFtZ39YSQ)
 Remember the repetitive things let the robot do it for you. And now you just rest and relax.

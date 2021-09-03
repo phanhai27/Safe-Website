@@ -27,9 +27,6 @@ function generateSitemap () {
     })
     .map((staticPagePath) => {
       staticPagePath = staticPagePath.replace(".js", "");
-      if (staticPagePath == `index`) {
-        staticPagePath = "";
-      }
       return `${staticPagePath}`;
     });
 
@@ -44,9 +41,6 @@ function generateSitemap () {
     })
     .map((staticPagePath) => {
       staticPagePath = staticPagePath.replace(".js", "");
-      if (staticPagePath == `index`) {
-        staticPagePath = "";
-      }
       return `${staticPagePath}`;
     });
 
@@ -56,9 +50,6 @@ function generateSitemap () {
     .readdirSync(blogDir)
     .map((staticPagePath) => {
       staticPagePath = staticPagePath.replace(".js", "");
-      if (staticPagePath == `index`) {
-        staticPagePath = "";
-      }
       return `${staticPagePath}`;
     });
 
@@ -69,7 +60,7 @@ function generateSitemap () {
         .map((url) => {
           return `
         <url>
-            <loc>${baseUrl}/${url}</loc>
+            <loc>${baseUrl}/${url == "index" ? "": url}</loc>
             <lastmod>${new Date().toISOString()}</lastmod>
             <changefreq>monthly</changefreq>
             <priority>1.0</priority>
@@ -82,25 +73,13 @@ function generateSitemap () {
           var lastModified = new Date().toISOString();
           const fs = require('fs');
           languages.forEach(lang => {
-            if (url == "") {
-              var jsonFile = path.join(process.cwd(), "src", "locales", lang, "index.json");
-              // fetch file details
-              const { mtime } = fs.statSync(jsonFile);
-              lastModified = mtime.toISOString();
-            } else if (url == "blog") {
-              var jsonFile = path.join(process.cwd(), "src", "locales", lang, url + "-head.json");
-              // fetch file details
-              const { mtime } = fs.statSync(jsonFile);
-              lastModified = mtime.toISOString();
-            } else {
-              var jsonFile = path.join(process.cwd(), "src", "locales", lang, url + ".json");
-              // fetch file details
-              const { mtime } = fs.statSync(jsonFile);
-              lastModified = mtime.toISOString();
-            }
+            var jsonFile = path.join(process.cwd(), "src", "locales", lang, url + ".md");
+            // fetch file details
+            const { mtime } = fs.statSync(jsonFile);
+            lastModified = mtime.toISOString();
           list += `
         <url>
-            <loc>${baseUrl}/${lang}/${url}</loc>
+            <loc>${baseUrl}/${lang}/${url == "index" ? "": url}</loc>
             <lastmod>${lastModified}</lastmod>
             <changefreq>monthly</changefreq>
             <priority>1.0</priority>
@@ -114,7 +93,7 @@ function generateSitemap () {
           var lastModified = new Date().toISOString();
           const fs = require('fs');
           languages.forEach(lang => {
-            var jsonFile = path.join(process.cwd(), "src", "locales", lang, "posts", url + ".json");
+            var jsonFile = path.join(process.cwd(), "src", "locales", lang, "posts", url + ".md");
               // fetch file details
               const { mtime } = fs.statSync(jsonFile);
               lastModified = mtime.toISOString();
