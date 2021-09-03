@@ -73,7 +73,7 @@ export async function getStaticProps({ params }) {
   const blogContents = fs.readFileSync(blogFilePath, "utf8");
   const blogHead = matter(blogContents);
 
-  const postDir = path.join(process.cwd(),"src", "locales", lang, "posts")
+  const postDir = path.join(process.cwd(), "posts", lang)
   const filenames = await fsp.readdir(postDir)
 
   const body = {

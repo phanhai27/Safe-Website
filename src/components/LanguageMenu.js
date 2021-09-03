@@ -6,7 +6,7 @@ import i18next from 'i18next';
 
 import { languages } from '../i18n/config';
 
-const LanguageMenu = (props) => {
+const LanguageMenu = ({slug}) => {
 	const router = useRouter();
 	const { pathname } = router;
 
@@ -16,9 +16,10 @@ const LanguageMenu = (props) => {
 			languages.map((lang, index) => {
 				const current = ['uppercase', i18next.language === lang ? 'text-blue-600' : ''];
 				const path = pathname.replace(/\[lang\]/i, lang);
+				const realPath = path.replace(/\[slug\]/i, slug);
 
 				return (
-					<Link className={'mr-2'} key={index} prefetch={false} href={pathname} as={path}>
+					<Link className={'mr-2'} key={index} prefetch={false} href={pathname} as={realPath}>
 						<a className={classes.concat(current).join(' ').trim()}>{i18next.t(lang)}</a>
 					</Link>
 				);
