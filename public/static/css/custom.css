@@ -154,6 +154,10 @@ button {
     color: #ffffff;
 }
 
+.text-blue-600.language-link {
+    text-decoration: underline;
+}
+
 /********** RWD **********/
 @media (max-width: 575px) {
     #banner h1 {
