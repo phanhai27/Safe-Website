@@ -100,6 +100,9 @@ function IndexPage({ language, homeData, externalUrls }) {
     #banner {        
         background: url('/static/img/banner-bk.jpg');
     }
+    .top-lighthouse {
+        background: #26314a
+    }
     `}</style>
 
     <div className="container my-5 py-2">

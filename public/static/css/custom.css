@@ -154,9 +154,18 @@ button {
     color: #ffffff;
 }
 
-.text-blue-600.language-link {
-    text-decoration: underline;
+.language-link {
+    padding: 5px 10px;
+    color: #ffffff
 }
+.text-blue-600.language-link {
+    padding:  5px 10px;
+    background: #ffffff;
+    color: #0275d8;
+    text-decoration: none;
+}
+
+
 
 /********** RWD **********/
 @media (max-width: 575px) {

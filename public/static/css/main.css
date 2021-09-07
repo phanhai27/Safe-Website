@@ -3121,7 +3121,7 @@ input, select, textarea {
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
 		justify-content: space-between;
-		background-color: #ffffff;
+		background-color: #26314a;
 		border-bottom: solid 1px rgba(160, 160, 160, 0.3);
 		height: 3.5em;
 		left: 0;
@@ -3130,13 +3130,11 @@ input, select, textarea {
 		top: 0;
 		width: 100%;
 		z-index: 10000;
+		padding: 0 10px;
 	}
 
 		#header a {
-			color: inherit;
 			text-decoration: none;
-			display: flex;
-			align-items: center;
 		}
 
 		#header ul {
@@ -3276,6 +3274,17 @@ input, select, textarea {
 			overflow: hidden;
 			padding: 0;
 			white-space: nowrap;
+		}
+
+		.language-link {
+			padding: 5px 10px;
+			color: #ffffff
+		}
+		.text-blue-600.language-link.d-block {
+			padding:  5px 10px;
+			background: #ffffff;
+			color: #0275d8;
+			text-decoration: none;
 		}
 
 			#header #search input {

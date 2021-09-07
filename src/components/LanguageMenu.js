@@ -18,14 +18,14 @@ const LanguageMenu = (props) => {
 	const classes = ['text-sm', 'md:text-base', 'm-0.5', 'p-0.5'];
 
 	return (
-		<div className="flex flex-wrap content-end text-gray-300 w-100">
+		<div className="d-flex w-100 text-gray-300 w-100">
 			{languages.map((lang, index) => {
 				const current = ['uppercase', i18next.language === lang ? 'text-blue-600' : ''];
 				const path = pathname.replace(/\[lang\]/i, lang);
 
 				return (
-					<Link key={index} prefetch={false} href={pathname} as={path}>
-						<a className={`${classes.concat(current).join(' ').trim()} pl-2 language-link`}>{i18next.t(lang)}</a>
+					<Link  key={index} prefetch={false} href={pathname} as={path}>
+						<a className={`${classes.concat(current).join(' ').trim()} language-link d-block`}>{i18next.t(lang)}</a>
 					</Link>
 				);
 			})}
