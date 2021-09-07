@@ -14,7 +14,7 @@ export default function ({ language, slug, postMeta, postData, menu }) {
     });
 
     return (
-        <div>
+        <div style={{background: "#152242"}} >
           <BlogHeadMeta postData={postMeta}/>
           <div id="wrapper">
             <BlogHeader lang={language} menu={menu} slug={slug}/>

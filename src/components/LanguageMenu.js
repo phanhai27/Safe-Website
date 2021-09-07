@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
@@ -13,14 +13,14 @@ const LanguageMenu = ({slug}) => {
 	const classes = ['text-sm', 'md:text-base', 'm-0.5', 'p-0.5'];
 
 	return (
-			languages.map((lang, index) => {
+		<div className="d-flex w-100 text-gray-300 w-100">
+			{languages.map((lang, index) => {
 				const current = ['uppercase', i18next.language === lang ? 'text-blue-600' : ''];
 				const path = pathname.replace(/\[lang\]/i, lang);
 				const realPath = path.replace(/\[slug\]/i, slug);
-
 				return (
-					<Link className={'mr-2'} key={index} prefetch={false} href={pathname} as={realPath}>
-						<a className={classes.concat(current).join(' ').trim()}>{i18next.t(lang)}</a>
+					<Link  key={index} prefetch={false} href={pathname} as={realPath}>
+						<a className={`${classes.concat(current).join(' ').trim()} language-link d-block`}>{i18next.t(lang)}</a>
 					</Link>
 				);
 			})

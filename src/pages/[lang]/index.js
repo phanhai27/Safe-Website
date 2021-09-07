@@ -72,20 +72,22 @@ function IndexPage({ language, homeData, externalUrls }) {
             <link rel="stylesheet" href="/static/css/aos.css"></link>
         </Head>
 
+    <div className="top-lighthouse">
+    <header>
+        <div className="row justify-content-between">
+            <div className="col-2 logo-img d-flex align-items-center pl-5">
+                <img style={{display: 'block', maxWidth: "50px"}} src="/static/img/logo.png" alt="logo"/>
+            </div>
+            <div className="col-6 text-right">
+                <a href={externalUrls.SignIn} className="btn my-2 font-weight-bold atlas-cta cta-white">{homeData.header.button1}</a>
+                <a href={externalUrls.SignUp} className="btn my-2 font-weight-bold atlas-cta cta-blue">{homeData.header.button2}</a>
+                <a className="btn font-weight-bold "><LanguageMenu/></a>
+            </div>
+        </div>
+    </header>
+    </div>
     <div className="jumbotron jumbotron-fluid" id="banner">
         <div className="container text-center text-md-left">
-            <header>
-                <div className="row justify-content-between">
-                    <div className="col-2">
-                        <img src="/static/img/logo.png" alt="logo"/>
-                    </div>
-                    <div className="col-6 align-self-center text-right">
-                        <a href={externalUrls.SignIn} className="btn my-4 font-weight-bold atlas-cta cta-white">{homeData.header.button1}</a>
-						<a href={externalUrls.SignUp} className="btn my-4 font-weight-bold atlas-cta cta-blue">{homeData.header.button2}</a>
-						<LanguageMenu/>
-                    </div>
-                </div>
-            </header>
             <h1 data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" className="display-3 text-white font-weight-bold my-5">
             	{homeData.header.part1}<br/>{homeData.header.part2}
             </h1>
@@ -99,6 +101,9 @@ function IndexPage({ language, homeData, externalUrls }) {
     #banner {        
         background: url('/static/img/banner-bk.jpg');
     }
+    .top-lighthouse {
+        background: #26314a
+    }
     `}</style>
 
     <div className="container my-5 py-2">
@@ -106,17 +111,17 @@ function IndexPage({ language, homeData, externalUrls }) {
         <div className="row">
             <div data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000" data-aos-once="true" className="col-md-4 text-center">
                 <img src="/static/img/smart-protect-1.png" alt="Anti-spam" className="mx-auto"/>
-                <h4>{homeData.topic.part1}</h4>
+                <h4 className="mt-3">{homeData.topic.part1}</h4>
                 <p>{homeData.topic.message1}</p>
             </div>
             <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true" className="col-md-4 text-center">
                 <img src="/static/img/smart-protect-2.png" alt="Phishing Detect" className="mx-auto"/>
-                <h4>{homeData.topic.part2}</h4>
+                <h4 className="mt-3">{homeData.topic.part2}</h4>
                 <p>{homeData.topic.message2}</p>
             </div>
             <div data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000" data-aos-once="true" className="col-md-4 text-center">
                 <img src="/static/img/smart-protect-6.png" alt="Smart Scan" className="mx-auto"/>
-                <h4>{homeData.topic.part3}</h4>
+                <h4 className="mt-3">{homeData.topic.part3}</h4>
                 <p>{homeData.topic.message3}</p>
             </div>
         </div>
@@ -131,7 +136,7 @@ function IndexPage({ language, homeData, externalUrls }) {
                     <a href={"/" + language + "/" + homeData.feature.part1.url} className="btn my-4 font-weight-bold atlas-cta cta-blue">{homeData.feature.part1.button}</a>
                 </div>
                 <div data-aos="fade-left" data-aos-duration="1000" data-aos-once="true" className="col-md-6 align-self-center">
-                    <img src="/static/img/feature-1a.png" alt="Take a look inside" className="mx-auto d-block" style={stylingImg1}/>
+                    <img src="/static/img/feature-1.png" alt="Take a look inside" className="mx-auto d-block" />
                 </div>
             </div>
         </div>
@@ -319,3 +324,5 @@ export async function getStaticProps({ params }) {
 }
 
 export default IndexPage
+
+
