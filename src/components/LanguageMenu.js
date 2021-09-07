@@ -23,7 +23,8 @@ const LanguageMenu = ({slug}) => {
 						<a className={`${classes.concat(current).join(' ').trim()} language-link d-block`}>{i18next.t(lang)}</a>
 					</Link>
 				);
-			})
+			})}
+		</div>
 	);
 };
 
