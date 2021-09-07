@@ -90,7 +90,8 @@ function generateSitemap () {
           // fetch file details
           const { mtime } = fs.statSync(filepath);
           lastModified = mtime.toISOString();
-          const subPaths = filepath.split('/');
+          const urlPaths = filepath.replace(".md", "");
+          const subPaths = urlPaths.split('/');
           return `
         <url>
             <loc>${baseUrl}/${subPaths[1]}/${subPaths[2]}</loc>
