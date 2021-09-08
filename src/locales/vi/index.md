@@ -40,21 +40,27 @@ payment:
         price: 0
         service1: Tối đa 2 máy vi tính
         service2: Tối đa 4 người/máy
-        service3: Hỗ trợ hạn chế
+        service3: Không chế độ tập trung
+        service4: Tối đa 2 web an toàn
+        service5: Danh sách đen không giới hạn
         button: Dùng Luôn
     standard:
         type: TIÊU CHUẨN
         price: 2
         service1: Tối đa 20 máy vi tính
         service2: Tối đa 40 người/máy
-        service3: Hỗ trợ hạn chế
+        service3: Có chế độ tập trung
+        service4: Tối đa 20 web an toàn
+        service5: Danh sách đen không giới hạn
         button: Mua Ngay
     premium:
         type: CAO CẤP
         price: 6
         service1: Không giới hạn số máy vi tính
         service2: Không giới hạn số người/máy
-        service3: Hỗ trợ không giới hạn
+        service3: Tự động vào chế độ tập trung
+        service4: Không giới hạn số web an toàn
+        service5: Danh sách đen không giới hạn
         button: Mua Ngay
 footer:
     title: Liên hệ

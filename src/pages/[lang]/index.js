@@ -168,6 +168,7 @@ function IndexPage({ language, homeData, externalUrls }) {
                     <li>{homeData.payment.free.service2}</li>
                     <li>{homeData.payment.free.service3}</li>
                     <li>{homeData.payment.free.service4}</li>
+                    <li>{homeData.payment.free.service5}</li>
                 </ul>
                 <a href="#" className="btn my-4 font-weight-bold atlas-cta cta-ghost">{homeData.payment.free.button}</a>
             </div>
@@ -179,6 +180,7 @@ function IndexPage({ language, homeData, externalUrls }) {
                     <li>{homeData.payment.standard.service2}</li>
                     <li>{homeData.payment.standard.service3}</li>
                     <li>{homeData.payment.standard.service4}</li>
+                    <li>{homeData.payment.standard.service5}</li>
                 </ul>
                 <a href="#" className="btn my-4 font-weight-bold atlas-cta cta-green">{homeData.payment.standard.button}</a>
             </div>
@@ -190,6 +192,7 @@ function IndexPage({ language, homeData, externalUrls }) {
                     <li>{homeData.payment.premium.service2}</li>
                     <li>{homeData.payment.premium.service3}</li>
                     <li>{homeData.payment.premium.service4}</li>
+                    <li>{homeData.payment.premium.service5}</li>
                 </ul>
                 <a href="#" className="btn my-4 font-weight-bold atlas-cta cta-ghost">{homeData.payment.premium.button}</a>
             </div>

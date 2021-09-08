@@ -40,21 +40,27 @@ payment:
         price: 0
         service1: Up to 2 PCs
         service2: Up to 4 Users/PC
-        service3: Limited Support
+        service3: No Focus mode
+        service4: Up to 2 Whitelist
+        service5: Unlimited Blacklist
         button: Get Free
     standard:
         type: STANDARD
         price: 2
         service1: Up to 20 PCs
         service2: Up to 40 Users/PC
-        service3: Limited Support
+        service3: Focus mode
+        service4: Up to 20 Whitelist
+        service5: Unlimited Blacklist
         button: Buy Now
     premium:
         type: PREMIUM
         price: 6
         service1: Unlimited PCs
         service2: Unlimited Users/PC
-        service3: Unlimited Support
+        service3: Auto Focus mode
+        service4: Unlimited Whitelist
+        service5: Unlimited Blacklist
         button: Buy Now
 footer:
     title: Contact Us
