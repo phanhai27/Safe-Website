@@ -41,7 +41,7 @@ payment:
         service1: Tối đa 2 máy vi tính
         service2: Tối đa 4 người/máy
         service3: Không chế độ tập trung
-        service4: Tối đa 2 web an toàn
+        service4: Không web an toàn
         service5: Danh sách đen không giới hạn
         button: Dùng Luôn
     standard:

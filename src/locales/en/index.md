@@ -41,7 +41,7 @@ payment:
         service1: Up to 2 PCs
         service2: Up to 4 Users/PC
         service3: No Focus mode
-        service4: Up to 2 Whitelist
+        service4: No Whitelist
         service5: Unlimited Blacklist
         button: Get Free
     standard:
@@ -50,7 +50,7 @@ payment:
         service1: Up to 20 PCs
         service2: Up to 40 Users/PC
         service3: Focus mode
-        service4: Up to 20 Whitelist
+        service4: Up to 20 pages in Whitelist
         service5: Unlimited Blacklist
         button: Buy Now
     premium:
