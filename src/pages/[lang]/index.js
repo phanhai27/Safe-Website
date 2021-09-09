@@ -116,6 +116,9 @@ function IndexPage({ language, homeData, externalUrls }) {
             display: block;
             width: 100%
         }
+        .menu-item > div {
+            justify-content: center
+        }
 
 	}
     `}</style>
