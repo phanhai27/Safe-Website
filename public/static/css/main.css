@@ -3499,6 +3499,9 @@ input, select, textarea {
 			#intro header > :last-child {
 				margin-bottom: 0;
 			}
+			.languages-link {
+				order: 1
+			}
 
 	}
 

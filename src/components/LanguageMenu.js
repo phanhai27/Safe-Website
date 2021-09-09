@@ -18,7 +18,7 @@ const LanguageMenu = (props) => {
 	const classes = ['text-sm', 'md:text-base', 'm-0.5', 'p-0.5'];
 
 	return (
-		<div className="d-flex w-100 text-gray-300 w-100">
+		<div className="d-flex w-100 text-gray-300 w-100 justify-content-end">
 			{languages.map((lang, index) => {
 				const current = ['uppercase', i18next.language === lang ? 'text-blue-600' : ''];
 				const path = pathname.replace(/\[lang\]/i, lang);

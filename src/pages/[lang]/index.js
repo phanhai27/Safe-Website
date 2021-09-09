@@ -77,10 +77,10 @@ function IndexPage({ language, homeData, externalUrls }) {
             <div className="col-2 logo-img d-flex align-items-center pl-5">
                 <img style={{display: 'block', maxWidth: "50px"}} src="/static/img/logo.png" alt="logo"/>
             </div>
-            <div className="col-6 text-right">
-                <a href={externalUrls.SignIn} className="btn my-2 font-weight-bold atlas-cta cta-white">{homeData.header.button1}</a>
-                <a href={externalUrls.SignUp} className="btn my-2 font-weight-bold atlas-cta cta-blue">{homeData.header.button2}</a>
-                <a className="btn font-weight-bold "><LanguageMenu/></a>
+            <div className="col-6 text-right menu-main">
+                <a href={externalUrls.SignIn} className="btn my-2 font-weight-bold atlas-cta cta-white menu-item">{homeData.header.button1}</a>
+                <a href={externalUrls.SignUp} className="btn my-2 font-weight-bold atlas-cta cta-blue menu-item">{homeData.header.button2}</a>
+                <a className="btn font-weight-bold language-link menu-item"><LanguageMenu/></a>
             </div>
         </div>
     </header>
@@ -103,6 +103,21 @@ function IndexPage({ language, homeData, externalUrls }) {
     .top-lighthouse {
         background: #26314a
     }
+    @media screen and (max-width: 992px) {
+        .menu-main {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap
+        }
+        .language-link {
+            order: -1
+        }
+        .menu-item {
+            display: block;
+            width: 100%
+        }
+
+	}
     `}</style>
 
     <div className="container my-5 py-2">
