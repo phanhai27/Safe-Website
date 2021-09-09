@@ -3282,7 +3282,8 @@ input, select, textarea {
 		}
 		.text-blue-600.language-link.d-block {
 			padding:  5px 10px;
-			background: #ffffff;
+			background: #192440;
+			border-radius: 99%;
 			color: #0275d8;
 			text-decoration: none;
 		}
