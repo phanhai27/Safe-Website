@@ -79,7 +79,7 @@ function IndexPage({ language, homeData, externalUrls }) {
             </div>
             <div className="col-6 text-right menu-main">
                 <a href={externalUrls.SignIn} className="btn my-2 font-weight-bold atlas-cta cta-white menu-item">{homeData.header.button1}</a>
-                <a href={externalUrls.SignUp} className="btn my-2 font-weight-bold atlas-cta cta-blue menu-item">{homeData.header.button2}</a>
+                <a href={externalUrls.SignUp} className="btn my-2 font-weight-bold atlas-cta cta-blue menu-item signUp">{homeData.header.button2}</a>
                 <a className="btn font-weight-bold language-link menu-item"><LanguageMenu/></a>
             </div>
         </div>
@@ -118,6 +118,10 @@ function IndexPage({ language, homeData, externalUrls }) {
         }
         .menu-item > div {
             justify-content: center
+        }
+        .signUp.menu-item {
+            width: auto;
+            margin: auto
         }
 
 	}
