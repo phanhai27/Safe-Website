@@ -182,7 +182,7 @@ function IndexPage({ language, homeData, externalUrls }) {
                     <li>{homeData.payment.standard.service4}</li>
                     <li>{homeData.payment.standard.service5}</li>
                 </ul>
-                <a href={"/" + language + "/payment"} className="btn my-4 font-weight-bold atlas-cta cta-green">{homeData.payment.standard.button}</a>
+                <a href={"/" + language + "/payment"} target="_blank" className="btn my-4 font-weight-bold atlas-cta cta-green">{homeData.payment.standard.button}</a>
             </div>
             <div data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true" className="col-md-4 text-center py-4 mt-5">
             <h4 className="my-4">{homeData.payment.premium.type}</h4>
@@ -194,7 +194,7 @@ function IndexPage({ language, homeData, externalUrls }) {
                     <li>{homeData.payment.premium.service4}</li>
                     <li>{homeData.payment.premium.service5}</li>
                 </ul>
-                <a href={"/" + language + "/payment"} className="btn my-4 font-weight-bold atlas-cta cta-ghost">{homeData.payment.premium.button}</a>
+                <a href={"/" + language + "/payment"} target="_blank" className="btn my-4 font-weight-bold atlas-cta cta-ghost">{homeData.payment.premium.button}</a>
             </div>
         </div>
     </div>

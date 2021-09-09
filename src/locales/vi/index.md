@@ -23,7 +23,7 @@ feature:
     part1:
         head: Chặn các website nguy hiểm, độc hại
         message: Chỉ cần mở điện thoại di động là bạn biết được con mình đang làm gì trên máy vi tính, đang học bài hay đang chơi game hoặc vào mạng xã hội.
-        detail: Từ bảng kê dữ liệu, bạn có thể chặn hoặc cho phép những website nào được vào và không được vào khi con cái đang trong giờ học online.
+        detail: Từ bảng kê dữ liệu, bạn có thể chặn hoặc cho phép những website nào được vào và không được vào khi các con đang trong giờ học online.
         button: Đọc Thêm
         url: blog/protecting-your-child-online
     part2:
@@ -42,7 +42,7 @@ payment:
         service2: Tối đa 4 người/máy
         service3: Không chế độ tập trung
         service4: Không web an toàn
-        service5: Danh sách đen không giới hạn
+        service5: Chặn web đen không giới hạn
         button: Dùng Luôn
     standard:
         type: TIÊU CHUẨN
@@ -51,7 +51,7 @@ payment:
         service2: Tối đa 40 người/máy
         service3: Có chế độ tập trung
         service4: Tối đa 20 web an toàn
-        service5: Danh sách đen không giới hạn
+        service5: Chặn web đen không giới hạn
         button: Mua Ngay
     premium:
         type: CAO CẤP
@@ -60,7 +60,7 @@ payment:
         service2: Không giới hạn số người/máy
         service3: Tự động vào chế độ tập trung
         service4: Không giới hạn số web an toàn
-        service5: Danh sách đen không giới hạn
+        service5: Chặn web đen không giới hạn
         button: Mua Ngay
 footer:
     title: Liên hệ

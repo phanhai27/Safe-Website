@@ -1,8 +1,7 @@
 ---
 url: payment
 picture: /static/img/remote-working-scaled.jpeg
-title: Thanh toán SafeWeb
-message: Trang web này đang xây dựng
+title: Trang web này đang xây dựng
+message: Thanh toán SafeWeb
 windows:
-    version: ngân hàng 2.0
----
+    version: Ngân hàng

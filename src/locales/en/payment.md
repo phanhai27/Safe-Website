@@ -1,8 +1,8 @@
 ---
 url: payment
 picture: /static/img/remote-working-scaled.jpeg
-title: SafeWeb Payment
-message: This site is under construction
+title: This site is under construction
+message: SafeWeb Payment
 windows:
-    version: bank 2.0
+    version: PayPal
 ---
