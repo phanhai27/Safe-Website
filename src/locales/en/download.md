@@ -2,7 +2,7 @@
 url: download
 picture: /static/img/remote-working-scaled.jpeg
 title: Download SafeWeb app
-message: Download our Windows application to have awesome experience.
+message: This software helps everyone to stay focused.
 windows:
     version: Windows version 0.1
     filename: SafeApp-v0.1.407.511.msi
