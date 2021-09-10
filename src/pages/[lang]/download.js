@@ -71,7 +71,7 @@ function DownloadPage({ language, downloadData, htmlMeta }) {
 
                 <div className="col-md-12 mt-3">
                     <div className="wow fadeInUp animated" data-wow-duration="2s" data-wow-delay="0.2s" style={stylingUp}>
-                        <h2>{downloadData.title}</h2>
+                        <h2>{downloadData.heading}</h2>
                         <p> {downloadData.message} </p>
                     </div>
                     <div className="buttons">
