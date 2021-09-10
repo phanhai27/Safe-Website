@@ -38,30 +38,30 @@ payment:
     free:
         type: MIỄN PHÍ
         price: 0
-        service1: ✓ Tối đa 2 máy vi tính
-        service2: ✓ Tối đa 4 người/máy
-        service3: ✓ Không chế độ tập trung
-        service4: ✓ Không web an toàn
-        service5: ✓ Chặn web đen không giới hạn
-        button: Dùng Ngay
+        service1: • Tối đa 2 máy vi tính
+        service2: • Tối đa 4 người/máy
+        service3: • Không chế độ tập trung
+        service4: • Không web an toàn
+        service5: • Chặn web đen không giới hạn
+        button: Dùng ngay
     standard:
         type: TIÊU CHUẨN
         price: 2
-        service1: ✓ Tối đa 20 máy vi tính
-        service2: ✓ Tối đa 40 người/máy
-        service3: ✓ Có chế độ tập trung
-        service4: ✓ Tối đa 20 web an toàn
-        service5: ✓ Chặn web đen không giới hạn
-        button: Dùng Ngay
+        service1: • Tối đa 20 máy vi tính
+        service2: • Tối đa 40 người/máy
+        service3: • Có chế độ tập trung
+        service4: • Tối đa 20 web an toàn
+        service5: • Chặn web đen không giới hạn
+        button: Dùng ngay
     premium:
         type: CAO CẤP
         price: 6
-        service1: ✓ Không giới hạn số máy vi tính
-        service2: ✓ Không giới hạn số người/máy
-        service3: ✓ Tự động vào chế độ tập trung
-        service4: ✓ Không giới hạn số web an toàn
-        service5: ✓ Chặn web đen không giới hạn
-        button: Dùng Ngay
+        service1: • Không giới hạn số máy vi tính
+        service2: • Không giới hạn số người/máy
+        service3: • Tự động vào chế độ tập trung
+        service4: • Không giới hạn số web an toàn
+        service5: • Chặn web đen không giới hạn
+        button: Dùng ngay
 footer:
     title: Liên hệ
     part1: Bạn gặp sự cố hoặc muốn góp ý về tính năng,
