@@ -9,7 +9,7 @@ header:
     part3: Very simple!
     part4: Just open the smart phone to access the cloud and turn on focus mode to block inappropriate websites and applications while at work or during school hours.
     button1: Sign in
-    button2: Try it FREE
+    button2: Sign up
     button3: Free Download
 topic:
     head: Main Features of SafeWeb
@@ -38,30 +38,30 @@ payment:
     free:
         type: FREE
         price: 0
-        service1: Up to 2 PCs
-        service2: Up to 4 Users/PC
-        service3: No Focus mode
-        service4: No Whitelist
-        service5: Unlimited Blacklist
-        button: Get Free
+        service1: ✓ Up to 2 PCs
+        service2: ✓ Up to 4 Users/PC
+        service3: ✓ No Focus mode
+        service4: ✓ No Whitelist
+        service5: ✓ Unlimited Blacklist
+        button: Get started
     standard:
         type: STANDARD
         price: 2
-        service1: Up to 20 PCs
-        service2: Up to 40 Users/PC
-        service3: Focus mode
-        service4: Up to 20 pages in Whitelist
-        service5: Unlimited Blacklist
-        button: Buy Now
+        service1: ✓ Up to 20 PCs
+        service2: ✓ Up to 40 Users/PC
+        service3: ✓ Focus mode
+        service4: ✓ Up to 20 pages in Whitelist
+        service5: ✓ Unlimited Blacklist
+        button: Get started
     premium:
         type: PREMIUM
         price: 6
-        service1: Unlimited PCs
-        service2: Unlimited Users/PC
-        service3: Auto Focus mode
-        service4: Unlimited Whitelist
-        service5: Unlimited Blacklist
-        button: Buy Now
+        service1: ✓ Unlimited PCs
+        service2: ✓ Unlimited Users/PC
+        service3: ✓ Auto Focus mode
+        service4: ✓ Unlimited Whitelist
+        service5: ✓ Unlimited Blacklist
+        button: Get started
 footer:
     title: Contact Us
     part1: You have a problem or want to comment on a feature,
