@@ -51,19 +51,19 @@ function IndexPage({ language, homeData, externalUrls }) {
     
             <meta itemProp="name" content={homeData.title}/>
             <meta itemProp="description" content={homeData.meta.description}/>
-            <meta itemProp="image" content={homeData.meta.image}/>
+            <meta itemProp="image" content={ENV.BASE_URL + homeData.meta.image}/>
 
             <meta property="og:type" content="website"/>
             <meta property="og:url" content={ENV.BASE_URL}/>
             <meta property="og:title" content={homeData.title}/>
             <meta property="og:description" content={homeData.meta.description}/>
-            <meta property="og:image" content={homeData.meta.image}/>
+            <meta property="og:image" content={ENV.BASE_URL + homeData.meta.image}/>
 
             <meta property="twitter:card" content="summary_large_image"/>
             <meta property="twitter:url" content={ENV.BASE_URL}/>
             <meta property="twitter:title" content={homeData.title}/>
             <meta property="twitter:description" content={homeData.meta.description}/>
-            <meta property="twitter:image" content={homeData.meta.image}/>
+            <meta property="twitter:image" content={ENV.BASE_URL + homeData.meta.image}/>
             
             <link rel="icon" href="/static/img/favicon.png" sizes="32x32" type="image/png"/>
             <link rel="stylesheet" href="/static/css/custom.css"/>
