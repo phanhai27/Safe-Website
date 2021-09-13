@@ -54,13 +54,13 @@ function IndexPage({ language, homeData, externalUrls }) {
             <meta itemProp="image" content={ENV.BASE_URL + homeData.meta.image}/>
 
             <meta property="og:type" content="website"/>
-            <meta property="og:url" content={ENV.BASE_URL}/>
+            <meta property="og:url" content={ENV.BASE_URL + "/" + language + "/"}/>
             <meta property="og:title" content={homeData.title}/>
             <meta property="og:description" content={homeData.meta.description}/>
             <meta property="og:image" content={ENV.BASE_URL + homeData.meta.image}/>
 
             <meta property="twitter:card" content="summary_large_image"/>
-            <meta property="twitter:url" content={ENV.BASE_URL}/>
+            <meta property="twitter:url" content={ENV.BASE_URL + "/" + language + "/"}/>
             <meta property="twitter:title" content={homeData.title}/>
             <meta property="twitter:description" content={homeData.meta.description}/>
             <meta property="twitter:image" content={ENV.BASE_URL + homeData.meta.image}/>
@@ -204,7 +204,7 @@ function IndexPage({ language, homeData, externalUrls }) {
                     <li>{homeData.payment.standard.service4}</li>
                     <li>{homeData.payment.standard.service5}</li>
                 </ul>
-                <a href={"/" + language + "/payment"} target="_blank" className="btn my-4 font-weight-bold atlas-cta cta-green">{homeData.payment.standard.button}</a>
+                <a href={externalUrls.SignUp} target="_blank" className="btn my-4 font-weight-bold atlas-cta cta-green">{homeData.payment.standard.button}</a>
             </div>
             <div data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true" className="col-md-4 text-center py-4 mt-5">
             <h4 className="my-4">{homeData.payment.premium.type}</h4>
@@ -216,7 +216,7 @@ function IndexPage({ language, homeData, externalUrls }) {
                     <li>{homeData.payment.premium.service4}</li>
                     <li>{homeData.payment.premium.service5}</li>
                 </ul>
-                <a href={"/" + language + "/payment"} target="_blank" className="btn my-4 font-weight-bold atlas-cta cta-ghost">{homeData.payment.premium.button}</a>
+                <a href={externalUrls.SignUp} target="_blank" className="btn my-4 font-weight-bold atlas-cta cta-ghost">{homeData.payment.premium.button}</a>
             </div>
         </div>
     </div>
@@ -256,7 +256,7 @@ function IndexPage({ language, homeData, externalUrls }) {
                     </p>
                     <ul className="list-unstyled">
                         <li>Email : {homeData.footer.email}</li>
-                        <li>Phone : {homeData.footer.phone}</li>
+                        {/* <li>Phone : {homeData.footer.phone}</li> */}
                         <li>Address : {homeData.footer.address}</li>
                     </ul>
                 </div>

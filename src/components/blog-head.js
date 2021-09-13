@@ -17,13 +17,13 @@ export default function BlogHead ({postData, lang}) {
             <meta itemProp="image" content={ENV.BASE_URL + postData.picture}/>
 
             <meta property="og:type" content="website"/>
-            <meta property="og:url" content={ENV.BASE_URL + "/" + lang + "/" + postData.url}/>
+            <meta property="og:url" content={ENV.BASE_URL + "/" + lang + "/" + postData.url + "/"}/>
             <meta property="og:title" content={postData.title + "- SafeWeb"}/>
             <meta property="og:description" content={postData.description}/>
             <meta property="og:image" content={ENV.BASE_URL + postData.picture}/>
 
             <meta property="twitter:card" content="summary_large_image"/>
-            <meta property="twitter:url" content={ENV.BASE_URL + "/" + lang + "/" + postData.url}/>
+            <meta property="twitter:url" content={ENV.BASE_URL + "/" + lang + "/" + postData.url + "/"}/>
             <meta property="twitter:title" content={postData.title + "- SafeWeb"}/>
             <meta property="twitter:description" content={postData.description}/>
             <meta property="twitter:image" content={ENV.BASE_URL + postData.picture}/>
