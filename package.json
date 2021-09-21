@@ -7,6 +7,7 @@
     "dev": "next -p 3001",
     "build": "next build",
     "start": "next start",
+    "build-static": "next build && next export",
     "export": "node scripts/generateSitemap.js && next build && next export"
   },
   "repository": {

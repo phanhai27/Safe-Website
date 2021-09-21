@@ -1,6 +1,7 @@
 ---
 url: privacy-policy
-title: Privacy Policy
+title: Privacy Policy - SafeWeb
+description: Your privacy is important to us. It is SafeWeb.app's policy to respect your privacy and comply with any applicable law and regulation regarding any personal information
 ---
 # Privacy Policy
 Your privacy is important to us. It is SafeWeb.app's policy to respect your privacy and comply with any applicable law and regulation regarding any personal information we may collect about you, including across our website, https://safeweb.app, and other sites we own and operate.

@@ -1,6 +1,7 @@
 ---
 url: privacy-policy
-title: Chính sách bảo mật
+title: Chính sách bảo mật - SafeWeb
+description: Quyền riêng tư của bạn rất quan trọng với chúng tôi. Chính sách của SafeWeb.app là tôn trọng quyền riêng tư của bạn và tuân thủ mọi luật và quy định hiện hành liên quan đến bất kỳ thông tin cá nhân nào
 ---
 # Chính sách bảo mật
 Quyền riêng tư của bạn rất quan trọng với chúng tôi. Chính sách của SafeWeb.app là tôn trọng quyền riêng tư của bạn và tuân thủ mọi luật và quy định hiện hành liên quan đến bất kỳ thông tin cá nhân nào mà chúng tôi có thể thu thập về bạn, bao gồm trên trang web của chúng tôi, https://safeweb.app và các trang web khác mà chúng tôi sở hữu và vận hành.
@@ -65,5 +66,5 @@ Nếu luật pháp yêu cầu, chúng tôi sẽ nhận được sự cho phép c
 # Liên hệ chúng tôi
 Đối với bất kỳ câu hỏi hoặc thắc mắc nào liên quan đến quyền riêng tư của bạn, bạn có thể liên hệ với chúng tôi bằng các chi tiết sau:
 
-Hai Phan\
-hai@safeweb.app
+Hải\
+qa@safeweb.app

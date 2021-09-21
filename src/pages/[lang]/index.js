@@ -65,7 +65,7 @@ function IndexPage({ language, homeData, externalUrls }) {
             <meta property="twitter:description" content={homeData.meta.description}/>
             <meta property="twitter:image" content={ENV.BASE_URL + homeData.meta.image}/>
             
-            <link rel="icon" href="/static/img/favicon.png" sizes="32x32" type="image/png"/>
+            <link rel="icon" href="/favicon.ico" sizes="32x32" type="image/png"/>
             <link rel="stylesheet" href="/static/css/custom.css"/>
             <link rel="stylesheet" href="/static/css/bootstrap.min.css"/>
             <link rel="stylesheet" href="/static/font-awesome-4.7.0/css/font-awesome.min.css"/>
@@ -293,6 +293,8 @@ function IndexPage({ language, homeData, externalUrls }) {
             <div className="row justify-content-between">
             	<div className="col-md-6 text-white align-self-center text-center text-md-left my-2">
                     Copyright © 2021 SafeWeb.
+                    <br/>
+                    <a href={"/" + language + "/privacy-policy/"}>Privacy Policy</a>
                 </div>
                 <div className="col-md-6 align-self-center text-center text-md-right my-2" id="social-media">
                     <a href="#" className="d-inline-block text-center ml-2">
