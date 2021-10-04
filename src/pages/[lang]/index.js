@@ -294,7 +294,7 @@ function IndexPage({ language, homeData, externalUrls }) {
             	<div className="col-md-6 text-white align-self-center text-center text-md-left my-2">
                     Copyright © 2021 SafeWeb.
                     <br/>
-                    <a href={"/" + language + "/privacy-policy/"}>Privacy Policy</a>
+                    <a href={"/" + language + "/privacy-policy/"}>Privacy Policy</a>, <a href={"/" + language + "/eula/"}>EULA</a>
                 </div>
                 <div className="col-md-6 align-self-center text-center text-md-right my-2" id="social-media">
                     <a href="#" className="d-inline-block text-center ml-2">
