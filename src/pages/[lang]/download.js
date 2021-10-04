@@ -4,6 +4,8 @@ import { getAllLanguageSlugs, getLanguage } from '../../lib/lang';
 import { gaRunScript } from '../../lib/googleAnalytics'
 import JQueryLib from '../../components/jquery-lib';
 import BootstrapLib from '../../components/bootstrap-lib';
+import LanguageMenu from '../../components/LanguageMenu';
+import ENV from '../../../env.json'
 
 function DownloadPage({ language, downloadData, htmlMeta }) {
     React.useEffect(() => {
@@ -66,6 +68,13 @@ function DownloadPage({ language, downloadData, htmlMeta }) {
                 <JQueryLib />
                 <BootstrapLib />
             </Head>
+            <div className="row justify-content-between">
+                <div className="col-2 logo-img d-flex align-items-center pl-5">
+                </div>
+                <div className="col-6 text-right menu-main">
+                    <a className="btn font-weight-bold language-link menu-item"><LanguageMenu/></a>
+                </div>
+            </div>
             <div className="row mt-4">
                 <div style={{ width: "100%", maxWidth: "350px", margin: "auto", }}><a className="d-block text-center" href={"/" + language}><img src="/static/img/logo.png" alt="logo" style={stylingLogo} /></a></div>
 
@@ -76,6 +85,13 @@ function DownloadPage({ language, downloadData, htmlMeta }) {
                     </div>
                     <div className="buttons">
                         <a id="dlink" href="#" className="btn btn-info btn-lg" data-wow-duration="2s" data-wow-delay="0.2s" style={stylingLeft}><i className="fa fa-windows fa-2x"></i> Download<br /> <small>{downloadData.windows.version}</small></a>
+                    </div>
+                    <br/>
+                    <div className="wow fadeInUp animated" data-wow-duration="2s" data-wow-delay="0.2s" style={stylingUp}>
+                        <p> {downloadData.browser}:
+                        &nbsp;<a id="chromelink" href={downloadData.chrome.url} data-wow-duration="2s" data-wow-delay="0.2s" style={stylingLeft}><i className="fa fa-chrome"></i> <small>{downloadData.chrome.version}</small></a>
+                        &nbsp;<a id="edgelink" href={downloadData.edge.url} data-wow-duration="2s" data-wow-delay="0.2s" style={stylingLeft}><i className="fa fa-edge"></i> <small>{downloadData.edge.version}</small></a>
+                        </p>
                     </div>
                 </div>
             </div>
