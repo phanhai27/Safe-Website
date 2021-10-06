@@ -19,10 +19,10 @@ function Blog({ language, blogHead, blogBody}) {
             <div id="wrapper">
               <BlogHeader lang={language} menu={blogHead.menu}/>
                 <div id="main">
-                    <article className="post">
                         {
                             blogBody.posts.map((v, i) => (
                               <React.Fragment key={Math.random()}>
+                              <article className="post" key={i}>
                                 <header key={i}>
                                 <div className="title">
                                     <h2><a href={"/" + language + "/" + v.url}>{v.title}</a></h2>
@@ -39,10 +39,10 @@ function Blog({ language, blogHead, blogBody}) {
                                         <li><a href={"/" + language + "/" + v.url} className="button large">{blogHead.button}</a></li>
                                     </ul>
                                 </footer>
+                              </article>
                               </React.Fragment>
                             ))
                         }
-			    	</article>
 				</div>
 
         <section id="sidebar">

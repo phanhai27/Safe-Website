@@ -22,11 +22,17 @@ topic:
 feature:
     part1:
         head: Block dangerous and malicious website
-        message: Just turn on your smart phone and you will know what your child is doing on the computer, learning or playing a game or on social media.
-        detail: From the data list, you can block or allow which websites can and cannot be accessed while your children are in online lessons.
+        message: Just turn on your smart phone and you can immediately know what your child is doing on the computer, playing a game or on social media?
+        detail: From the real-time data table, you can instantly block inappropriate websites or unused apps.
         button: Read More
         url: blog/protecting-your-child-online
     part2:
+        head: Clean environment to focus on studying
+        message: When online, a lot of interesting and attractive things will make children lose focus. Create a whitelist of only websites and apps dedicated to learning.
+        detail: After school, your child can use game apps or visit social networking sites. You give permission by turning off whitelist mode or setting automatic timers.
+        button: Read More
+        url: blog/focus-while-studying
+    part3:
         head: Control the computer to run commands remotely
         message: SafeWeb is a cloud platform that allows you to run PowerShell commands on your computer like an IT administrator, but the commands are sent from the web.
         detail: You can also use your smart phone to control multiple computers performing Robotic Process Automation (RPA) tasks at the same time. The results of running RPA on computers will be continuously updated on the web dashboard.

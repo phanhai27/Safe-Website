@@ -6,6 +6,6 @@ description: Stories about remote and automated work
 menu: SafeWeb Stories
 button: Continue Reading
 intro:
-    title: The future of working remotely
-    message: One day, robots will work for us so that we have more time for life
+    title: Focus - The key to success
+    message: Regaining our own focus not only helps us to work and study with impressive efficiency, but also helps us stay present, connecting more qualitatively with the important people in our lives.
 ---

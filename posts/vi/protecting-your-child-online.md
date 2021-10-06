@@ -4,7 +4,7 @@ picture: /static/img/Your-Kids-Online-Safety.jpg
 title: Bảo vệ con bạn khi lên mạng
 description: Có rất nhiều nguy hiểm luôn rình rập từ những thông tin sai lệch đến kích động bạo lực, rủ nhau tự tử, tự làm hại bản thân v.v.
 summary: Trẻ em là đối tượng dễ bị tổn thương nhất nên khi bị tấn công và đe doạ, trẻ không dám kể cho những người xung quanh. Kẻ xấu nắm bắt được tâm lý và những điểm yếu này để lừa đảo, lạm dụng nạn nhân. Theo thống kê tổng hợp từ báo cáo của UNICEF, Bộ Lao động, Thương binh & Xã hội và Trung tâm Quốc gia về Trẻ em Mất tích và Bị bóc lột, có 706.435 trường hợp lạm dụng trẻ em trên không gian mạng đã được báo cáo vào năm 2018, khoảng 720.000 bức ảnh về lạm dụng tình dục trẻ em được tung lên mạng mỗi ngày.
-date: 30 th8, 202
+date: 30 th8, 2021
 author: Peter
 avatar: /static/img/peter_avatar.png
 ---

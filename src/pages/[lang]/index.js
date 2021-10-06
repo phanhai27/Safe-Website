@@ -149,7 +149,7 @@ function IndexPage({ language, homeData, externalUrls }) {
         </div>
     </div>
 
-    <div className="jumbotron jumbotron-fluid feature" id="feature-first">
+    <div className="jumbotron jumbotron-fluid feature" id="feature-begin">
         <div className="container my-5">
             <div className="row justify-content-between text-center text-md-left">
                 <div data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" className="col-md-6">
@@ -158,13 +158,13 @@ function IndexPage({ language, homeData, externalUrls }) {
                     <a href={"/" + language + "/" + homeData.feature.part1.url} className="btn my-4 font-weight-bold atlas-cta cta-blue">{homeData.feature.part1.button}</a>
                 </div>
                 <div data-aos="fade-left" data-aos-duration="1000" data-aos-once="true" className="col-md-6 align-self-center">
-                    <img src="/static/img/feature-1.png" alt="Take a look inside" className="mx-auto d-block" />
+                    <img src="/static/img/safe-kid.jpg" alt="Take a look inside" className="mx-auto d-block" />
                 </div>
             </div>
         </div>
     </div>
 
-    <div className="jumbotron jumbotron-fluid feature" id="feature-last">
+    <div className="jumbotron jumbotron-fluid feature" id="feature-mid">
         <div className="container">
             <div className="row justify-content-between text-center text-md-left">
                 <div data-aos="fade-left" data-aos-duration="1000" data-aos-once="true" className="col-md-6 flex-md-last">
@@ -173,7 +173,22 @@ function IndexPage({ language, homeData, externalUrls }) {
                     <a href={"/" + language + "/" + homeData.feature.part2.url} className="btn my-4 font-weight-bold atlas-cta cta-blue">{homeData.feature.part2.button}</a>
                 </div>
                 <div data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" className="col-md-6 align-self-center flex-md-first">
-                    <img src="/static/img/feature-2a.png" alt="Safe and reliable" className="mx-auto d-block" style={stylingImg2}/>
+                    <img src="/static/img/kid-focus.jpg" alt="Safe and reliable" className="mx-auto d-block"/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div className="jumbotron jumbotron-fluid feature" id="feature-last">
+        <div className="container my-5">
+            <div className="row justify-content-between text-center text-md-left">
+                <div data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" className="col-md-6">
+                    <h2 className="font-weight-bold">{homeData.feature.part3.head}</h2>
+                    <p className="my-4">{homeData.feature.part3.message}<br/>{homeData.feature.part3.detail}</p>
+                    <a href={"/" + language + "/" + homeData.feature.part3.url} className="btn my-4 font-weight-bold atlas-cta cta-blue">{homeData.feature.part3.button}</a>
+                </div>
+                <div data-aos="fade-left" data-aos-duration="1000" data-aos-once="true" className="col-md-6 align-self-center">
+                    <img src="/static/img/feature-2a.png" alt="Take a look inside" className="mx-auto d-block" style={stylingImg2}/>
                 </div>
             </div>
         </div>
@@ -219,31 +234,6 @@ function IndexPage({ language, homeData, externalUrls }) {
                 <a href={externalUrls.SignUp} target="_blank" className="btn my-4 font-weight-bold atlas-cta cta-ghost">{homeData.payment.premium.button}</a>
             </div>
         </div>
-    </div>
-
-    <div className="jumbotron jumbotron-fluid">
-        {/* <div className="container">
-            <div className="row">
-                <div className="col-sm-4 col-md-2 py-2 align-self-center">
-                    <img src="/static/img/client-1.png" className="mx-auto d-block"/>
-                </div>
-                <div className="col-sm-4 col-md-2 py-2 align-self-center">
-                    <img src="/static/img/client-2.png" className="mx-auto d-block" />
-                </div>
-                <div className="col-sm-4 col-md-2 py-2 align-self-center">
-                    <img src="/static/img/client-3.png" className="mx-auto d-block" />
-                </div>
-                <div className="col-sm-4 col-md-2 py-2 align-self-center">
-                    <img src="/static/img/client-4.png" className="mx-auto d-block" />
-                </div>
-                <div className="col-sm-4 col-md-2 py-2 align-self-center">
-                    <img src="/static/img/client-5.png" className="mx-auto d-block" />
-                </div>
-                <div className="col-sm-4 col-md-2 py-2 align-self-center">
-                    <img src="/static/img/client-6.png" className="mx-auto d-block" />
-                </div>
-            </div>
-        </div> */}
     </div>
 
     <div className="jumbotron jumbotron-fluid" id="contact">

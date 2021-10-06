@@ -21,12 +21,18 @@ topic:
     message3: Báo cáo bằng biểu đồ trên web admin hoặc gửi email cảnh báo có người vi phạm chính sách.
 feature:
     part1:
-        head: Chặn các website nguy hiểm, độc hại
-        message: Chỉ cần mở điện thoại di động là bạn biết được con mình đang làm gì trên máy vi tính, đang học bài hay đang chơi game hoặc vào mạng xã hội.
-        detail: Từ bảng kê dữ liệu, bạn có thể chặn hoặc cho phép những website nào được vào và không được vào khi các con đang trong giờ học online.
+        head: Chặn các trang web nguy hiểm, độc hại
+        message: Chỉ cần mở điện thoại di động là bạn biết được ngay con mình đang làm gì trên máy vi tính, đang chơi game hay là vào mạng xã hội?
+        detail: Từ bảng dữ liệu thời gian thực, bạn có thể chặn ngay lập tức những trang web không phù hợp hoặc những app không được dùng.
         button: Đọc Thêm
         url: blog/protecting-your-child-online
     part2:
+        head: Tạo môi trường sạch để tập trung học hành
+        message: Khi online, rất nhiều thứ hấp dẫn, lôi cuốn sẽ làm cho các con mất tập trung. Bạn hãy tạo ngay danh sách trắng chỉ chứa những trang web và các app dành riêng cho việc học tập.
+        detail: Các app game hoặc trang mạng xã hội sẽ được sử dụng trở lại sau giờ học. Bạn chỉ cần tắt chế độ danh sách trắng hoặc hẹn giờ chuyển chế độ.
+        button: Đọc Thêm
+        url: blog/focus-while-studying
+    part3:
         head: Điều khiển máy vi tính chạy lệnh từ xa
         message: SafeWeb phát triển nền tảng cloud cho phép bạn chạy các lệnh PowerShell trên máy vi tính giống như một quản trị viên IT nhưng lệnh được gửi đi từ web.
         detail: Bạn cũng có thể sử dụng điện thoại di động để điều khiển các robot RPA trên nhiều máy vi tính khác nhau cùng một lúc. Kết quả chạy RPA ở các máy vi tính sẽ được cập nhật liên tục trên dashboard của web.
