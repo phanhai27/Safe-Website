@@ -5,7 +5,8 @@ title: Download SafeApp
 heading: Please come back in a week
 message: This software helps everyone to stay focused
 windows:
-    version: Windows version 0.1
+    version: Version 1.0
+    supports: Supports Windows 11/10/8.1/8/7
     filename: SafeApp-v0.1.407.511.msi
 browser: Supports browsers
 chrome:
