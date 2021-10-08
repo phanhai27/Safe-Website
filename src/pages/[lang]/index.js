@@ -293,6 +293,9 @@ function IndexPage({ language, homeData, externalUrls }) {
                     <a href="https://twitter.com/SafeWeb_app" className="d-inline-block text-center ml-2">
                     	<i className="fa fa-twitter" aria-hidden="true"></i>
                     </a>
+                    <a href="https://www.youtube.com/channel/UC9t4hpAS5jSzPfD2JIIEvrw" className="d-inline-block text-center ml-2">
+                    	<i className="fa fa-youtube-play" aria-hidden="true"></i>
+                    </a>
                     <a href="mailto:qa@safeweb.app" className="d-inline-block text-center ml-2">
                     	<i className="fa fa-envelope" aria-hidden="true"></i>
                     </a>
