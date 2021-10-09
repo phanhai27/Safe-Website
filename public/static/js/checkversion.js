@@ -7,8 +7,8 @@ $(document).ready(function(){
     $.getJSON(urlAPI, function(data) {
 		$.each(data.list, function(key,value) {
 			if (value.platform == `windows`) {
-				$('#dlink').attr("href", `/download/SafeApp-v${value.version}.msi`);
-				$("#dlink small").text(`Windows version ${value.version}`);
+				$('#dlink').attr("href", `/download/SafeApp-v${value.version}-setup.exe`);
+				$("#dlink small").text(`Version ${value.version}`);
 			}
 		  });
     });

@@ -2,7 +2,7 @@
 url: download
 picture: /static/img/remote-working-scaled.jpeg
 title: Download SafeApp
-heading: Please come back in a week
+heading: Download the SafeWeb app
 message: This software helps everyone to stay focused
 windows:
     version: Version 1.0

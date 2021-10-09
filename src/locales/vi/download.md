@@ -2,7 +2,7 @@
 url: download
 picture: /static/img/remote-working-scaled.jpeg
 title: Tải xuống SafeApp
-heading: Vui lòng quay lại sau một tuần
+heading: Tải xuống phần mềm SafeApp
 message: Phần mềm giúp mọi người làm việc tập trung
 windows:
     version: Phiên bản 1.0
