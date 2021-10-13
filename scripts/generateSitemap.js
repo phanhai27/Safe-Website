@@ -94,7 +94,7 @@ function generateSitemap () {
           const subPaths = urlPaths.split('/');
           return `
         <url>
-            <loc>${baseUrl}/${subPaths[1]}/${subPaths[2]}</loc>
+            <loc>${baseUrl}/${subPaths[1]}/blog/${subPaths[2]}</loc>
             <lastmod>${lastModified}</lastmod>
             <changefreq>monthly</changefreq>
             <priority>1.0</priority>
