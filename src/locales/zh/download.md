@@ -15,4 +15,8 @@ chrome:
 edge:
     version: Edge
     url: https://microsoftedge.microsoft.com/addons/detail/safewebapp/fffknmhfnlaknplgpnhffcidkenmmecj
+instruction:
+    message1: 安装说明在
+    message2: 这里
+    url: /blog/how-to-install-safeweb-app/
 ---

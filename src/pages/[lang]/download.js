@@ -94,6 +94,11 @@ function DownloadPage({ language, downloadData, htmlMeta }) {
                         &nbsp;<a id="edgelink" href={downloadData.edge.url} data-wow-duration="2s" data-wow-delay="0.2s" style={stylingLeft}><i className="fa fa-edge"></i> <small>{downloadData.edge.version}</small></a>
                         </p>
                     </div>
+                    <div className="wow fadeInUp animated" data-wow-duration="2s" data-wow-delay="0.2s" style={stylingUp}>
+                        <p>{downloadData.instruction.message1}
+                        &nbsp;<a id="instructionlink" href={ENV.BASE_URL + "/" + language + downloadData.instruction.url} data-wow-duration="2s" data-wow-delay="0.2s" style={stylingLeft}><i className="fa fa-link"></i> <small>{downloadData.instruction.message2}</small></a>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
