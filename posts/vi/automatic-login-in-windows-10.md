@@ -17,7 +17,7 @@ Lần đầu tiên bạn chạy nó, bạn phải chấp nhận các điều kho
 ![autologon](/static/img/autologon.png)
 
 ###### Tắt Đăng nhập Tự động:
-Nếu bạn muốn tắt đăng nhập tự động cho một tài khoản cụ thể, chỉ cần nhập tên tài khoản của bạn và nhấp vào **Tắt** và bạn đã hoàn tất!
+Nếu bạn muốn tắt đăng nhập tự động cho một tài khoản cụ thể, chỉ cần nhập tên tài khoản của bạn và nhấp vào **Disable** và bạn đã hoàn tất!
 
 ###### Bật Đăng nhập Tự động:
-Nếu bạn muốn bật đăng nhập tự động, hãy *nhập tên tài khoản và mật khẩu của bạn*. Nhấp vào **Bật**. Cuối cùng khởi động lại máy tính của bạn và Windows 10 sẽ khởi động thẳng vào tài khoản người dùng mong muốn của bạn mà không cần yêu cầu mật khẩu.
+Nếu bạn muốn bật đăng nhập tự động, hãy *nhập tên tài khoản và mật khẩu của bạn*. Nhấp vào **Enable**. Cuối cùng khởi động lại máy tính của bạn và Windows 10 sẽ khởi động thẳng vào tài khoản người dùng mong muốn của bạn mà không cần yêu cầu mật khẩu.
