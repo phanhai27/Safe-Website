@@ -245,9 +245,9 @@ function IndexPage({ language, homeData, externalUrls }) {
                         {homeData.footer.part1}<br/>{homeData.footer.part2}
                     </p>
                     <ul className="list-unstyled">
-                        <li>Email : {homeData.footer.email}</li>
+                        <li>{homeData.footer.part3} : {homeData.footer.email}</li>
                         {/* <li>Phone : {homeData.footer.phone}</li> */}
-                        <li>Address : {homeData.footer.address}</li>
+                        <li>{homeData.footer.part4} : {homeData.footer.address}</li>
                     </ul>
                 </div>
                 <div className="col-md-6">

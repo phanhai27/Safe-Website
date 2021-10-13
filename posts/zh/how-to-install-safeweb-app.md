@@ -9,7 +9,7 @@ author: Peter
 avatar: /static/img/peter_avatar.png
 ---
 ### I. Hướng dẫn tải app
-**Bước 1:** Vào trang chủ **[safeweb.app](https://safeweb.app/vi/)** và click vào nút **"Tải app"**
+**Bước 1:** Vào trang chủ **[safeweb.app](https://safeweb.app/zh/)** và click vào nút **"Tải app"**
 
 ![home-page](/static/img/safeweb-how-to-install-01.png)
 
@@ -47,7 +47,7 @@ avatar: /static/img/peter_avatar.png
 ![windows-protect-01](/static/img/safeweb-how-to-install-06.png)
 
 ### III. Tài khoản mặc định
-Sau khi cài đặt thành công, ứng dụng sẽ mở màn hình đăng nhập. Bạn chỉ cần gõ **safeweb.app** vào 2 ô trắng bên dưới rồi gõ phím Enter (*chú ý: bỏ chế độ gõ tiếng Việt có dấu*). Bạn có thể thay đổi tài khoản này trên trang web **[admin.safeweb.app](https://admin.safeweb.app)**.
+Sau khi cài đặt thành công, ứng dụng sẽ mở màn hình đăng nhập. Bạn chỉ cần gõ **safeweb.app** vào 2 ô trắng bên dưới rồi gõ phím Enter. Bạn có thể thay đổi tài khoản này trên trang web **[admin.safeweb.app](https://admin.safeweb.app)**.
 
 ![windows-protect-01](/static/img/safeweb-how-to-install-07-login-default.png)
 

@@ -72,6 +72,8 @@ footer:
     title: 联系
     part1: 如果你有问题或对功能有意见，
     part2: 请通过以下地址与我们联系。
+    part3: 电子邮件
+    part4: 地址
     email: qa@safeweb.app
     phone: +84-989-550-390
     address: 越南，河内

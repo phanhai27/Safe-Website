@@ -72,6 +72,8 @@ footer:
     title: Liên hệ
     part1: Bạn gặp sự cố hoặc muốn góp ý về tính năng,
     part2: hãy liên hệ với chúng tôi theo địa chỉ bên dưới.
+    part3: Hòm thư
+    part4: Địa chỉ
     email: qa@safeweb.app
     phone: +84-989-550-390
     address: Hanoi, Vietnam
