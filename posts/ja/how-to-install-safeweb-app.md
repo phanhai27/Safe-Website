@@ -11,11 +11,11 @@ avatar: /static/img/peter_avatar.png
 ### I。アプリをダウンロードするための手順
 **ステップ1:** ホームページに移動 **[safeweb.app](https://safeweb.app/ja/)** ホームページに移動**無料ダウンロード**ボタンをクリックしてください
 
-![home-page](/static/img/safeweb-how-to-install-01-en.png)
+![home-page](/static/img/safeweb-how-to-install-01-ja.png)
 
 **ステップ2:** ボタン**DOWNLOAD**をクリックします
 
-![download-page](/static/img/safeweb-how-to-install-02-en.png)
+![download-page](/static/img/safeweb-how-to-install-02-ja.png)
 
 **ステップ3:** 警告がある場合は処理します\
 **Chromeブラウザ:** 下の画像の赤い矢印1と2に従ってください。

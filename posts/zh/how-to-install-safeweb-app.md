@@ -1,54 +1,54 @@
 ---
 url: blog/how-to-install-safeweb-app
 picture: /static/img/safeweb-download.png
-title: Hướng dẫn cài ứng dụng SafeWeb
-description: Cài đặt ứng dụng SafeWeb trên máy vi tính mới từ A tới Z.
-summary: Hướng dẫn cách download và cài phần mềm SafeWeb trên Windows từ trình duyệt Chrome và Edge. Bạn làm theo các bước sau.
-date: 10 th10, 2021
+title: SafeWeb 应用程序安装说明
+description: 以帮助你在新电脑上从头到尾安装 SafeWeb.
+summary: 如何从 Chrome 和 Edge 浏览器在 Windows 上下载和安装 SafeWeb 软件的安装。 你按照以下步骤操作。
+date: 2021年10月10日
 author: Peter
 avatar: /static/img/peter_avatar.png
 ---
-### I. Hướng dẫn tải app
-**Bước 1:** Vào trang chủ **[safeweb.app](https://safeweb.app/zh/)** và click vào nút **"Tải app"**
+### I. 应用程序下载具体说明
+**第一步：** 进入 **[safeweb.app](https://safeweb.app/zh/)** 主页并点击 **《下载应用程序》**
 
-![home-page](/static/img/safeweb-how-to-install-01.png)
+![home-page](/static/img/safeweb-how-to-install-01-zh.png)
 
-**Bước 2:** Click vào nút **"DOWNLOAD"**
+**第二步：** 点击 **《DOWNLOAD》** 按钮
 
-![download-page](/static/img/safeweb-how-to-install-02.png)
+![download-page](/static/img/safeweb-how-to-install-02-zh.png)
 
-**Bước 3:** Xử lý cảnh báo nếu có\
-**Trình duyệt Chrome:** Làm theo mũi tên đỏ 1 và 2 trong ảnh bên dưới.
+**第三步：** 处理警告〈如果有〉\
+**Chrome 浏览器：** 按照下图中的红色箭头 1 和 2 操作。
 
 ![chrome-keep-file](/static/img/safeweb-how-to-install-chrome-01.png)
 
-**Trình duyệt Edge:** Làm theo mũi tên đỏ 1, 2, 3 và 4 trong ảnh bên dưới.
+**Edge 浏览器：** 按照下图中的红色箭头 1、2、3 和 4 操作
 
 ![edge-keep-file-01](/static/img/safeweb-how-to-install-edge-01.png)\
 ![edge-keep-file-02](/static/img/safeweb-how-to-install-edge-02.png)\
 ![edge-keep-file-03](/static/img/safeweb-how-to-install-edge-03.png)
 
-**Bước 4:** Mở bộ cài\
-**Trình duyệt Chrome:** Làm theo mũi tên đỏ 1 và 2 trong ảnh bên dưới.
+**第四步：** 打开软件\
+**Chrome 浏览器：** 按照下图中的红色箭头 1 和 2 操作。
 
 ![chrome-open-file](/static/img/safeweb-how-to-install-chrome-02.png)
 
-**Trình duyệt Edge:** Làm theo mũi tên đỏ trong ảnh bên dưới.
+**Edge 浏览器 ：** 按照下图中的红色箭头操作。
 
 ![edge-open-file](/static/img/safeweb-how-to-install-edge-04.png)
 
-### II. Hướng dẫn cài đặt
-**Bước 1:** Click vào nút **"More info"** (hoặc **"Thông tin thêm"**) như mũi tên đỏ trong ảnh dưới.
+### II. 安装说明
+**第一步：** 点击〈More info〉按 钮〈或更加信息〉如下图中的红色箭头。
 
 ![windows-protect-01](/static/img/safeweb-how-to-install-05.png)
 
-**Bước 2:**  Click vào nút **Run anyway**.
+**第二步：** 点击 **Run anyway** 按钮。
 
 ![windows-protect-01](/static/img/safeweb-how-to-install-06.png)
 
-### III. Tài khoản mặc định
-Sau khi cài đặt thành công, ứng dụng sẽ mở màn hình đăng nhập. Bạn chỉ cần gõ **safeweb.app** vào 2 ô trắng bên dưới rồi gõ phím Enter. Bạn có thể thay đổi tài khoản này trên trang web **[admin.safeweb.app](https://admin.safeweb.app)**.
+### III. 默认账号
+安装完成后，应用程序会打开登入屏幕。 你只要在下面的两个白框中输入safeweb.app，然后按Enter。你可以在 **[admin.safeweb.app](https://admin.safeweb.app)** 网站更改此账户。
 
 ![windows-protect-01](/static/img/safeweb-how-to-install-07-login-default.png)
 
-**Cám ơn bạn đã tin dùng sản phẩm của chúng tôi!**
+**感谢您对我们产品的信任！**
