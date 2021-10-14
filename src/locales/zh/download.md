@@ -8,7 +8,9 @@ windows:
     version: 版本 1.0
     supports: 支持 Windows 11/10/8.1/8/7
     filename: SafeApp-v0.1.407.511.msi
-browser: 支持浏览器
+browser:
+    message1: 支持浏览器
+    message2: Vivaldi, Brave, Cốc Cốc
 chrome:
     version: Chrome
     url: https://chrome.google.com/webstore/detail/safewebapp/kndnmjfabojcaliebfdildmhcojnblpn

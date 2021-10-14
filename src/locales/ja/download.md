@@ -8,7 +8,9 @@ windows:
     version: バージョン 1.0
     supports: ウィンドウサポート11/10/8.1/8/7
     filename: SafeApp-v0.1.407.511.msi
-browser: サポートされているブラウザ
+browser:
+    message1: サポートされているブラウザ
+    message2: Vivaldi, Brave, Cốc Cốc
 chrome:
     version: クロム
     url: https://chrome.google.com/webstore/detail/safewebapp/kndnmjfabojcaliebfdildmhcojnblpn
