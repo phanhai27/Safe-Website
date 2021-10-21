@@ -11,11 +11,14 @@ windows:
 browser:
     message1: サポートされているブラウザ
     message2: Vivaldi, Brave, Cốc Cốc
+firefox:
+    version: Firefox
+    url: https://addons.mozilla.org/en-US/firefox/addon/safeweb-app
 chrome:
-    version: クロム
+    version: Chrome
     url: https://chrome.google.com/webstore/detail/safewebapp/kndnmjfabojcaliebfdildmhcojnblpn
 edge:
-    version: イデグ
+    version: Edge
     url: https://microsoftedge.microsoft.com/addons/detail/safewebapp/fffknmhfnlaknplgpnhffcidkenmmecj
 instruction:
     message1: インストール案内

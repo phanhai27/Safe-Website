@@ -11,6 +11,9 @@ windows:
 browser:
     message1: Hỗ trợ các trình duyệt
     message2: Vivaldi, Brave, Cốc Cốc
+firefox:
+    version: Firefox
+    url: https://addons.mozilla.org/en-US/firefox/addon/safeweb-app
 chrome:
     version: Chrome
     url: https://chrome.google.com/webstore/detail/safewebapp/kndnmjfabojcaliebfdildmhcojnblpn
