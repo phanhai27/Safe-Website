@@ -49,6 +49,7 @@ payment:
         service3: • Không chế độ tập trung
         service4: • Không web an toàn
         service5: • Chặn web đen không giới hạn
+        service6: • Không chụp ảnh màn hình
         button: Dùng ngay
     standard:
         type: TIÊU CHUẨN
@@ -58,15 +59,17 @@ payment:
         service3: • Có chế độ tập trung
         service4: • Tối đa 20 web an toàn
         service5: • Chặn web đen không giới hạn
+        service6: • Không chụp ảnh màn hình
         button: Dùng ngay
     premium:
         type: CAO CẤP
         price: 6
-        service1: • Không giới hạn số máy vi tính
-        service2: • Không giới hạn số người/máy
+        service1: • Tối đa 60 máy vi tính
+        service2: • Tối đa 120 người/máy
         service3: • Tự động vào chế độ tập trung
         service4: • Không giới hạn số web an toàn
         service5: • Chặn web đen không giới hạn
+        service6: • Chụp ảnh màn hình
         button: Dùng ngay
 footer:
     title: Liên hệ

@@ -49,6 +49,7 @@ payment:
         service3: • No Focus mode
         service4: • No Whitelist
         service5: • Unlimited Blacklist
+        service6: • No Screenshots
         button: Get started
     standard:
         type: STANDARD
@@ -58,15 +59,17 @@ payment:
         service3: • Focus mode
         service4: • Up to 20 pages in Whitelist
         service5: • Unlimited Blacklist
+        service6: • No Screenshots
         button: Get started
     premium:
         type: PREMIUM
         price: 6
-        service1: • Unlimited PCs
-        service2: • Unlimited Users/PC
+        service1: • Up to 60 PCs
+        service2: • Up to 120 Users/PC
         service3: • Auto Focus mode
         service4: • Unlimited Whitelist
         service5: • Unlimited Blacklist
+        service6: • Screenshots
         button: Get started
 footer:
     title: Contact Us

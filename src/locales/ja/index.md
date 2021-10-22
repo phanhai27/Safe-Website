@@ -44,29 +44,32 @@ payment:
     free:
         type: 無料
         price: 0
-        service1: • 最大2台のコンピューター
-        service2: • 最大4人/マシン
+        service1: • 最大 2 台のコンピューター
+        service2: • 最大 4 人/マシン
         service3: • フォーカスモードなし
         service4: • 安全なウェブはありません
         service5: • 無制限のダークウェブブロッキング
+        service6: • スクリーンショットなし
         button: すぐ使用
     standard:
         type: 標準
         price: 2
-        service1: • 最大20台のコンピューター
-        service2: • 最大40人/マシン
+        service1: • 最大 20 台のコンピューター
+        service2: • 最大 40 人/マシン
         service3: • フォーカスモードがあります
         service4: • 最大20の安全なWebサイト
         service5: • 無制限のダークウェブブロッキング
+        service6: • スクリーンショットなし
         button: すぐ使用
     premium:
         type: 高級
         price: 6
-        service1: • 無制限の数のコンピューター
-        service2: • 無制限の人数/マシン
+        service1: • 最大 60 台のコンピューター
+        service2: • 最大 120 人/マシン
         service3: • 自動的にフォーカスモードに入る
         service4: • 無制限の数の安全なWebサイト
         service5: • 無制限のダークウェブブロッキング
+        service6: • スクリーンショット
         button: すぐ使用
 footer:
     title: 連絡
