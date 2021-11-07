@@ -51,4 +51,12 @@ avatar: /static/img/peter_avatar.png
 
 ![windows-protect-01](/static/img/safeweb-how-to-install-07-login-default.png)
 
-**感谢您对我们产品的信任！**
+### IV. 将管理员帐户连接到应用程序
+请观看以下视频：
+@[youtube](https://www.youtube.com/watch?v=xb_pDXU7tvo)
+
+**恭喜您安装成功！**
+
+### ✅使用黑名单屏蔽网站
+首先，您需要为您的孩子创建一个用户帐户来替换上面的默认帐户。 然后您创建一个黑名单并将其应用于该用户。 请观看视频以了解如何操作。
+@[youtube](https://www.youtube.com/watch?v=8g7pninXmG0)

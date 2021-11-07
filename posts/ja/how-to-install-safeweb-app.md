@@ -51,4 +51,12 @@ avatar: /static/img/peter_avatar.png
 
 ![windows-protect-01](/static/img/safeweb-how-to-install-07-login-default.png)
 
-**当社の製品を信頼していただきありがとうございます！**
+### IV. 管理者アカウントをアプリケーションに接続します
+以下のビデオをご覧ください：
+@[youtube](https://www.youtube.com/watch?v=xb_pDXU7tvo)
+
+**インストールが成功しました。おめでとうございます。**
+
+### ✅ブラックリストでウェブサイトをブロックする
+まず、上記のデフォルトアカウントを置き換えるために、お子様のユーザーアカウントを作成する必要があります。 次に、ブラックリストを作成して、このユーザーに適用します。 方法については、ビデオをご覧ください。
+@[youtube](https://www.youtube.com/watch?v=8g7pninXmG0)

@@ -51,4 +51,12 @@ Sau khi cài đặt thành công, ứng dụng sẽ mở màn hình đăng nhậ
 
 ![windows-protect-01](/static/img/safeweb-how-to-install-07-login-default.png)
 
-**Cám ơn bạn đã tin dùng sản phẩm của chúng tôi!**
+### IV. Hướng dẫn kết nối tài khoản admin với app
+Vui lòng xem video bên dưới:
+@[youtube](https://www.youtube.com/watch?v=xb_pDXU7tvo)
+
+**Chúc mừng bạn đã cài đặt thành công!**
+
+### ✅Chặn các trang web bằng blacklist
+Đầu tiên, bạn cần tạo tài khoản user cho con để thay thế tài khoản mặc định ở trên. Sau đó, bạn tạo một blacklist (danh sách đen) và áp dụng nó cho tài khoản user này. Mời bạn xem video để biết cách làm.
+@[youtube](https://www.youtube.com/watch?v=8g7pninXmG0)
