@@ -53,10 +53,10 @@ avatar: /static/img/peter_avatar.png
 
 ### IV. 管理者アカウントをアプリケーションに接続します
 以下のビデオをご覧ください：
-@[youtube](https://www.youtube.com/watch?v=xb_pDXU7tvo)
+@[youtube](https://www.youtube.com/watch?v=UROEl_wwmxA)
 
 **インストールが成功しました。おめでとうございます。**
 
 ### ✅ブラックリストでウェブサイトをブロックする
 まず、上記のデフォルトアカウントを置き換えるために、お子様のユーザーアカウントを作成する必要があります。 次に、ブラックリストを作成して、このユーザーに適用します。 方法については、ビデオをご覧ください。
-@[youtube](https://www.youtube.com/watch?v=8g7pninXmG0)
+@[youtube](https://www.youtube.com/watch?v=wxm8yZFjI-4)

@@ -53,10 +53,10 @@ After successful installation, the application will open the login screen. You j
 
 ### IV. CONNECT ADMIN ACCOUNT TO APP
 Please watch the video below:
-@[youtube](https://www.youtube.com/watch?v=xb_pDXU7tvo)
+@[youtube](https://www.youtube.com/watch?v=UROEl_wwmxA)
 
 **Congratulations on your successful installation!**
 
 ### ✅BLOCK WEBSITES WITH BLACKLIST
 First, you need to create a user account for your child to replace the default account above. Then you create a blacklist and apply it to this user. Please watch the video to see how.
-@[youtube](https://www.youtube.com/watch?v=8g7pninXmG0)
+@[youtube](https://www.youtube.com/watch?v=wxm8yZFjI-4)
