@@ -179,21 +179,6 @@ function IndexPage({ language, homeData, externalUrls }) {
         </div>
     </div>
 
-    <div className="jumbotron jumbotron-fluid feature" id="feature-last">
-        <div className="container my-5">
-            <div className="row justify-content-between text-center text-md-left">
-                <div data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" className="col-md-6">
-                    <h2 className="font-weight-bold">{homeData.feature.part3.head}</h2>
-                    <p className="my-4">{homeData.feature.part3.message}<br/>{homeData.feature.part3.detail}</p>
-                    <a href={"/" + language + "/" + homeData.feature.part3.url} className="btn my-4 font-weight-bold atlas-cta cta-blue">{homeData.feature.part3.button}</a>
-                </div>
-                <div data-aos="fade-left" data-aos-duration="1000" data-aos-once="true" className="col-md-6 align-self-center">
-                    <img src="/static/img/feature-2a.png" alt="Take a look inside" className="mx-auto d-block" style={stylingImg2}/>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <div className="container my-5 py-2" id="price-table">
         <h2 className="text-center font-weight-bold d-block mb-3">{homeData.payment.title}</h2>
         <div className="row">

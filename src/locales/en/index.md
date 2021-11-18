@@ -32,12 +32,6 @@ feature:
         detail: After school, your child can use game apps or visit social networking sites. You give permission by turning off whitelist mode or setting automatic timers.
         button: Read More
         url: blog/focus-while-studying
-    part3:
-        head: Control the computer to run commands remotely
-        message: SafeWeb is a cloud platform that allows you to run PowerShell commands on your computer like an IT administrator, but the commands are sent from the web.
-        detail: You can also use your smart phone to control multiple computers performing Robotic Process Automation (RPA) tasks at the same time. The results of running RPA on computers will be continuously updated on the web dashboard.
-        button: Read More
-        url: blog/remote-tagui-rpa
 payment:
     title: Check our pricing
     unit: USER/MO
