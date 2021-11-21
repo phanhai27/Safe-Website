@@ -1,8 +1,8 @@
 ---
 url: download
 picture: /static/img/remote-working-scaled.jpeg
-title: 下载 SafeApp
-heading: 下载 SafeApp
+title: 下载 SafeWeb app
+heading: 下载 SafeWeb app
 message: 该软件可帮助每个人保持专注
 windows:
     version: 版本 1.0

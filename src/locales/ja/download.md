@@ -1,8 +1,8 @@
 ---
 url: download
 picture: /static/img/remote-working-scaled.jpeg
-title: SafeAppをダウンロードする
-heading: SafeAppをダウンロードする
+title: SafeWeb app をダウンロードする
+heading: SafeWeb app をダウンロードする
 message: 誰も仕事集中できるようにソフトウェア
 windows:
     version: バージョン 1.0
