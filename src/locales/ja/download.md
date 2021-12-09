@@ -6,7 +6,7 @@ heading: SafeWeb app をダウンロードする
 message: 誰も仕事集中できるようにソフトウェア
 windows:
     version: バージョン 1.0
-    supports: ウィンドウサポート11/10/8.1/8/7
+    supports: ウィンドウサポート11/10/8.1/8
     filename: SafeApp-v0.1.407.511.msi
 browser:
     message1: サポートされているブラウザ

@@ -6,7 +6,7 @@ heading: Tải xuống SafeWeb app
 message: Phần mềm giúp mọi người làm việc tập trung
 windows:
     version: Phiên bản 1.0
-    supports: Hỗ trợ Windows 11/10 / 8.1 / 8/7
+    supports: Hỗ trợ Windows 11/10/8.1/8
     filename: SafeApp-v0.1.407.511.msi
 browser:
     message1: Hỗ trợ các trình duyệt

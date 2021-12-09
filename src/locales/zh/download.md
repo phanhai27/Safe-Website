@@ -6,7 +6,7 @@ heading: 下载 SafeWeb app
 message: 该软件可帮助每个人保持专注
 windows:
     version: 版本 1.0
-    supports: 支持 Windows 11/10/8.1/8/7
+    supports: 支持 Windows 11/10/8.1/8
     filename: SafeApp-v0.1.407.511.msi
 browser:
     message1: 支持浏览器

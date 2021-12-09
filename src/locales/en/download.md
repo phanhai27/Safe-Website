@@ -6,7 +6,7 @@ heading: Download SafeWeb app
 message: This software helps everyone to stay focused
 windows:
     version: Version 1.0
-    supports: Supports Windows 11/10/8.1/8/7
+    supports: Supports Windows 11/10/8.1/8
     filename: SafeApp-v0.1.407.511.msi
 browser:
     message1: Supports browsers
