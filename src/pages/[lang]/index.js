@@ -83,8 +83,8 @@ function IndexPage({ language, homeData, externalUrls }) {
     <div className="top-lighthouse">
     <header>
         <div className="row justify-content-between">
-            <div className="col-2 logo-img d-flex align-items-center pl-5">
-                <img style={{display: 'block', maxWidth: "50px"}} src="/static/img/logo.png" alt="logo"/>
+            <div className="col-2 logo-img d-flex align-items-center pl-5 pt-3">
+                <img style={{display: 'block', maxWidth: "200px"}} src="/static/img/logo.png" alt="logo"/>
             </div>
             <div className="col-6 text-right menu-main">
             <a href={externalUrls.SignUp} className="btn my-2 font-weight-bold atlas-cta cta-blue menu-item signUp">{homeData.header.button2}</a>
@@ -133,6 +133,7 @@ function IndexPage({ language, homeData, externalUrls }) {
             margin: auto
         }
 
+
 	}
     `}</style>
 
@@ -140,18 +141,24 @@ function IndexPage({ language, homeData, externalUrls }) {
         <h2 className="text-center font-weight-bold my-5">{homeData.topic.head}</h2>
         <div className="row">
             <div data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000" data-aos-once="true" className="col-md-4 text-center">
-                <img src="/static/img/smart-protect-1.png" alt="Anti-spam" className="mx-auto"/>
-                <h4 className="mt-3">{homeData.topic.part1}</h4>
+                <div class="about-img">
+                    <img src="/static/img/smart-protect-1.png" alt="Anti-spam" className="mx-auto"/>
+                </div>
+                <h4>{homeData.topic.part1}</h4>
                 <p>{homeData.topic.message1}</p>
             </div>
             <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true" className="col-md-4 text-center">
-                <img src="/static/img/smart-protect-2.png" alt="Phishing Detect" className="mx-auto"/>
-                <h4 className="mt-3">{homeData.topic.part2}</h4>
+                <div class="about-img">
+                    <img src="/static/img/smart-protect-2.png" alt="Phishing Detect" className="mx-auto"/>
+                </div>
+                <h4>{homeData.topic.part2}</h4>
                 <p>{homeData.topic.message2}</p>
             </div>
             <div data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000" data-aos-once="true" className="col-md-4 text-center">
-                <img src="/static/img/smart-protect-6.png" alt="Smart Scan" className="mx-auto"/>
-                <h4 className="mt-3">{homeData.topic.part3}</h4>
+                <div class="about-img">
+                    <img src="/static/img/smart-protect-6.png" alt="Smart Scan" className="mx-auto"/>
+                </div>
+                <h4>{homeData.topic.part3}</h4>
                 <p>{homeData.topic.message3}</p>
             </div>
         </div>
@@ -189,15 +196,17 @@ function IndexPage({ language, homeData, externalUrls }) {
 
     <div className="container my-5 py-2" id="price-table">
         <h2 className="text-center font-weight-bold d-block mb-3">{homeData.payment.title}</h2>
-        <div class="toggle">
-            <label>{homeData.payment.monthly} </label>
-            <div class="toggle-btn">
-                <input type="checkbox" class="checkbox" id="checkbox" />
-                <label class="sub" id="sub" for="checkbox">
-                <div class="circle"></div>
-                </label>
+        <div class="toggle d-flex justify-content-center">
+            <div class="toggle-main d-flex align-items-center">
+                <div>{homeData.payment.monthly} </div>
+                <div class="toggle-btn ml-3 mr-3 mt-3">
+                    <input type="checkbox" class="switch" id="checkbox" />
+                    <label class="sub" id="sub" for="checkbox">
+                    <div class="circle"></div>
+                    </label>
+                </div>
+                <div> {homeData.payment.yearly}</div>
             </div>
-            <label> {homeData.payment.yearly}</label>
         </div>
         <div className="row">
             <div data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true" className="col-md-4 text-center py-4 mt-5">

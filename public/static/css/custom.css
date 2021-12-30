@@ -165,6 +165,43 @@ button {
     color: #0275d8;
     text-decoration: none;
 }
+.switch {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 80px;
+    height: 38px;
+    background: #192440;
+    border: 1px solid gray;
+    border-radius: 30px;
+    position: relative;
+}
+.switch:checked {
+    background: #192440;
+}
+.switch::before {
+    content: '';
+    display: block;
+    width: 34px;
+    height: 35px;
+    border-radius: 50%;
+    background: #ffffff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .2s;
+}
+.switch:checked::before {
+    left: 44px;
+    transition: all .2s;
+}
+.about-img {
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+}
+.about-img ~ p {
+    margin-bottom: 0;
+}
 
 
 

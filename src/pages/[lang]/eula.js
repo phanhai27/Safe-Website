@@ -31,9 +31,9 @@ function EULAPage({ language, pageData, pageContent }) {
             <div className="top-lighthouse">
             <header>
                 <div className="row justify-content-between">
-                    <div className="col-2 logo-img d-flex align-items-center pl-5">
+                    <div className="col-2 logo-img d-flex align-items-center pl-5 pt-3">
                         <a href={"/"+language+"/"}>
-                            <img style={{display: 'block', maxWidth: "50px"}} src="/static/img/logo.png" alt="logo"/>
+                            <img style={{display: 'block', maxWidth: "200px"}} src="/static/img/logo.png" alt="logo"/>
                         </a>
                         
                     </div>

@@ -37,7 +37,7 @@ function PrivacyPolicyPage({ language, pageData, pageContent }) {
                         </a>
                         
                     </div>
-                    <div className="col-6 text-right menu-main">
+                    <div className="col-6 text-right menu-main mt-3">
                     <a href={ENV.SIGN_UP_URL} className="btn my-2 font-weight-bold atlas-cta cta-blue menu-item signUp">Sign up</a>
                         <a href={ENV.SIGN_IN_URL} className="btn my-2 font-weight-bold atlas-cta cta-white menu-item">Sign in</a>
                         <a className="btn font-weight-bold language-link menu-item"><LanguageMenu/></a>
