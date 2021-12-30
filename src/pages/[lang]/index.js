@@ -25,8 +25,16 @@ function IndexPage({ language, homeData, externalUrls }) {
         contactScript.type = 'text/javascript';
         contactScript.src = "/static/js/contact.js";
     
-        document.head.appendChild(aoScript);
+        document.head.appendChild(contactScript);
         contactScript.onload = () => {
+        };
+
+        var priceScript = document.createElement('script');
+        priceScript.type = 'text/javascript';
+        priceScript.src = "/static/js/price.js";
+    
+        document.head.appendChild(priceScript);
+        priceScript.onload = () => {
         };
     }, [])
 
@@ -181,6 +189,16 @@ function IndexPage({ language, homeData, externalUrls }) {
 
     <div className="container my-5 py-2" id="price-table">
         <h2 className="text-center font-weight-bold d-block mb-3">{homeData.payment.title}</h2>
+        <div class="toggle">
+            <label>{homeData.payment.monthly} </label>
+            <div class="toggle-btn">
+                <input type="checkbox" class="checkbox" id="checkbox" />
+                <label class="sub" id="sub" for="checkbox">
+                <div class="circle"></div>
+                </label>
+            </div>
+            <label> {homeData.payment.yearly}</label>
+        </div>
         <div className="row">
             <div data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true" className="col-md-4 text-center py-4 mt-5">
                 <h4 className="my-4">{homeData.payment.free.type}</h4>
@@ -189,7 +207,6 @@ function IndexPage({ language, homeData, externalUrls }) {
                     <li>{homeData.payment.free.service1}</li>
                     <li>{homeData.payment.free.service2}</li>
                     <li>{homeData.payment.free.service3}</li>
-                    <li>{homeData.payment.free.service4}</li>
                     <li>{homeData.payment.free.service5}</li>
                     <li>{homeData.payment.free.service6}</li>
                 </ul>
@@ -197,12 +214,11 @@ function IndexPage({ language, homeData, externalUrls }) {
             </div>
             <div data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" className="col-md-4 text-center py-4 mt-5 rounded" id="price-table__premium">
             <h4 className="my-4">{homeData.payment.standard.type}</h4>
-                <p className="font-weight-bold">$ <span className="display-2 font-weight-bold">{homeData.payment.standard.price}</span> / {homeData.payment.unit}.</p>
+                <p className="font-weight-bold">$ <span id="standard-price" className="display-2 font-weight-bold">{homeData.payment.standard.price}</span> / {homeData.payment.unit}.</p>
                 <ul className="list-unstyled">
                     <li>{homeData.payment.standard.service1}</li>
                     <li>{homeData.payment.standard.service2}</li>
                     <li>{homeData.payment.standard.service3}</li>
-                    <li>{homeData.payment.standard.service4}</li>
                     <li>{homeData.payment.standard.service5}</li>
                     <li>{homeData.payment.standard.service6}</li>
                 </ul>
@@ -210,12 +226,11 @@ function IndexPage({ language, homeData, externalUrls }) {
             </div>
             <div data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true" className="col-md-4 text-center py-4 mt-5">
             <h4 className="my-4">{homeData.payment.premium.type}</h4>
-                <p className="font-weight-bold">$ <span className="display-2 font-weight-bold">{homeData.payment.premium.price}</span> / {homeData.payment.unit}.</p>
+                <p className="font-weight-bold">$ <span id="preminum-price" className="display-2 font-weight-bold">{homeData.payment.premium.price}</span> / {homeData.payment.unit}.</p>
                 <ul className="list-unstyled">
                     <li>{homeData.payment.premium.service1}</li>
                     <li>{homeData.payment.premium.service2}</li>
                     <li>{homeData.payment.premium.service3}</li>
-                    <li>{homeData.payment.premium.service4}</li>
                     <li>{homeData.payment.premium.service5}</li>
                     <li>{homeData.payment.premium.service6}</li>
                 </ul>

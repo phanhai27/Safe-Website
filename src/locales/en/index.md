@@ -34,7 +34,9 @@ feature:
         url: blog/focus-while-studying
 payment:
     title: Check our pricing
-    unit: USER/MO
+    unit: USER
+    yearly: Annually
+    monthly: Monthly
     free:
         type: FREE
         price: 0

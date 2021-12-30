@@ -40,7 +40,9 @@ feature:
         url: blog/remote-tagui-rpa
 payment:
     title: 価格を確認してください
-    unit: 人/月
+    unit: 人
+    yearly: 毎年
+    monthly: 毎月
     free:
         type: 無料
         price: 0

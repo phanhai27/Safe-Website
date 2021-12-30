@@ -40,7 +40,9 @@ feature:
         url: blog/remote-tagui-rpa
 payment:
     title: Bảng giá
-    unit: NGƯỜI/TH
+    unit: NGƯỜI
+    yearly: Theo Năm
+    monthly: Theo Tháng
     free:
         type: MIỄN PHÍ
         price: 0
