@@ -168,8 +168,8 @@ button {
 .switch {
     -webkit-appearance: none;
     appearance: none;
-    width: 80px;
-    height: 38px;
+    width: 50px;
+    height: 24px;
     background: #192440;
     border: 1px solid gray;
     border-radius: 30px;
@@ -181,8 +181,8 @@ button {
 .switch::before {
     content: '';
     display: block;
-    width: 34px;
-    height: 35px;
+    width: 22px;
+    height: 23px;
     border-radius: 50%;
     background: #ffffff;
     position: absolute;
@@ -191,7 +191,7 @@ button {
     transition: all .2s;
 }
 .switch:checked::before {
-    left: 44px;
+    left: 26px;
     transition: all .2s;
 }
 .about-img {
