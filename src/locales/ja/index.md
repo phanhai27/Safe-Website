@@ -47,30 +47,30 @@ payment:
         type: 無料
         price: 0
         service1: • 最大 2 台のコンピューター
-        service2: • 最大 4 人/マシン
+        service2: • 最大 2 人の子供
         service3: • フォーカスモードなし
-        service4: • 安全なウェブはありません
-        service5: • 無制限のダークウェブブロッキング
+        service4: • ブロックゲームアプリはありません
+        service5: • 無制限のブラックリスト
         service6: • スクリーンショットなし
         button: すぐ使用
     standard:
         type: 標準
         price: 2
-        service1: • 最大 20 台のコンピューター
-        service2: • 最大 40 人/マシン
-        service3: • フォーカスモードがあります
-        service4: • 最大20の安全なWebサイト
-        service5: • 無制限のダークウェブブロッキング
+        service1: • 最大 4 台のコンピューター
+        service2: • 最大 4 人の子供
+        service3: • フォーカスモード
+        service4: • ゲームアプリをブロックする
+        service5: • 無制限のブラックリスト
         service6: • スクリーンショットなし
         button: すぐ使用
     premium:
         type: 高級
         price: 6
-        service1: • 最大 60 台のコンピューター
-        service2: • 最大 120 人/マシン
-        service3: • 自動的にフォーカスモードに入る
-        service4: • 無制限の数の安全なWebサイト
-        service5: • 無制限のダークウェブブロッキング
+        service1: • 最大 6 台のコンピューター
+        service2: • 最大 6 人の子供
+        service3: • フォーカスモードとタイマー
+        service4: • ゲームアプリとタイマーをブロックする
+        service5: • 無制限のブラックリスト
         service6: • スクリーンショット
         button: すぐ使用
 footer:

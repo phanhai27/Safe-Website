@@ -47,31 +47,31 @@ payment:
         type: MIỄN PHÍ
         price: 0
         service1: • Tối đa 2 máy vi tính
-        service2: • Tối đa 4 người/máy
+        service2: • Tối đa 2 cháu bé
         service3: • Không chế độ tập trung
-        service4: • Không web an toàn
+        service4: • Không chặn app game
         service5: • Chặn web đen không giới hạn
         service6: • Không chụp ảnh màn hình
         button: Dùng ngay
     standard:
         type: TIÊU CHUẨN
         price: 2
-        service1: • Tối đa 20 máy vi tính
-        service2: • Tối đa 40 người/máy
+        service1: • Tối đa 4 máy vi tính
+        service2: • Tối đa 4 cháu bé
         service3: • Có chế độ tập trung
-        service4: • Tối đa 20 web an toàn
+        service4: • Có chặn app game
         service5: • Chặn web đen không giới hạn
         service6: • Không chụp ảnh màn hình
         button: Dùng ngay
     premium:
         type: CAO CẤP
         price: 6
-        service1: • Tối đa 60 máy vi tính
-        service2: • Tối đa 120 người/máy
-        service3: • Tự động vào chế độ tập trung
-        service4: • Không giới hạn số web an toàn
+        service1: • Tối đa 6 máy vi tính
+        service2: • Tối đa 6 cháu bé
+        service3: • Chế độ tập trung có hẹn giờ
+        service4: • Chặn app game có hẹn giờ
         service5: • Chặn web đen không giới hạn
-        service6: • Chụp ảnh màn hình
+        service6: • Có chụp ảnh màn hình
         button: Dùng ngay
 footer:
     title: Liên hệ

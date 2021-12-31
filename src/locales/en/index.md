@@ -41,29 +41,29 @@ payment:
         type: FREE
         price: 0
         service1: • Up to 2 PCs
-        service2: • Up to 4 Users/PC
+        service2: • Up to 2 Kids
         service3: • No Focus mode
-        service4: • No Whitelist
+        service4: • No block game apps
         service5: • Unlimited Blacklist
         service6: • No Screenshots
         button: Get started
     standard:
         type: STANDARD
         price: 2
-        service1: • Up to 20 PCs
-        service2: • Up to 40 Users/PC
+        service1: • Up to 4 PCs
+        service2: • Up to 4 Kids
         service3: • Focus mode
-        service4: • Up to 20 pages in Whitelist
+        service4: • Block game apps
         service5: • Unlimited Blacklist
         service6: • No Screenshots
         button: Get started
     premium:
         type: PREMIUM
         price: 6
-        service1: • Up to 60 PCs
-        service2: • Up to 120 Users/PC
-        service3: • Auto Focus mode
-        service4: • Unlimited Whitelist
+        service1: • Up to 6 PCs
+        service2: • Up to 6 Kids
+        service3: • Focus mode and timer
+        service4: • Block game apps and timer
         service5: • Unlimited Blacklist
         service6: • Screenshots
         button: Get started
