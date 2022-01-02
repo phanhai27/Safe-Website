@@ -141,21 +141,21 @@ function IndexPage({ language, homeData, externalUrls }) {
         <h2 className="text-center font-weight-bold my-5">{homeData.topic.head}</h2>
         <div className="row">
             <div data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000" data-aos-once="true" className="col-md-4 text-center">
-                <div class="about-img">
+                <div className="about-img">
                     <img src="/static/img/smart-protect-1.png" alt="Anti-spam" className="mx-auto"/>
                 </div>
                 <h4>{homeData.topic.part1}</h4>
                 <p>{homeData.topic.message1}</p>
             </div>
             <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true" className="col-md-4 text-center">
-                <div class="about-img">
+                <div className="about-img">
                     <img src="/static/img/smart-protect-2.png" alt="Phishing Detect" className="mx-auto"/>
                 </div>
                 <h4>{homeData.topic.part2}</h4>
                 <p>{homeData.topic.message2}</p>
             </div>
             <div data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000" data-aos-once="true" className="col-md-4 text-center">
-                <div class="about-img">
+                <div className="about-img">
                     <img src="/static/img/smart-protect-6.png" alt="Smart Scan" className="mx-auto"/>
                 </div>
                 <h4>{homeData.topic.part3}</h4>
@@ -196,13 +196,13 @@ function IndexPage({ language, homeData, externalUrls }) {
 
     <div className="container my-5 py-2" id="price-table">
         <h2 className="text-center font-weight-bold d-block mb-3">{homeData.payment.title}</h2>
-        <div class="toggle d-flex justify-content-center">
-            <div class="toggle-main d-flex align-items-center">
+        <div className="toggle d-flex justify-content-center">
+            <div className="toggle-main d-flex align-items-center">
                 <div>{homeData.payment.monthly} </div>
-                <div class="toggle-btn ml-3 mr-3 mt-3">
-                    <input type="checkbox" class="switch" id="checkbox" />
-                    <label class="sub" id="sub" for="checkbox">
-                    <div class="circle"></div>
+                <div className="toggle-btn ml-3 mr-3 mt-3">
+                    <input type="checkbox" className="switch" id="checkbox" />
+                    <label className="sub" id="sub" for="checkbox">
+                    <div className="circle"></div>
                     </label>
                 </div>
                 <div> {homeData.payment.yearly}</div>

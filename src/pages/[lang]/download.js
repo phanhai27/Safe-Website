@@ -76,7 +76,7 @@ function DownloadPage({ language, downloadData, htmlMeta }) {
                 </div>
             </div>
             <div className="row mt-4">
-                <div style={{ width: "100%", maxWidth: "350px", margin: "auto", }}><a className="d-block text-center" href={"/" + language}><img src="/static/img/logo.png" alt="logo" style={stylingLogo} /></a></div>
+                <div style={{ width: "100%", maxWidth: "350px", margin: "auto", }}><a className="d-block text-center" href={"/" + language}><img src="/static/img/icon.png" alt="logo" style={stylingLogo} /></a></div>
 
                 <div className="col-md-12 mt-3">
                     <div className="wow fadeInUp animated" data-wow-duration="2s" data-wow-delay="0.2s" style={stylingUp}>
