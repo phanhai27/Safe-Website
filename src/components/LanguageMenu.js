@@ -19,8 +19,8 @@ const LanguageMenu = ({slug}) => {
 				const path = pathname.replace(/\[lang\]/i, lang);
 				const realPath = path.replace(/\[slug\]/i, slug);
 				return (
-					<Link  key={index} prefetch={false} href={pathname} as={realPath}>
-						<a className={`${classes.concat(current).join(' ').trim()} language-link d-block`}>{i18next.t(lang)}</a>
+					<Link key={index} prefetch={false} href={pathname} as={realPath}>
+						<div className={`${classes.concat(current).join(' ').trim()} language-link d-block`}>{i18next.t(lang)}</div>
 					</Link>
 				);
 			})}

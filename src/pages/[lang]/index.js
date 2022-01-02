@@ -4,7 +4,9 @@ import { getAllLanguageSlugs, getLanguage } from '../../lib/lang';
 import LanguageMenu from '../../components/LanguageMenu';
 import { gaRunScript } from '../../lib/googleAnalytics'
 import { reCaptchaScript } from '../../lib/googleRecaptcha'
+import JQueryLib from '../../components/jquery-lib';
 import ENV from '../../../env.json'
+import $ from 'jquery';
 
 function IndexPage({ language, homeData, externalUrls }) {
 
@@ -21,14 +23,6 @@ function IndexPage({ language, homeData, externalUrls }) {
             AOS.init({});
         };
 
-        var contactScript = document.createElement('script');
-        contactScript.type = 'text/javascript';
-        contactScript.src = "/static/js/contact.js";
-    
-        document.head.appendChild(contactScript);
-        contactScript.onload = () => {
-        };
-
         var priceScript = document.createElement('script');
         priceScript.type = 'text/javascript';
         priceScript.src = "/static/js/price.js";
@@ -36,6 +30,39 @@ function IndexPage({ language, homeData, externalUrls }) {
         document.head.appendChild(priceScript);
         priceScript.onload = () => {
         };
+
+        $("#gocontact").click(function(e){
+            e.preventDefault();
+            
+            grecaptcha.ready(function() {
+                grecaptcha.execute('6LcUv5MaAAAAAFdSHhVVXoQTYoHRr2SKSSMqHU0F', {action: 'contact'}).then(function(token) {
+                    var formData = {
+                        "fullname": $("#name").val(),
+                        "email": $("#email").val(),
+                        "message": $("#message").val(),
+                        "token": token,
+                    };
+                    $.ajax({
+                        type: "POST",
+                        url: "/api/v1/website/contact/submit",
+                        data: JSON.stringify(formData),
+                        contentType: "application/json; charset=utf-8",
+                        dataType: "json",
+                    })
+                    .done(function (data) {
+                        if (data.error == 0) {
+                            $("form").html('<div class="alert alert-success">' + data.message + "</div>");
+                        } else {
+                            $("form").html('<div class="alert alert-danger">' + data.message + "</div>");
+                        }
+                    })
+                    .fail(function (data) {
+                        $("form").html('<div class="alert alert-danger">Could not reach server, please try again later.</div>');
+                    });
+                });
+            });
+        });
+        
     }, [])
 
     const stylingImg1 = {
@@ -78,6 +105,7 @@ function IndexPage({ language, homeData, externalUrls }) {
             <link rel="stylesheet" href="/static/css/bootstrap.min.css"/>
             <link rel="stylesheet" href="/static/font-awesome-4.7.0/css/font-awesome.min.css"/>
             <link rel="stylesheet" href="/static/css/aos.css"></link>
+            <JQueryLib />
         </Head>
 
     <div className="top-lighthouse">
@@ -87,7 +115,7 @@ function IndexPage({ language, homeData, externalUrls }) {
                 <img style={{display: 'block', maxWidth: "200px"}} src="/static/img/logo.png" alt="logo"/>
             </div>
             <div className="col-6 text-right menu-main">
-            <a href={externalUrls.SignUp} className="btn my-2 font-weight-bold atlas-cta cta-blue menu-item signUp">{homeData.header.button2}</a>
+                <a href={externalUrls.SignUp} className="btn my-2 font-weight-bold atlas-cta cta-blue menu-item signUp">{homeData.header.button2}</a>
                 <a href={externalUrls.SignIn} className="btn my-2 font-weight-bold atlas-cta cta-white menu-item">{homeData.header.button1}</a>
                 <a className="btn font-weight-bold language-link menu-item"><LanguageMenu/></a>
             </div>
@@ -201,7 +229,7 @@ function IndexPage({ language, homeData, externalUrls }) {
                 <div>{homeData.payment.monthly} </div>
                 <div className="toggle-btn ml-3 mr-3 mt-3">
                     <input type="checkbox" className="switch" id="checkbox" />
-                    <label className="sub" id="sub" for="checkbox">
+                    <label className="sub" id="sub" htmlFor="checkbox">
                     <div className="circle"></div>
                     </label>
                 </div>
