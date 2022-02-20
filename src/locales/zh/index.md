@@ -45,7 +45,7 @@ payment:
     monthly: 每月
     free:
         type: 免费
-        price: 0
+        price: $0
         service1: • 最多 2 台电脑
         service2: • 最多 2 个孩子
         service3: • 没有对焦模式
@@ -55,7 +55,7 @@ payment:
         button: 立即使用
     standard:
         type: 标准
-        price: 2
+        price: $2
         service1: • 最多 4 台电脑
         service2: • 最多 4 个孩子
         service3: • 对焦模式
@@ -65,7 +65,7 @@ payment:
         button: 立即使用
     premium:
         type: 高级
-        price: 6
+        price: $6
         service1: • 最多 6 台电脑
         service2: • 最多 6 个孩子
         service3: • 对焦模式和定时器

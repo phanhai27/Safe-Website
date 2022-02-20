@@ -45,7 +45,7 @@ payment:
     monthly: 毎月
     free:
         type: 無料
-        price: 0
+        price: $0
         service1: • 最大 2 台のコンピューター
         service2: • 最大 2 人の子供
         service3: • フォーカスモードなし
@@ -55,7 +55,7 @@ payment:
         button: すぐ使用
     standard:
         type: 標準
-        price: 2
+        price: $2
         service1: • 最大 4 台のコンピューター
         service2: • 最大 4 人の子供
         service3: • フォーカスモード
@@ -65,7 +65,7 @@ payment:
         button: すぐ使用
     premium:
         type: 高級
-        price: 6
+        price: $6
         service1: • 最大 6 台のコンピューター
         service2: • 最大 6 人の子供
         service3: • フォーカスモードとタイマー

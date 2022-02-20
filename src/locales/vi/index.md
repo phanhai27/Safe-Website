@@ -45,7 +45,7 @@ payment:
     monthly: Theo Tháng
     free:
         type: MIỄN PHÍ
-        price: 0
+        price: 0đ
         service1: • Tối đa 2 máy vi tính
         service2: • Tối đa 2 cháu bé
         service3: • Không chế độ tập trung
@@ -55,7 +55,7 @@ payment:
         button: Dùng ngay
     standard:
         type: TIÊU CHUẨN
-        price: 2
+        price: 44.000đ
         service1: • Tối đa 4 máy vi tính
         service2: • Tối đa 4 cháu bé
         service3: • Có chế độ tập trung
@@ -65,7 +65,7 @@ payment:
         button: Dùng ngay
     premium:
         type: CAO CẤP
-        price: 6
+        price: 132.000đ
         service1: • Tối đa 6 máy vi tính
         service2: • Tối đa 6 cháu bé
         service3: • Chế độ tập trung có hẹn giờ

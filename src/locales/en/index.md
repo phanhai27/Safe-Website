@@ -35,11 +35,11 @@ feature:
 payment:
     title: Check our pricing
     unit: USER
-    yearly: Annually
+    yearly: Yearly
     monthly: Monthly
     free:
         type: FREE
-        price: 0
+        price: $0
         service1: • Up to 2 PCs
         service2: • Up to 2 Kids
         service3: • No Focus mode
@@ -49,7 +49,7 @@ payment:
         button: Get started
     standard:
         type: STANDARD
-        price: 2
+        price: $2
         service1: • Up to 4 PCs
         service2: • Up to 4 Kids
         service3: • Focus mode
@@ -59,7 +59,7 @@ payment:
         button: Get started
     premium:
         type: PREMIUM
-        price: 6
+        price: $6
         service1: • Up to 6 PCs
         service2: • Up to 6 Kids
         service3: • Focus mode and timer

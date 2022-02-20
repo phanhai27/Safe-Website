@@ -239,7 +239,7 @@ function IndexPage({ language, homeData, externalUrls }) {
         <div className="row">
             <div data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true" className="col-md-4 text-center py-4 mt-5">
                 <h4 className="my-4">{homeData.payment.free.type}</h4>
-                <p className="font-weight-bold">$ <span className="display-2 font-weight-bold">{homeData.payment.free.price}</span></p>
+                <p className="font-weight-bold"><span className="display-4 font-weight-bold">{homeData.payment.free.price}</span></p>
                 <ul className="list-unstyled">
                     <li>{homeData.payment.free.service1}</li>
                     <li>{homeData.payment.free.service2}</li>
@@ -252,7 +252,7 @@ function IndexPage({ language, homeData, externalUrls }) {
             </div>
             <div data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" className="col-md-4 text-center py-4 mt-5 rounded" id="price-table__premium">
             <h4 className="my-4">{homeData.payment.standard.type}</h4>
-                <p className="font-weight-bold">$ <span id="standard-price" className="display-2 font-weight-bold">{homeData.payment.standard.price}</span></p>
+                <p className="font-weight-bold"><span id="standard-price" className="display-4 font-weight-bold">{homeData.payment.standard.price}</span></p>
                 <ul className="list-unstyled">
                     <li>{homeData.payment.standard.service1}</li>
                     <li>{homeData.payment.standard.service2}</li>
@@ -265,7 +265,7 @@ function IndexPage({ language, homeData, externalUrls }) {
             </div>
             <div data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true" className="col-md-4 text-center py-4 mt-5">
             <h4 className="my-4">{homeData.payment.premium.type}</h4>
-                <p className="font-weight-bold">$ <span id="preminum-price" className="display-2 font-weight-bold">{homeData.payment.premium.price}</span></p>
+                <p className="font-weight-bold"><span id="preminum-price" className="display-4 font-weight-bold">{homeData.payment.premium.price}</span></p>
                 <ul className="list-unstyled">
                     <li>{homeData.payment.premium.service1}</li>
                     <li>{homeData.payment.premium.service2}</li>
