@@ -223,7 +223,7 @@ function IndexPage({ language, homeData, externalUrls }) {
     </div>
 
     <div className="container my-5 py-2" id="price-table">
-        <h2 className="text-center font-weight-bold d-block mb-3">{homeData.payment.title}</h2>
+        <h2 className="text-center font-weight-bold d-block mb-3"><a href="#price-table">{homeData.payment.title}</a></h2>
         <div className="toggle d-flex justify-content-center">
             <div className="toggle-main d-flex align-items-center">
                 <div>{homeData.payment.monthly} </div>
