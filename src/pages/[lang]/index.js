@@ -226,14 +226,14 @@ function IndexPage({ language, homeData, externalUrls }) {
         <h2 className="text-center font-weight-bold d-block mb-3"><a href="#price-table">{homeData.payment.title}</a></h2>
         <div className="toggle d-flex justify-content-center">
             <div className="toggle-main d-flex align-items-center">
-                <div><p id="monthly">{homeData.payment.monthly}</p> </div>
+                <div><span id="monthly">{homeData.payment.monthly}</span> </div>
                 <div className="toggle-btn ml-3 mr-3 mt-3">
                     <input type="checkbox" className="switch" id="checkbox" />
                     <label className="sub" id="sub" htmlFor="checkbox">
                     <div className="circle"></div>
                     </label>
                 </div>
-                <div> <p id="yearly">{homeData.payment.yearly}</p></div>
+                <div> <span id="yearly">{homeData.payment.yearly}</span></div>
             </div>
         </div>
         <div className="row">
