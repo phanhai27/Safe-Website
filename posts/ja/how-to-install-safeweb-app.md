@@ -46,12 +46,7 @@ avatar: /static/img/peter_avatar.png
 
 ![windows-protect-01](/static/img/safeweb-how-to-install-06.png)
 
-### III。 デフォルトのアカウント
-インストールが正常に完了すると、アプリケーションはログイン画面を開きます。 下の2つの白いボックスに** safeweb.app **と入力してから、Enterと入力するだけです。 このアカウントはウェブサイトで変更できます **[admin.safeweb.app](https://admin.safeweb.app)**.
-
-![windows-protect-01](/static/img/safeweb-how-to-install-07-login-default.png)
-
-### IV. 管理者アカウントをアプリケーションに接続します
+### III。管理者アカウントをアプリケーションに接続します
 以下のビデオをご覧ください：
 @[youtube](https://www.youtube.com/watch?v=UROEl_wwmxA)
 

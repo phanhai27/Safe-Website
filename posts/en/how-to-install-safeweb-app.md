@@ -46,12 +46,7 @@ avatar: /static/img/peter_avatar.png
 
 ![windows-protect-01](/static/img/safeweb-how-to-install-06.png)
 
-### III. Default account
-After successful installation, the application will open the login screen. You just need to type **safeweb.app** in the 2 white boxes below and then type Enter. You can change this account on the website **[admin.safeweb.app](https://admin.safeweb.app)**.
-
-![windows-protect-01](/static/img/safeweb-how-to-install-07-login-default.png)
-
-### IV. CONNECT ADMIN ACCOUNT TO APP
+### III. CONNECT ADMIN ACCOUNT TO APP
 Please watch the video below:
 @[youtube](https://www.youtube.com/watch?v=UROEl_wwmxA)
 

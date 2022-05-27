@@ -13,8 +13,8 @@ checkbox.addEventListener("click", () => {
       standard.textContent = "$20";
       preminum.textContent = "$66";
     } else {
-      standard.textContent = "440.000đ";
-      preminum.textContent = "1.452.000đ";
+      standard.textContent = "450.000đ";
+      preminum.textContent = "1.485.000đ";
     }
     frPeriod.textContent = yearlyPeriod.textContent;
     stPeriod.textContent = yearlyPeriod.textContent;
@@ -25,8 +25,8 @@ checkbox.addEventListener("click", () => {
       standard.textContent = "$2";
       preminum.textContent = "$6";
     } else {
-      standard.textContent = "44.000đ";
-      preminum.textContent = "132.000đ";
+      standard.textContent = "45.000đ";
+      preminum.textContent = "135.000đ";
     }
     frPeriod.textContent = monthlyPeriod.textContent;
     stPeriod.textContent = monthlyPeriod.textContent;

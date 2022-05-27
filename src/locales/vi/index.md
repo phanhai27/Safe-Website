@@ -55,7 +55,7 @@ payment:
         button: Dùng ngay
     standard:
         type: TIÊU CHUẨN
-        price: 44.000đ
+        price: 45.000đ
         service1: • Tối đa 4 máy vi tính
         service2: • Tối đa 4 cháu bé
         service3: • Có chế độ tập trung
@@ -65,7 +65,7 @@ payment:
         button: Dùng ngay
     premium:
         type: CAO CẤP
-        price: 132.000đ
+        price: 135.000đ
         service1: • Tối đa 6 máy vi tính
         service2: • Tối đa 6 cháu bé
         service3: • Chế độ tập trung có hẹn giờ
