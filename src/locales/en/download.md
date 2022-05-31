@@ -10,7 +10,7 @@ windows:
     filename: SafeApp-v0.1.407.511.msi
 browser:
     message1: Supports browsers
-    message2: Vivaldi, Brave, Cốc Cốc
+    message2: Vivaldi, Brave
 firefox:
     version: Firefox
     url: https://addons.mozilla.org/en-US/firefox/addon/safeweb-app

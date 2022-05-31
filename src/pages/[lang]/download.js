@@ -97,7 +97,7 @@ function DownloadPage({ language, downloadData, htmlMeta }) {
                         </p>
                     </div>
                     <div className="buttons">
-                        <a id="help" href={ENV.BASE_URL + "/" + language + downloadData.instruction.url} className="btn btn-outline-warning" data-wow-duration="2s" data-wow-delay="0.2s" style={stylingLeft}><i class="fa fa-question-circle fa-2x"></i> {downloadData.instruction.message1}</a>
+                        <a id="help" href={ENV.BASE_URL + "/" + language + downloadData.instruction.url} className="btn btn-outline-warning" data-wow-duration="2s" data-wow-delay="0.2s" style={stylingLeft}><i className="fa fa-question-circle fa-2x"></i> {downloadData.instruction.message1}</a>
                     </div>
                 </div>
             </div>
