@@ -48,7 +48,7 @@ avatar: /static/img/peter_avatar.png
 
 ### III. Hướng dẫn kết nối tài khoản admin với app
 Vui lòng xem video bên dưới:
-@[youtube](https://www.youtube.com/watch?v=xb_pDXU7tvo)
+@[youtube](https://www.youtube.com/watch?v=bs2W8qRcxto)
 
 **Chúc mừng bạn đã cài đặt thành công!**
 
