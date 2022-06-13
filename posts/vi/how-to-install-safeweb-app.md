@@ -54,4 +54,4 @@ Vui lòng xem video bên dưới:
 
 ### ✅Chặn các trang web bằng blacklist
 Đầu tiên, bạn cần tạo tài khoản user cho con để thay thế tài khoản mặc định ở trên. Sau đó, bạn tạo một blacklist (danh sách đen) và áp dụng nó cho tài khoản user này. Mời bạn xem video để biết cách làm.
-@[youtube](https://www.youtube.com/watch?v=8g7pninXmG0)
+@[youtube](https://www.youtube.com/watch?v=_8h5LsvREpM)
