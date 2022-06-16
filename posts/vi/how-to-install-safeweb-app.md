@@ -46,17 +46,12 @@ avatar: /static/img/peter_avatar.png
 
 ![windows-protect-01](/static/img/safeweb-how-to-install-06.png)
 
-### III. Tài khoản mặc định
-Sau khi cài đặt thành công, ứng dụng sẽ mở màn hình đăng nhập. Bạn chỉ cần gõ **safeweb.app** vào 2 ô trắng bên dưới rồi gõ phím Enter (*chú ý: bỏ chế độ gõ tiếng Việt có dấu*). Bạn có thể thay đổi tài khoản này trên trang web **[admin.safeweb.app](https://admin.safeweb.app)**.
-
-![windows-protect-01](/static/img/safeweb-how-to-install-07-login-default.png)
-
-### IV. Hướng dẫn kết nối tài khoản admin với app
+### III. Hướng dẫn kết nối tài khoản admin với app
 Vui lòng xem video bên dưới:
-@[youtube](https://www.youtube.com/watch?v=xb_pDXU7tvo)
+@[youtube](https://www.youtube.com/watch?v=bs2W8qRcxto)
 
 **Chúc mừng bạn đã cài đặt thành công!**
 
 ### ✅Chặn các trang web bằng blacklist
 Đầu tiên, bạn cần tạo tài khoản user cho con để thay thế tài khoản mặc định ở trên. Sau đó, bạn tạo một blacklist (danh sách đen) và áp dụng nó cho tài khoản user này. Mời bạn xem video để biết cách làm.
-@[youtube](https://www.youtube.com/watch?v=8g7pninXmG0)
+@[youtube](https://www.youtube.com/watch?v=_8h5LsvREpM)

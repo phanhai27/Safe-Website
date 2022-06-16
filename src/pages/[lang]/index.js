@@ -226,20 +226,21 @@ function IndexPage({ language, homeData, externalUrls }) {
         <h2 className="text-center font-weight-bold d-block mb-3"><a href="#price-table">{homeData.payment.title}</a></h2>
         <div className="toggle d-flex justify-content-center">
             <div className="toggle-main d-flex align-items-center">
-                <div>{homeData.payment.monthly} </div>
+                <div><span id="monthly">{homeData.payment.monthly}</span> </div>
                 <div className="toggle-btn ml-3 mr-3 mt-3">
                     <input type="checkbox" className="switch" id="checkbox" />
                     <label className="sub" id="sub" htmlFor="checkbox">
                     <div className="circle"></div>
                     </label>
                 </div>
-                <div> {homeData.payment.yearly}</div>
+                <div> <span id="yearly">{homeData.payment.yearly}</span></div>
             </div>
         </div>
         <div className="row">
             <div data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true" className="col-md-4 text-center py-4 mt-5">
                 <h4 className="my-4">{homeData.payment.free.type}</h4>
                 <p className="font-weight-bold"><span className="display-4 font-weight-bold">{homeData.payment.free.price}</span></p>
+                <p className='font-weight-bold'>(<span id='free-period'>{homeData.payment.monthly}</span>)</p>
                 <ul className="list-unstyled">
                     <li>{homeData.payment.free.service1}</li>
                     <li>{homeData.payment.free.service2}</li>
@@ -253,6 +254,7 @@ function IndexPage({ language, homeData, externalUrls }) {
             <div data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" className="col-md-4 text-center py-4 mt-5 rounded" id="price-table__premium">
             <h4 className="my-4">{homeData.payment.standard.type}</h4>
                 <p className="font-weight-bold"><span id="standard-price" className="display-4 font-weight-bold">{homeData.payment.standard.price}</span></p>
+                <p className='font-weight-bold'>(<span id='standard-period'>{homeData.payment.monthly}</span>)</p>
                 <ul className="list-unstyled">
                     <li>{homeData.payment.standard.service1}</li>
                     <li>{homeData.payment.standard.service2}</li>
@@ -266,6 +268,7 @@ function IndexPage({ language, homeData, externalUrls }) {
             <div data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true" className="col-md-4 text-center py-4 mt-5">
             <h4 className="my-4">{homeData.payment.premium.type}</h4>
                 <p className="font-weight-bold"><span id="preminum-price" className="display-4 font-weight-bold">{homeData.payment.premium.price}</span></p>
+                <p className='font-weight-bold'>(<span id='preminum-period'>{homeData.payment.monthly}</span>)</p>
                 <ul className="list-unstyled">
                     <li>{homeData.payment.premium.service1}</li>
                     <li>{homeData.payment.premium.service2}</li>

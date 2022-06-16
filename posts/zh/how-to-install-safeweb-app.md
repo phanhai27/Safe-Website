@@ -46,12 +46,7 @@ avatar: /static/img/peter_avatar.png
 
 ![windows-protect-01](/static/img/safeweb-how-to-install-06.png)
 
-### III. 默认账号
-安装完成后，应用程序会打开登入屏幕。 你只要在下面的两个白框中输入safeweb.app，然后按Enter。你可以在 **[admin.safeweb.app](https://admin.safeweb.app)** 网站更改此账户。
-
-![windows-protect-01](/static/img/safeweb-how-to-install-07-login-default.png)
-
-### IV. 将管理员帐户连接到应用程序
+### III. 将管理员帐户连接到应用程序
 请观看以下视频：
 @[youtube](https://www.youtube.com/watch?v=HFnaqzxWinw)
 
