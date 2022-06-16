@@ -53,10 +53,10 @@ avatar: /static/img/peter_avatar.png
 
 ### IV. 将管理员帐户连接到应用程序
 请观看以下视频：
-@[youtube](https://www.youtube.com/watch?v=UROEl_wwmxA)
+@[youtube](https://www.youtube.com/watch?v=HFnaqzxWinw)
 
 **恭喜您安装成功！**
 
 ### ✅使用黑名单屏蔽网站
 首先，您需要为您的孩子创建一个用户帐户来替换上面的默认帐户。 然后您创建一个黑名单并将其应用于该用户。 请观看视频以了解如何操作。
-@[youtube](https://www.youtube.com/watch?v=wxm8yZFjI-4)
+@[youtube](https://www.youtube.com/watch?v=RB_0COPQc9g)
