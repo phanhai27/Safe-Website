@@ -90,9 +90,9 @@ function DownloadPage({ language, downloadData, htmlMeta }) {
                     <div className="wow fadeInUp animated" data-wow-duration="2s" data-wow-delay="0.2s" style={stylingUp}>
                         <p>{downloadData.windows.supports}</p>
                         <p> {downloadData.browser.message1}:
-                        &nbsp;<a id="firelink" href={downloadData.firefox.url} data-wow-duration="2s" data-wow-delay="0.2s" style={stylingLeft}><i className="fa fa-firefox"></i> <small>{downloadData.firefox.version}</small></a>,
-                        &nbsp;<a id="edgelink" href={downloadData.edge.url} data-wow-duration="2s" data-wow-delay="0.2s" style={stylingLeft}><i className="fa fa-edge"></i> <small>{downloadData.edge.version}</small></a>,
-                        &nbsp;<a id="chromelink" href={downloadData.chrome.url} data-wow-duration="2s" data-wow-delay="0.2s" style={stylingLeft}><i className="fa fa-chrome"></i> <small>{downloadData.chrome.version}</small></a>,
+                        &nbsp;<i className="fa fa-firefox"></i> <small>{downloadData.firefox.version}</small>,
+                        &nbsp;<i className="fa fa-edge"></i> <small>{downloadData.edge.version}</small>,
+                        &nbsp;<i className="fa fa-chrome"></i> <small>{downloadData.chrome.version}</small>,
                         &nbsp;{downloadData.browser.message2}
                         </p>
                     </div>
