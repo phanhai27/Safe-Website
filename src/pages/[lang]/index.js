@@ -23,13 +23,13 @@ function IndexPage({ language, homeData, externalUrls }) {
             AOS.init({});
         };
 
-        var priceScript = document.createElement('script');
-        priceScript.type = 'text/javascript';
-        priceScript.src = "/static/js/price.js";
+        // var priceScript = document.createElement('script');
+        // priceScript.type = 'text/javascript';
+        // priceScript.src = "/static/js/price.js";
     
-        document.head.appendChild(priceScript);
-        priceScript.onload = () => {
-        };
+        // document.head.appendChild(priceScript);
+        // priceScript.onload = () => {
+        // };
 
         $("#gocontact").click(function(e){
             e.preventDefault();
@@ -224,7 +224,7 @@ function IndexPage({ language, homeData, externalUrls }) {
 
     <div className="container my-5 py-2" id="price-table">
         <h2 className="text-center font-weight-bold d-block mb-3"><a href="#price-table">{homeData.payment.title}</a></h2>
-        <div className="toggle d-flex justify-content-center">
+        {/* <div className="toggle d-flex justify-content-center">
             <div className="toggle-main d-flex align-items-center">
                 <div><span id="monthly">{homeData.payment.monthly}</span> </div>
                 <div className="toggle-btn ml-3 mr-3 mt-3">
@@ -235,7 +235,7 @@ function IndexPage({ language, homeData, externalUrls }) {
                 </div>
                 <div> <span id="yearly">{homeData.payment.yearly}</span></div>
             </div>
-        </div>
+        </div> */}
         <div className="row">
             <div data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true" className="col-md-4 text-center py-4 mt-5">
                 <h4 className="my-4">{homeData.payment.free.type}</h4>
