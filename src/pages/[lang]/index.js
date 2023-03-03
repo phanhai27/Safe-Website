@@ -9,6 +9,7 @@ import ENV from '../../../env.json'
 import $ from 'jquery';
 
 function IndexPage({ language, homeData, externalUrls }) {
+    const adminLang = language !== "vi" ? "en" : "vi";
 
     React.useEffect(() => {
         gaRunScript();
@@ -115,8 +116,8 @@ function IndexPage({ language, homeData, externalUrls }) {
                 <img style={{display: 'block', maxWidth: "200px"}} src="/static/img/logo.png" alt="logo"/>
             </div>
             <div className="col-6 text-right menu-main">
-                <a href={externalUrls.SignUp} className="btn my-2 font-weight-bold atlas-cta cta-blue menu-item signUp">{homeData.header.button2}</a>
-                <a href={externalUrls.SignIn} className="btn my-2 font-weight-bold atlas-cta cta-white menu-item">{homeData.header.button1}</a>
+                <a href={externalUrls.SignUp + "?lang=" + adminLang} className="btn my-2 font-weight-bold atlas-cta cta-blue menu-item signUp">{homeData.header.button2}</a>
+                <a href={externalUrls.SignIn + "?lang=" + adminLang} className="btn my-2 font-weight-bold atlas-cta cta-white menu-item">{homeData.header.button1}</a>
                 <a className="btn font-weight-bold language-link menu-item"><LanguageMenu/></a>
             </div>
         </div>
