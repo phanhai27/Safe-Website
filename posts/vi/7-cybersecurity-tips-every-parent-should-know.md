@@ -1,7 +1,7 @@
 ---
 url: blog/7-cybersecurity-tips-every-parent-should-know
 picture: /static/img/internet-safety-for-kids.png
-title: 7 Cybersecurity Tips Every Parent Should Know
+title: 7 mẹo bảo mật internet mà mọi phụ huynh nên biết
 description: Với sự gia tăng của tội phạm mạng và vi phạm dữ liệu, việc giữ an toàn cho con bạn khỏi các mối đe dọa trên internet ngày càng trở nên khó khăn.
 summary: Theo một cuộc thăm dò gần đây do Norton by Symantec thực hiện, 60% phụ huynh trên toàn thế giới cho con cái họ truy cập Internet trước 11 tuổi. Ngay cả khi 78% phụ huynh cảm thấy rằng trẻ em hiện phải đối mặt với các mối đe dọa trực tuyến lớn hơn so với 5 năm trước, chỉ 50% kiểm tra lịch sử trình duyệt của con họ và 46% hạn chế quyền truy cập vào một số trang web và ứng dụng nhất định.
 date: Mar 10, 2023
