@@ -84,7 +84,7 @@ function DownloadPage({ language, downloadData, htmlMeta }) {
                         <p> {downloadData.message} </p>
                     </div>
                     <div className="buttons">
-                        <a id="dlink" href="#" className="btn btn-info btn-lg" data-wow-duration="2s" data-wow-delay="0.2s" style={stylingLeft}><i className="fa fa-windows fa-2x"></i> Download<br /> <small>{downloadData.windows.version}</small></a>
+                        <a id="dlink" href={ENV.BASE_URL + "/download/SafeWeb-setup.exe"} className="btn btn-info btn-lg" data-wow-duration="2s" data-wow-delay="0.2s" style={stylingLeft}><i className="fa fa-windows fa-2x"></i> Download<br /> <small>{downloadData.windows.version}</small></a>
                     </div>
                     <br/>
                     <div className="wow fadeInUp animated" data-wow-duration="2s" data-wow-delay="0.2s" style={stylingUp}>

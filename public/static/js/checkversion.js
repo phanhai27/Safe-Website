@@ -22,7 +22,7 @@ $(document).ready(function(){
 		$.each(data.list, function(key,value) {
 			
 			if (value.platform == `windows`) {
-				$('#dlink').attr("href", `/download/SafeApp-v${value.version}-setup.exe`);
+				// $('#dlink').attr("href", `/download/SafeApp-v${value.version}-setup.exe`);
 				$("#dlink small").text(`${verLang} ${value.version}`);
 			}
 		  });
