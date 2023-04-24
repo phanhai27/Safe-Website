@@ -77,11 +77,14 @@ footer:
     title: 連絡
     part1: 問題がある、または機能についてコメントしたい、
     part2: 下記アドレスまでご連絡ください。
-    part3: Eメール
-    part4: 住所
-    email: qa@safeweb.app
-    phone: +84-989-550-390
+    part3: 会社名
+    part4: 税法
+    part5: 住所
+    part6: Eメール
+    company: SAFEWEB CO.,LTD
+    taxcode: "0110201044"
     address: ベトナム、ハノイ
+    email: qa@safeweb.app
 submit:
     name: 名前
     email: 電子メールアドレス

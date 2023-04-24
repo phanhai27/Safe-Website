@@ -71,11 +71,14 @@ footer:
     title: Contact Us
     part1: You have a problem or want to comment on a feature,
     part2: please contact the address below.
-    part3: Email
-    part4: Address
-    email: qa@safeweb.app
-    phone: +84-989-550-390
+    part3: Company name
+    part4: Tax code
+    part5: Address
+    part6: Email
+    company: SAFEWEB CO.,LTD
+    taxcode: "0110201044"
     address: Hanoi, Vietnam
+    email: qa@safeweb.app
 submit:
     name: Your Name
     email: Your Email

@@ -77,11 +77,14 @@ footer:
     title: 联系
     part1: 如果你有问题或对功能有意见，
     part2: 请通过以下地址与我们联系。
-    part3: 电子邮件
-    part4: 地址
-    email: qa@safeweb.app
-    phone: +84-989-550-390
+    part3: 公司名称
+    part4: 税法
+    part5: 地址
+    part6: 电子邮件
+    company: SAFEWEB CO.,LTD
+    taxcode: "0110201044"
     address: 越南，河内
+    email: qa@safeweb.app
 submit:
     name: 姓名
     email: 电子邮箱地址
