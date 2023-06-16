@@ -6,7 +6,7 @@ import TagManager from 'react-gtm-module';
 function App ({ Component, pageProps }) {
 	i18next.changeLanguage(pageProps.language);
 	useEffect(() => {
-		TagManager.initialize({ gtmId: "GTM-XXXXX" })
+		TagManager.initialize({ gtmId: "GTM-W4FP622" })
 	  }, []);
 	return <Component {...pageProps} />;
 };
