@@ -1,15 +1,10 @@
 import Head from 'next/head'
 import React from 'react'
 import { getAllLanguageSlugs, getLanguage } from '../../lib/lang';
-import { gaRunScript } from '../../lib/googleAnalytics'
 import LanguageMenu from '../../components/LanguageMenu';
 import ENV from '../../../env.json'
 
 function EULAPage({ language, pageData, pageContent }) {
-    React.useEffect(() => {
-        gaRunScript();
-    }, [])
-
     var md = require('markdown-it')({
         html: true,
         linkify: true,

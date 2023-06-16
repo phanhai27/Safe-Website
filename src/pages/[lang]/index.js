@@ -2,7 +2,6 @@ import Head from 'next/head'
 import React from 'react'
 import { getAllLanguageSlugs, getLanguage } from '../../lib/lang';
 import LanguageMenu from '../../components/LanguageMenu';
-import { gaRunScript } from '../../lib/googleAnalytics'
 import { reCaptchaScript } from '../../lib/googleRecaptcha'
 import JQueryLib from '../../components/jquery-lib';
 import ENV from '../../../env.json'
@@ -12,7 +11,6 @@ function IndexPage({ language, homeData, externalUrls }) {
     const adminLang = language !== "vi" ? "en" : "vi";
 
     React.useEffect(() => {
-        gaRunScript();
         reCaptchaScript();
 
         var aoScript = document.createElement('script');

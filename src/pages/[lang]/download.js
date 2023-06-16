@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import React from 'react'
 import { getAllLanguageSlugs, getLanguage } from '../../lib/lang';
-import { gaRunScript } from '../../lib/googleAnalytics'
 import JQueryLib from '../../components/jquery-lib';
 import BootstrapLib from '../../components/bootstrap-lib';
 import LanguageMenu from '../../components/LanguageMenu';
@@ -9,8 +8,6 @@ import ENV from '../../../env.json'
 
 function DownloadPage({ language, downloadData, htmlMeta }) {
     React.useEffect(() => {
-        gaRunScript();
-
         var checkversion = document.createElement('script');
         checkversion.type = 'text/javascript';
         checkversion.src = '/static/js/checkversion.js'
