@@ -333,6 +333,9 @@ function IndexPage({ language, homeData, externalUrls }) {
                     <a href={"/" + language + "/privacy-policy/"}>Privacy Policy</a>, <a href={"/" + language + "/eula/"}>EULA</a>
                 </div>
                 <div className="col-md-6 align-self-center text-center text-md-right my-2" id="social-media">
+                    <a href="https://www.facebook.com/groups/safewebapp" className="d-inline-block text-center ml-2">
+                    	<i className="fa fa-group" aria-hidden="true"></i>
+                    </a>
                     <a href="https://www.facebook.com/safeweb.apps" className="d-inline-block text-center ml-2">
                     	<i className="fa fa-facebook" aria-hidden="true"></i>
                     </a>
