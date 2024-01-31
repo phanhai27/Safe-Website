@@ -328,7 +328,7 @@ function IndexPage({ language, homeData, externalUrls }) {
         <div className="container">
             <div className="row justify-content-between">
             	<div className="col-md-6 text-white align-self-center text-center text-md-left my-2">
-                    Copyright © 2021 SafeWeb.
+                    Copyright © 2021-2024 SafeWeb.
                     <br/>
                     <a href={"/" + language + "/privacy-policy/"}>Privacy Policy</a>, <a href={"/" + language + "/eula/"}>EULA</a>
                 </div>
