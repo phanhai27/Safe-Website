@@ -336,7 +336,7 @@ function IndexPage({ language, homeData, externalUrls }) {
                     <a href="https://www.facebook.com/groups/safewebapp" className="d-inline-block text-center ml-2">
                     	<i className="fa fa-group" aria-hidden="true"></i>
                     </a>
-                    <a href="https://www.facebook.com/safeweb.consafekhiluotweb" className="d-inline-block text-center ml-2">
+                    <a href="https://www.facebook.com/safeweb.app.vn" className="d-inline-block text-center ml-2">
                     	<i className="fa fa-facebook" aria-hidden="true"></i>
                     </a>
                     <a href="https://twitter.com/SafeWeb_app" className="d-inline-block text-center ml-2">
