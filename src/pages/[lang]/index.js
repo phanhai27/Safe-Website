@@ -22,13 +22,13 @@ function IndexPage({ language, homeData, externalUrls }) {
             AOS.init({});
         };
 
-        // var priceScript = document.createElement('script');
-        // priceScript.type = 'text/javascript';
-        // priceScript.src = "/static/js/price.js";
+        var discountScript = document.createElement('script');
+        discountScript.type = 'text/javascript';
+        discountScript.src = "/static/js/discountPopup.js";
     
-        // document.head.appendChild(priceScript);
-        // priceScript.onload = () => {
-        // };
+        document.head.appendChild(discountScript);
+        discountScript.onload = () => {
+        };
 
         $("#gocontact").click(function(e){
             e.preventDefault();
