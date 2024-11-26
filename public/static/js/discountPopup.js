@@ -1,4 +1,4 @@
-(function($) {
+$(document).ready(function(){
 
   let pathName = window.location.pathname;
   let subPath = pathName.split('/');
@@ -19,6 +19,8 @@
       const summonModal = () => {
         //add class to body,   contains grey filter and modal  
         $('body').append("<div id='box'></div>");
+
+        $('#box').append(`<div class="imgPromo"><img src="https://files.elfsightcdn.com/b27fdf3d-b477-40ce-84d4-ddcade571fb4/41ec728d-4957-425e-ba48-8ce3b1b1dd4a.jpeg" alt="image"></div>`);
   
         $('#box').append(`<p id='messageText'>${message}</p>`);
         $('#box').append(`<p id='titleText'>${title}</p>`);
@@ -34,7 +36,7 @@
         //Modal Box
         $('#box').css({
           width: '350px',
-          height: '350px',
+          height: '550px',
           background: '#FFF',
           border: 'rgba(17, 0, 255, 0.822) solid 1px',
           'text-align': 'center',
@@ -46,6 +48,11 @@
           display : 'block' ,
           'background-color': '#ffc700'
         });
+
+        $('.imgPromo').css({
+          width: '100%',
+          height: '210px',
+        })
 
         //Close button
         $('#closeBtn').css({
@@ -75,7 +82,7 @@
         $('#titleText').css({
           'font-family': 'Fertigo Pro',
           'font-size':'20px',
-          'margin-top':'40px',
+          'margin-top':'10px',
           'margin-left':'20px',
           'margin-right':'20px',
           color: '#111111'
@@ -131,4 +138,4 @@
 
     dealTime();
 
-})(jQuery);
+});
