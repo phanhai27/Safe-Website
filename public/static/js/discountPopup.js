@@ -20,7 +20,7 @@ $(document).ready(function(){
         //add class to body,   contains grey filter and modal  
         $('body').append("<div id='box'></div>");
 
-        $('#box').append(`<div class="imgPromo"><img src="https://files.elfsightcdn.com/b27fdf3d-b477-40ce-84d4-ddcade571fb4/41ec728d-4957-425e-ba48-8ce3b1b1dd4a.jpeg" alt="image"></div>`);
+        $('#box').append(`<div class="imgPromo"><img src="https://img.freepik.com/premium-vector/50-off-super-discount-discount-promotion-special-offer-discount-banner-yellow-square-banner_901408-742.jpg" alt="image"></div>`);
   
         $('#box').append(`<p id='messageText'>${message}</p>`);
         $('#box').append(`<p id='titleText'>${title}</p>`);
@@ -51,7 +51,7 @@ $(document).ready(function(){
 
         $('.imgPromo').css({
           width: '100%',
-          height: '210px',
+          height: '45%',
         })
 
         //Close button
