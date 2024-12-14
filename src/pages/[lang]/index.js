@@ -3,7 +3,6 @@ import React from 'react'
 import { getAllLanguageSlugs, getLanguage } from '../../lib/lang';
 import LanguageMenu from '../../components/LanguageMenu';
 import { reCaptchaScript } from '../../lib/googleRecaptcha'
-import JQueryLib from '../../components/jquery-lib';
 import ENV from '../../../env.json'
 import $ from 'jquery';
 
@@ -104,7 +103,7 @@ function IndexPage({ language, homeData, externalUrls }) {
             <link rel="stylesheet" href="/static/css/bootstrap.min.css"/>
             <link rel="stylesheet" href="/static/font-awesome-4.7.0/css/font-awesome.min.css"/>
             <link rel="stylesheet" href="/static/css/aos.css"></link>
-            <JQueryLib />
+            <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         </Head>
 
     <div className="top-lighthouse">
