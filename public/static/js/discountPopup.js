@@ -6,13 +6,13 @@ $(document).ready(function(){
 
   const dealTime = () => {
       let message = `6 MONTHS OF USE`;
-      let title = 'Click the "Register Now" button';
-      let btnName = 'Register Now';
+      let title = 'Click the "View details" button now.';
+      let btnName = 'View details';
 
       if (lang == 'vi') {
         message = `6 THÁNG SỬ DỤNG`;
-        title = 'Hãy bấm nút "Đăng ký" ngay';
-        btnName = 'Đăng ký';
+        title = 'Hãy bấm ngay nút "Xem chi tiết".';
+        btnName = 'Xem chi tiết';
       }
   
       const summonModal = () => {
