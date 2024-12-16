@@ -6,14 +6,13 @@ $(document).ready(function(){
 
   const dealTime = () => {
       let message = `6 MONTHS OF USE`;
-      let title = 'Your coupon code:';
-      let coupon = 'ConTuHoc';
-      let btnName = 'Try Now';
+      let title = 'Click the "Register Now" button';
+      let btnName = 'Register Now';
 
       if (lang == 'vi') {
         message = `6 THÁNG SỬ DỤNG`;
-        title = 'Mã của bạn:';
-        btnName = 'Thử Ngay';
+        title = 'Hãy bấm nút "Đăng ký" ngay';
+        btnName = 'Đăng ký';
       }
   
       const summonModal = () => {
@@ -24,7 +23,6 @@ $(document).ready(function(){
   
         $('#box').append(`<p id='messageText'>${message}</p>`);
         $('#box').append(`<p id='titleText'>${title}</p>`);
-        $('#box').append(`<p id='couponText'>${coupon}</p>`);
   
         $('#box').append(`<button id='getDealBtn' type='button'>${btnName}</button>`);
         $('#box').append(`<div id='closeBtn'><i class='fa fa-close'></i></div>`);
@@ -36,7 +34,7 @@ $(document).ready(function(){
         //Modal Box
         $('#box').css({
           width: '350px',
-          height: '550px',
+          height: '500px',
           background: '#FFF',
           border: 'rgba(17, 0, 255, 0.822) solid 1px',
           'text-align': 'center',
@@ -73,7 +71,7 @@ $(document).ready(function(){
           'font-family': 'Fertigo Pro',
           'font-size':'30px',
           'font-weight':'bold',
-          'margin-top':'40px',
+          'margin-top':'60px',
           'margin-left':'20px',
           'margin-right':'20px',
           color: '#111111'
@@ -86,16 +84,6 @@ $(document).ready(function(){
           'margin-left':'20px',
           'margin-right':'20px',
           color: '#111111'
-        })
-
-        $('#couponText').css({
-          'font-family': 'Fertigo Pro',
-          'font-size':'30px',
-          'margin-top':'5px',
-          'margin-left':'20px',
-          'margin-right':'20px',
-          color: '#111111',
-          'background-color': '#ffffff',
         })
   
         //Get Deal! button
@@ -113,7 +101,7 @@ $(document).ready(function(){
           'background-color': '#111111',
           '-webkit-appearance': 'button',
           cursor: 'pointer',
-          'margin-top': '40px',
+          'margin-top': '10px',
           'margin-bottom': '10px'
         });
   
