@@ -116,7 +116,9 @@ $(document).ready(function(){
     
     $('body').on('click', '#getDealBtn', function() {
       // $('#box').css('display', 'none');
-      window.location.href = `https://admin.safeweb.app/signup?lang=${lang}`;
+      // window.location.href = `https://www.contuhoc.com/back-to-school-2024-uu-dai-mua-1-tang-1-tren-tak12`;
+      var redirectWindow = window.open('https://www.contuhoc.com/back-to-school-2024-uu-dai-mua-1-tang-1-tren-tak12', '_blank');
+      redirectWindow.location;
     });
 
     $('body').on('click', '#closeBtn', function() {
