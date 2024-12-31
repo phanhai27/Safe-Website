@@ -116,8 +116,8 @@ $(document).ready(function(){
     
     $('body').on('click', '#getDealBtn', function() {
       // $('#box').css('display', 'none');
-      // window.location.href = `https://www.contuhoc.com/back-to-school-2024-uu-dai-mua-1-tang-1-tren-tak12`;
-      var redirectWindow = window.open('https://www.contuhoc.com/back-to-school-2024-uu-dai-mua-1-tang-1-tren-tak12', '_blank');
+      // window.location.href = `https://www.contuhoc.com/chao-nam-moi-2025-mua-kids-a-z-tang-ngay-6-thang-safeweb-tri-gia-300k`;
+      var redirectWindow = window.open('https://www.contuhoc.com/chao-nam-moi-2025-mua-kids-a-z-tang-ngay-6-thang-safeweb-tri-gia-300k', '_blank');
       redirectWindow.location;
     });
 
