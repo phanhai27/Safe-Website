@@ -3,7 +3,6 @@ import React from 'react'
 import { getAllLanguageSlugs, getLanguage } from '../../lib/lang';
 import LanguageMenu from '../../components/LanguageMenu';
 import { reCaptchaScript } from '../../lib/googleRecaptcha'
-import JQueryLib from '../../components/jquery-lib';
 import ENV from '../../../env.json'
 import $ from 'jquery';
 
@@ -22,13 +21,13 @@ function IndexPage({ language, homeData, externalUrls }) {
             AOS.init({});
         };
 
-        // var priceScript = document.createElement('script');
-        // priceScript.type = 'text/javascript';
-        // priceScript.src = "/static/js/price.js";
+        var discountScript = document.createElement('script');
+        discountScript.type = 'text/javascript';
+        discountScript.src = "/static/js/discountPopup.js";
     
-        // document.head.appendChild(priceScript);
-        // priceScript.onload = () => {
-        // };
+        document.head.appendChild(discountScript);
+        discountScript.onload = () => {
+        };
 
         $("#gocontact").click(function(e){
             e.preventDefault();
@@ -102,9 +101,10 @@ function IndexPage({ language, homeData, externalUrls }) {
             <link rel="icon" href="/favicon.ico" sizes="32x32" type="image/png"/>
             <link rel="stylesheet" href="/static/css/custom.css"/>
             <link rel="stylesheet" href="/static/css/bootstrap.min.css"/>
-            <link rel="stylesheet" href="/static/font-awesome-4.7.0/css/font-awesome.min.css"/>
+            {/* <link rel="stylesheet" href="/static/font-awesome-4.7.0/css/font-awesome.min.css"/> */}
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
             <link rel="stylesheet" href="/static/css/aos.css"></link>
-            <JQueryLib />
+            <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         </Head>
 
     <div className="top-lighthouse">
@@ -334,19 +334,19 @@ function IndexPage({ language, homeData, externalUrls }) {
                 </div>
                 <div className="col-md-6 align-self-center text-center text-md-right my-2" id="social-media">
                     <a href="https://www.facebook.com/groups/safewebapp" className="d-inline-block text-center ml-2">
-                    	<i className="fa fa-group" aria-hidden="true"></i>
+                        <i className="fa-solid fa-user-group"></i>
                     </a>
                     <a href="https://www.facebook.com/safeweb.app.vn" className="d-inline-block text-center ml-2">
-                    	<i className="fa fa-facebook" aria-hidden="true"></i>
+                        <i className="fa-brands fa-facebook-f"></i>
                     </a>
-                    <a href="https://twitter.com/SafeWeb_app" className="d-inline-block text-center ml-2">
-                    	<i className="fa fa-twitter" aria-hidden="true"></i>
+                    <a href="https://x.com/SafeWeb_app" className="d-inline-block text-center ml-2">
+                        <i className="fa-brands fa-x-twitter"></i>
                     </a>
                     <a href="https://www.youtube.com/channel/UC9t4hpAS5jSzPfD2JIIEvrw" className="d-inline-block text-center ml-2">
-                    	<i className="fa fa-youtube-play" aria-hidden="true"></i>
+                        <i className="fa-brands fa-youtube"></i>
                     </a>
                     <a href="mailto:qa@safeweb.app" className="d-inline-block text-center ml-2">
-                    	<i className="fa fa-envelope" aria-hidden="true"></i>
+                        <i className="fa-solid fa-envelope"></i>
                     </a>
                 </div>
             </div>
