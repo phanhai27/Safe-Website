@@ -34,7 +34,7 @@ function IndexPage({ language, homeData, externalUrls }) {
             e.preventDefault();
             
             grecaptcha.ready(function() {
-                grecaptcha.execute('6LcUv5MaAAAAAFdSHhVVXoQTYoHRr2SKSSMqHU0F', {action: 'contact'}).then(function(token) {
+                grecaptcha.execute(ENV.RECAPTCHA_KEY, {action: 'contact'}).then(function(token) {
                     var formData = {
                         "fullname": $("#name").val(),
                         "email": $("#email").val(),
