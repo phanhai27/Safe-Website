@@ -21,13 +21,13 @@ function IndexPage({ language, homeData, externalUrls }) {
             AOS.init({});
         };
 
-        var discountScript = document.createElement('script');
-        discountScript.type = 'text/javascript';
-        discountScript.src = "/static/js/discountPopup.js";
+        // var discountScript = document.createElement('script');
+        // discountScript.type = 'text/javascript';
+        // discountScript.src = "/static/js/discountPopup.js";
     
-        document.head.appendChild(discountScript);
-        discountScript.onload = () => {
-        };
+        // document.head.appendChild(discountScript);
+        // discountScript.onload = () => {
+        // };
 
         $("#gocontact").click(function(e){
             e.preventDefault();
